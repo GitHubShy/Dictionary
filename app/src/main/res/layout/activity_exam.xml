@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="一月" />
+
+    <EditText
+        android:id="@+id/answer_box"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/question"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="提交"
+        app:layout_constraintStart_toEndOf="@+id/answer_box"
+        app:layout_constraintTop_toTopOf="@+id/answer_box" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="正确率"
+        app:layout_constraintStart_toStartOf="@+id/answer_box"
+        app:layout_constraintTop_toBottomOf="@+id/answer_box" />
+
+    <TextView
+        android:id="@+id/score_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="90%"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/score_text"
+        app:layout_constraintTop_toBottomOf="@+id/answer_box" />
+
+    <TextView
+        android:id="@+id/check_wrong_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="查看错误答案"
+        app:layout_constraintTop_toBottomOf="@+id/score_text" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wrong_words"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/check_wrong_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_wrong_word" />
+
+
+</android.support.constraint.ConstraintLayout>
