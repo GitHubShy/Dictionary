@@ -105,6 +105,7 @@ public class ExamActivity extends AppCompatActivity {
             mScore.setVisibility(View.VISIBLE);
             DecimalFormat df = new DecimalFormat("0.00");
             mScore.setText(df.format((float) mCorrectNum / mRepoSize));
+            showWrongWords();
         } else {
             displayQuestion();
         }

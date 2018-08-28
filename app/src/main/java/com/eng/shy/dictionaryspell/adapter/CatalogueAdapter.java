@@ -13,7 +13,7 @@ import com.eng.shy.dictionaryspell.pojo.Catalogue;
 import java.util.List;
 
 
-public class CatalogueAdapter extends RecyclerView.Adapter<CatalogueAdapter.CatalogueViewHolder>{
+public class CatalogueAdapter extends RecyclerView.Adapter<CatalogueAdapter.CatalogueViewHolder> {
 
     private List<Catalogue> mData;
 
@@ -30,7 +30,7 @@ public class CatalogueAdapter extends RecyclerView.Adapter<CatalogueAdapter.Cata
     @NonNull
     @Override
     public CatalogueViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.catalogue_list,null,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.catalogue_list, null, false);
         CatalogueViewHolder holder = new CatalogueViewHolder(view);
         return holder;
     }
@@ -53,7 +53,7 @@ public class CatalogueAdapter extends RecyclerView.Adapter<CatalogueAdapter.Cata
         return mData.size();
     }
 
-    public class CatalogueViewHolder extends RecyclerView.ViewHolder{
+    public class CatalogueViewHolder extends RecyclerView.ViewHolder {
 
         public TextView title;
         public TextView accuracy;

@@ -28,6 +28,19 @@ public class VocabularyRepo {
         questions.add(new Question("星期五","Friday"));
         questions.add(new Question("星期六","Saturday"));
         questions.add(new Question("星期日","Sunday"));
+
+        questions.add(new Question("举例说明","illustrate"));
+        questions.add(new Question("论证;证明，证实;显示，展示;演示，说明","demonstrate"));
+        questions.add(new Question("信心;信任;秘密","confidence"));
+        questions.add(new Question("确信的，深信的;有信心的，沉着的;大胆的，过分自信的;厚颜无耻的","confident"));
+        questions.add(new Question("n.金融;财政;资金;财源","finance"));
+        questions.add(new Question("adj经济的;经济学的;合算的;有经济效益的","economic"));
+        questions.add(new Question("n经济;节约;理财;秩序","economy"));
+        questions.add(new Question("adj方便的","convenient"));
+        questions.add(new Question("n方便，便利;","convenience"));
+
+        questions.add(new Question("n.恩惠;赞同;帮助;善行","favour"));
+        questions.add(new Question("n.野餐郊游;供野餐吃的食品;猪的肩肉;轻松的工作","picnic"));
         return questions;
     }
 }
