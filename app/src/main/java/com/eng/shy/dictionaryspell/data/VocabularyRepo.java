@@ -3,10 +3,27 @@ package com.eng.shy.dictionaryspell.data;
 import com.eng.shy.dictionaryspell.pojo.Question;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class VocabularyRepo {
-    public static List<Question> getNormalRepo() {
+    private static VocabularyRepo mRepo = null;
+
+    private VocabularyRepo() {
+        mAllQuestions.put("日常",getNormalRepo());
+    }
+
+    public static VocabularyRepo getInstance() {
+        mRepo = new VocabularyRepo();
+        return mRepo;
+    }
+    private HashMap<String,List> mAllQuestions = new HashMap();
+
+    public HashMap<String, List> getmAllQuestions() {
+        return mAllQuestions;
+    }
+
+    private List<Question> getNormalRepo() {
         List<Question> questions = new ArrayList<>();
         questions.add(new Question("一月","January"));
         questions.add(new Question("二月","February"));

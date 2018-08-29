@@ -34,7 +34,7 @@ public class ExamActivity extends AppCompatActivity {
 
     private Question mCurrentQuestion;
 
-    private int mType;
+    private String mTitle;
 
     private int mRepoSize;
     private int mCorrectNum;
@@ -71,10 +71,8 @@ public class ExamActivity extends AppCompatActivity {
 
 
     private void initData() {
-        mType = getIntent().getIntExtra("type", 0);
-        if (mType == 0) {
-            mQuestionRepository = VocabularyRepo.getNormalRepo();
-        }
+        mTitle = getIntent().getStringExtra("title");
+        mQuestionRepository = VocabularyRepo.getInstance().getmAllQuestions().get(mTitle);
         mRepoSize = mQuestionRepository.size();
 
         displayQuestion();

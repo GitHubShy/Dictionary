@@ -1,17 +1,17 @@
 package com.eng.shy.dictionaryspell;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.ViewGroup;
 
 import com.eng.shy.dictionaryspell.adapter.CatalogueAdapter;
+import com.eng.shy.dictionaryspell.data.VocabularyRepo;
 import com.eng.shy.dictionaryspell.pojo.Catalogue;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,15 +37,19 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         mData = new ArrayList<>();
-        mData.add(new Catalogue("日常","90%"));
-        mData.add(new Catalogue("日常","90%"));
-        mData.add(new Catalogue("日常","90%"));
-        mData.add(new Catalogue("日常","90%"));
+        HashMap<String, List> repos = VocabularyRepo.getInstance().getmAllQuestions();
+        for (String title : repos.keySet()) {
+            mData.add(new Catalogue(title,"90%"));
+        }
         mAdapter = new CatalogueAdapter(mData);
         mAdapter.setmClickListener(new CatalogueAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int position) {
-                startActivity(new Intent().setClass(MainActivity.this,ExamActivity.class));
+                Catalogue catalogue = mData.get(position);
+                Intent i = new Intent();
+                i.putExtra("title",catalogue.title);
+                i.setClass(MainActivity.this,ExamActivity.class);
+                startActivity(i);
             }
         });
         mRecycleView.setAdapter(mAdapter);
