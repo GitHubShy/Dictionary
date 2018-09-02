@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 
 import com.eng.shy.dictionaryspell.adapter.WrongWordsAdapter;
@@ -67,6 +69,21 @@ public class ExamActivity extends AppCompatActivity {
                 estimate();
             }
         });
+        mBox.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                //当actionId == XX_SEND 或者 XX_DONE时都触发
+                //或者event.getKeyCode == ENTER 且 event.getAction == ACTION_DOWN时也触发
+                //注意，这是一定要判断event != null。因为在某些输入法上会返回null。
+                if (actionId == EditorInfo.IME_ACTION_SEND
+                        || actionId == EditorInfo.IME_ACTION_DONE
+                        || (event != null && KeyEvent.KEYCODE_ENTER == event.getKeyCode() && KeyEvent.ACTION_DOWN == event.getAction())) {
+                    estimate();
+                }
+                return false;
+            }
+        });
     }
 
 
@@ -88,7 +105,7 @@ public class ExamActivity extends AppCompatActivity {
     }
 
     private void estimate() {
-        String text = mBox.getText().toString();
+        String text = mBox.getText().toString().trim();
 
         if (StringUtil.isEmpty(text) || !mCurrentQuestion.getEnglish().equals(text)) {
             mCurrentQuestion.setWrongEnglish(text);
@@ -115,4 +132,6 @@ public class ExamActivity extends AppCompatActivity {
         mRecycleView.setLayoutManager(new LinearLayoutManager(this));
         mRecycleView.setAdapter(wrongWordsAdapter);
     }
+
+
 }

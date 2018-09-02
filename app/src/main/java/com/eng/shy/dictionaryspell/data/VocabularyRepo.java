@@ -11,6 +11,7 @@ public class VocabularyRepo {
 
     private VocabularyRepo() {
         mAllQuestions.put("日常",getNormalRepo());
+        mAllQuestions.put("日常进阶1",getProNormalRepo());
     }
 
     public static VocabularyRepo getInstance() {
@@ -58,6 +59,19 @@ public class VocabularyRepo {
 
         questions.add(new Question("n.恩惠;赞同;帮助;善行","favour"));
         questions.add(new Question("n.野餐郊游;供野餐吃的食品;猪的肩肉;轻松的工作","picnic"));
+        return questions;
+    }
+    private List<Question> getProNormalRepo() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question("n.\n" + "雇主，老板;雇佣者","employer"));
+        questions.add(new Question("n.\n" +
+                "雇工，雇员，职工","employee"));
+        questions.add(new Question("n.\n" +
+                "窗帘，门帘;帐幕之物，幕布;启幕，落幕","curtain"));
+        questions.add(new Question("n.\n" +
+                "保险费;保险，保险业;预防措施","insurance"));
+        questions.add(new Question("n.\n" +
+                "弹跳;弹性;活力","bounce"));
         return questions;
     }
 }
