@@ -12,6 +12,7 @@ public class VocabularyRepo {
     private VocabularyRepo() {
         mAllQuestions.put("日常", getNormalRepo());
         mAllQuestions.put("日常进阶1", getProNormalRepo());
+        mAllQuestions.put("日常进阶2", getProNormalRepo2());
         mAllQuestions.put("阅读考点词", getIELTSReadingRepo());
     }
 
@@ -117,6 +118,16 @@ public class VocabularyRepo {
                 "凌乱的，散乱的;肮脏的，污秽的;复杂的，麻烦的，难以应付的", "messy"));
         questions.add(new Question("倾向;爱好;斜坡", "inclination"));
 
+        questions.add(new Question("n.\n" +
+                "博物馆", "museum"));
+
+        questions.add(new Question("n.\n" +
+                "板;董事会;甲板;膳食\n" +
+                "vt.\n" +
+                "上（船、车或飞机）;收费供…膳宿;使搭伙，使寄宿;强行登（船）\n" +
+                "vi.\n" +
+                "（火车、轮船、飞机等）接受乘客;搭伙，寄宿", "board"));
+
         return questions;
     }
 
@@ -213,7 +224,75 @@ public class VocabularyRepo {
         questions.add(new Question("vt.\n" +
                 "引起;归纳;引诱;[电]感应", "induce"));
 
+        return questions;
+    }
+
+    private List<Question> getProNormalRepo2() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question("n.\n" +
+                "煤;煤块;煤堆;木炭\n" +
+                "vi.\n" +
+                "上煤;加煤\n" +
+                "vt.\n" +
+                "给…加煤;把…烧成炭\n", "coal"));
+        questions.add(new Question("n.\n" +
+                "柴火;木柴;柴草;荛", "firewood"));
+        questions.add(new Question("n.\n" +
+                "矿物;矿物质;矿石;汽水\n" +
+                "adj.\n" +
+                "矿物的，似矿物的", "mineral"));
+        questions.add(new Question("n.\n" +
+                "小屋，村舍;（农舍式的）小别墅;（郊外的）新式住宅，（大院内的）单幢住宅;乡下房子，小房子", "cottage"));
+        questions.add(new Question("adj.\n" +
+                "工业的，产业的;从事工业的;供工业用的;来自勤劳的\n" +
+                "n.\n" +
+                "工业股票;工业工人", "industrial"));
+        questions.add(new Question("n.\n" +
+                "素材;材料，原料;布，织物;适当人选\n" +
+                "adj.\n" +
+                "物质的;肉体的;重要的，决定性的;辩证的，推论的\n", "material"));
+        questions.add(new Question("vt.\n" +
+                "面对;使面对面，使对质;碰到，遇到;比较", "confront"));
+        questions.add(new Question("n.\n" +
+                "港湾;海港，港口;避难所;藏身处\n" +
+                "vt.&vi.\n" +
+                "隐匿;怀着;包含，聚藏;藏有", "harbour"));
+        questions.add(new Question("n.\n" +
+                "学费;教学，讲授", "tuition"));
+        questions.add(new Question("adv.\n" +
+                "可惜;不幸地，遗憾地;不巧", "unfortunately"));
+        questions.add(new Question("adj.\n" +
+                "侥幸的，幸运的;带来幸运的，吉利的", "fortunate"));
+        questions.add(new Question("n.\n" +
+                "幸运;（某人的）命运;富有;[常作复数]（人生事件中的）时运", "fortune"));
+
+        questions.add(new Question("adv.\n" +
+                "一般地，通常;广泛地，普遍地;概括地;主要地", "generally"));
+        questions.add(new Question("n.\n" +
+                "产生;一代人;代（约30年），时代;生殖", "generation"));
+        questions.add(new Question("adj.\n" +
+                "有耐性的;能容忍的\n" +
+                "n.\n" +
+                "病人;患者;病号", "patient"));
+
+        questions.add(new Question("n.\n" +
+                "上诉;呼吁;[体育]诉请;（迫切的）要求（帮助、同情等）恳求\n" +
+                "vi.\n" +
+                "（迫切）要求;有吸引力;求助（于）;提请注意\n" +
+                "vt.\n" +
+                "将…移交上级法院审理\n", "appeal"));
+        questions.add(new Question("adj.\n" +
+                "聪明的;理解力强的;有智力的;[计]智能的", "intelligent"));
+        questions.add(new Question("vt.\n" +
+                "感激;欠…债;应归功于;怀有情感", "owe"));
+        questions.add(new Question("十二月", "December"));
+        questions.add(new Question("十二月", "December"));
+        questions.add(new Question("十二月", "December"));
+
+
 
         return questions;
     }
+
+
 }
