@@ -14,6 +14,8 @@ public class VocabularyRepo {
         mAllQuestions.put("日常进阶1", getProNormalRepo());
         mAllQuestions.put("日常进阶2", getProNormalRepo2());
         mAllQuestions.put("阅读考点词", getIELTSReadingRepo());
+        mAllQuestions.put("听力易错", getListenRepo());
+        mAllQuestions.put("听力易错2", getListenRepo2());
     }
 
     public static VocabularyRepo getInstance() {
@@ -285,12 +287,155 @@ public class VocabularyRepo {
                 "聪明的;理解力强的;有智力的;[计]智能的", "intelligent"));
         questions.add(new Question("vt.\n" +
                 "感激;欠…债;应归功于;怀有情感", "owe"));
-        questions.add(new Question("十二月", "December"));
-        questions.add(new Question("十二月", "December"));
-        questions.add(new Question("十二月", "December"));
+        return questions;
+    }
 
+    private List<Question> getListenRepo() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question("n.\n" +
+                "森林;丛林;（森林似的）一丛;一片", "forest"));
+        questions.add(new Question("vt.& vi.\n" +
+                "使结冰霜;冻坏;（在蛋糕上）撒糖霜", "frost"));
+        questions.add(new Question("adj.\n" +
+                "学院的，大学的，学会的，（学术，文艺）协会的;学究的，学理上的，空谈的，非实用的;〈美〉文科的，文学的;柏拉图学派的", "academic"));
+        questions.add(new Question("n.\n" +
+                "体育场;运动场;[医]（疾病的第…）期", "stadium"));
+        questions.add(new Question("n.\n" +
+                "帐篷;帐篷状物;塞子", "tent"));
+        questions.add(new Question("杂志;弹药库;弹仓;胶卷盒", "magazine"));
+        questions.add(new Question("n.\n" +
+                "组织;机构;团体", "organization"));
+        questions.add(new Question("n.\n" +
+                "观众;听众;读者;接见", "audience"));
+        questions.add(new Question("adv.\n" +
+                "轻微地，轻轻地;细长地，苗条地;〈罕〉轻蔑地;粗", "slightly"));
+        questions.add(new Question("n.\n" +
+                "庆祝;庆祝会（仪式）;颂扬", "celebration"));
+        questions.add(new Question("n.\n" +
+                "剧场;戏剧界;戏剧效果;[军]战区", "theater"));
+        questions.add(new Question("n.\n" +
+                "魔法;巫术;戏法;不可思议的魔力\n" +
+                "adj.\n" +
+                "魔术的;幻术的;不可思议的;有奇异魔力的\n" +
+                "v.\n" +
+                "用魔法变出;用魔法摆脱;用魔法得到;使中邪", "magic"));
 
+        questions.add(new Question("成年的;成年人的;成熟的;（智力、思想、行为）成熟的\n" +
+                "n.\n" +
+                "成年的人或动物", "adult"));
+        questions.add(new Question("n.\n" +
+                "分析家，化验员;〈美〉精神病医师", "analyst"));
+        questions.add(new Question("n.\n" +
+                "高度，海拔高度;高位，高等;[天]地平纬度;[数]顶垂线", "altitude"));
+        questions.add(new Question("n.\n" +
+                "态度;看法;姿势;个人风格", "attitude"));
+        questions.add(new Question("n.\n" +
+                "限额;折扣;津贴，补贴，零用钱;默许，默认\n" +
+                "vt.\n" +
+                "给（某人）零用钱或津贴;按定量供给", "allowance"));
+        questions.add(new Question("n.\n" +
+                "过敏性反应;反感，厌恶", "allergy"));
 
+        questions.add(new Question("n.\n" +
+                "精确（性），准确（性）", "accuracy"));
+        questions.add(new Question("n.\n" +
+                "分给，分配;任务，工作，（课外）作业;<美>任命;指定，委派", "assignment"));
+        questions.add(new Question("n.\n" +
+                "学士;单身汉;尚未交配的幼雄兽;侍从", "bachelor"));
+        questions.add(new Question("n.\n" +
+                "车辆;交通工具;传播媒介，媒介物;[药]赋形剂", "vehicle"));
+        questions.add(new Question("n.\n" +
+                "设备;容易;能力;灵巧", "facility"));
+        questions.add(new Question("n.\n" +
+                "住处，住宅;居住时间，居住;公馆;驻地", "residence"));
+        questions.add(new Question("n.\n" +
+                "住处，住宅;居住时间，居住;公馆;驻地", "residence"));
+        questions.add(new Question("n.\n" +
+                "疾病;弊端;不安\n" +
+                "vt.\n" +
+                "传染;使…有病\n", "disease"));
+        questions.add(new Question("n.\n" +
+                "灾难;彻底的失败;不幸;祸患", "disaster"));
+        return questions;
+    }
+    private List<Question> getListenRepo2() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question("n.\n" +
+                "发动机，引擎;工具;火车头;机车\n" +
+                "vt.\n" +
+                "给…安装发动机", "engine"));
+        questions.add(new Question("n.\n" +
+                "工程师，技师;（轮船的）机师;〈美〉（火车的）司机，;（陆军的）工兵\n" +
+                "vt.\n" +
+                "设计，策划;安排或处理;改变…的基因（或遗传）结构", "engineer"));
+        questions.add(new Question("n.\n" +
+                "流行病;迅速的传播、生长或发展;风尚等的流行\n" +
+                "adj.\n" +
+                "流行性的;极为盛行的", "epidemic"));
+        questions.add(new Question("n.\n" +
+                "伦理，伦理观;道德体系;（复数）伦理学，道德学;（复数）行为准则", "ethic"));
+        questions.add(new Question("n.\n" +
+                "练习;运动，训练;运用;典礼\n" +
+                "vi.\n" +
+                "锻炼，训练，练习\n" +
+                "vt.\n" +
+                "锻炼（身体某部位）;使焦虑，使忧虑;实行，发挥（作用）;运用\n", "exercise"));
+        questions.add(new Question("n.\n" +
+                "爆发;爆炸，炸裂;扩张，激增;（感情，尤指愤怒的）突然爆发", "explosion"));
+        questions.add(new Question("n.\n" +
+                "散文;随笔，杂记文;尝试，企图;试验\n" +
+                "vt.\n" +
+                "尝试;试验", "essay"));
+        questions.add(new Question("n.\n" +
+                "大使馆;大使馆全体成员;大使的职务（地位）;重任，差使", "embassy"));
+        questions.add(new Question("n.\n" +
+                "失败，不及格;缺乏，不足;破产，倒闭;失败的事，失败者", "failure"));
+        questions.add(new Question("n.\n" +
+                "面粉\n" +
+                "vt.\n" +
+                "撒上粉", "flour"));
+        questions.add(new Question("n.\n" +
+                "车库;汽车修理站;飞机库\n" +
+                "vt.\n" +
+                "把…送入车库;把（汽车）开进车库", "garage"));
+
+        questions.add(new Question("n.\n" +
+                "汽油", "gasoline"));
+        questions.add(new Question("n.\n" +
+                "头痛;令人头痛的事", "headache"));
+        questions.add(new Question("n.\n" +
+                "影响;<医>传染，感染;传染病，染毒物", "infection"));
+        questions.add(new Question("n.\n" +
+                "注射;注射剂;[医]充血;（卫星等的）入轨", "injection"));
+        questions.add(new Question("vt.\n" +
+                "加工;制造，生产;捏造，虚构;从事制造\n" +
+                "n.\n" +
+                "制造;制成品，产品;工业，工厂;（文学作品等的）粗制滥造", "manufacture"));
+        questions.add(new Question("n.\n" +
+                "制造商，制造厂;厂主;[经]厂商", "manufacturer"));
+
+        questions.add(new Question("n.\n" +
+                "成熟;完备;（票据等的）到期;[地]壮年期", "maturity"));
+        questions.add(new Question("n.\n" +
+                "道德;道德观;道德准则;品德高尚的行为", "morality"));
+        questions.add(new Question("自然;天性;天理;类型", "nature"));
+        questions.add(new Question("adj.\n" +
+                "自然的;天生的;物质的;不做作的\n" +
+                "n.\n" +
+                "自然的事情;（生来的）白痴;[乐]（风琴等的）白键", "natural"));
+        questions.add(new Question("社会;社团;上流社会;社群\n" +
+                "adj.\n" +
+                "上流社会的，社交界的", "society"));
+        questions.add(new Question("adj.\n" +
+                "社会的，社会上的;交际的，社交的;群居的;合群的\n" +
+                "n.\n" +
+                "联谊会，联欢会;社交聚会", "social"));
+        questions.add(new Question("n.\n" +
+                "钢琴家;钢琴师;钢琴演奏者", "pianist "));
+        questions.add(new Question("n.\n" +
+                "提交;演出;陈述，报告;颁奖仪式", "presentation"));
+        questions.add(new Question("n.\n" +
+                "保护;防腐;保存，保留;维护，保持", "preservation"));
         return questions;
     }
 
