@@ -14,6 +14,7 @@ public class VocabularyRepo {
         mAllQuestions.put("日常进阶1", getProNormalRepo());
         mAllQuestions.put("日常进阶2", getProNormalRepo2());
         mAllQuestions.put("阅读考点词", getIELTSReadingRepo());
+        mAllQuestions.put("阅读考点词2", getIELTSReadingRepo2());
         mAllQuestions.put("听力易错", getListenRepo());
         mAllQuestions.put("听力易错2", getListenRepo2());
     }
@@ -64,6 +65,24 @@ public class VocabularyRepo {
 
         questions.add(new Question("n.恩惠;赞同;帮助;善行", "favour"));
         questions.add(new Question("n.野餐郊游;供野餐吃的食品;猪的肩肉;轻松的工作", "picnic"));
+        questions.add(new Question("n.\n" +
+                "有利条件;益处;优越（性）;处于支配地位\n" +
+                "vt.\n" +
+                "有利于;有益于;促进;使处于有利地位\n" +
+                "vi.\n" +
+                "得益，获利\n", "advantage"));
+        questions.add(new Question("vt.\n" +
+                "预付;提出;（使）前进;将…提前\n" +
+                "vi.\n" +
+                "（数量等）增加;向前推（至下一步）;上涨\n" +
+                "n.\n" +
+                "增长;借款;（价格、价值的）上涨;预付款\n" +
+                "adj.\n" +
+                "预先的;先行的", "advance"));
+        questions.add(new Question("n.\n" +
+                "策略，战略;战略学", "strategy"));
+        questions.add(new Question("n.\n" +
+                "奇遇;冒险经历;冒险活动", "adventure"));
         return questions;
     }
 
@@ -358,6 +377,7 @@ public class VocabularyRepo {
                 "灾难;彻底的失败;不幸;祸患", "disaster"));
         return questions;
     }
+
     private List<Question> getListenRepo2() {
         List<Question> questions = new ArrayList<>();
         questions.add(new Question("n.\n" +
@@ -436,6 +456,84 @@ public class VocabularyRepo {
                 "提交;演出;陈述，报告;颁奖仪式", "presentation"));
         questions.add(new Question("n.\n" +
                 "保护;防腐;保存，保留;维护，保持", "preservation"));
+        return questions;
+    }
+
+    private List<Question> getIELTSReadingRepo2() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question("adj.\n" +
+                "巨大的;庞大的;极恶的;凶暴的", "enormous"));
+        questions.add(new Question("n.\n" +
+                "模型;霉;铸模;性格\n" +
+                "vt.\n" +
+                "用模子做;形成;陶冶，训练（人格）;用土覆盖", "mould"));
+        questions.add(new Question("vt.& vi.\n" +
+                "得到，导出;源于，来自;（从…中）提取", "derive"));
+        questions.add(new Question("n.\n" +
+                "动力;势头;促进;声势", "impetus"));
+        questions.add(new Question("vi.\n" +
+                "上飞机，上船;着手，从事\n" +
+                "vt.\n" +
+                "使…上船或飞机;使从事，使着手;投资于", "embark"));
+        questions.add(new Question("vt.\n" +
+                "治理;统治;管理;支配（词或短语的形式或用法）\n" +
+                "vi.\n" +
+                "控制，支配;操纵", "govern"));
+        questions.add(new Question("n.\n" +
+                "鄙视，轻蔑\n" +
+                "vt.\n" +
+                "鄙视;不屑于做，不愿意做", "disdain"));
+        questions.add(new Question("adj.\n" +
+                "肮脏的;下流的，令人讨厌的;恶劣的，艰险的;严重的\n" +
+                "n.\n" +
+                "令人不愉快的事物", "nasty"));
+        questions.add(new Question("vt.\n" +
+                "陪伴，陪同;附加，补充;与…共存;为…伴奏\n" +
+                "vi.\n" +
+                "伴奏", "accompany"));
+        questions.add(new Question("adj.\n" +
+                "易看见的，可看见的;显然的，明明白白的;貌似的，表面的;显见", "apparent"));
+        questions.add(new Question("n.\n" +
+                "紧张，不安;紧张气氛;[物]张力，拉力;矛盾\n" +
+                "vt.\n" +
+                "紧张;使紧张", "tension"));
+        questions.add(new Question("adj.\n" +
+                "决定性的;关键性的，极其显要的;十字形的", "crucial"));
+        questions.add(new Question("adj.\n" +
+                "认知的;认识的", "cognitive"));
+
+        questions.add(new Question("n.\n" +
+                "术语;期限;学期;条款\n" +
+                "vt.\n" +
+                "把…称为;把…叫做", "term"));
+        questions.add(new Question("vt.\n" +
+                "跟踪，追踪;追溯，探索;探索;查找\n" +
+                "vi.\n" +
+                "沿着一小径或道路前进;可以追溯的\n" +
+                "n.\n" +
+                "痕迹;痕迹，踪迹;微量，极少量;[植]（脉）迹", "trace"));
+
+        questions.add(new Question("adj.\n" +
+                "可疑的;猜疑的，怀疑的;多疑的，不信任的;多心", "suspicious"));
+        questions.add(new Question("adj.\n" +
+                "可持续的;可以忍受的;可支撑的", "sustainable"));
+        questions.add(new Question("n.\n" +
+                "步幅;大步，阔步;进展;一跨（的宽度）\n" +
+                "vt.& vi.\n" +
+                "跨过;大踏步走\n" +
+                "vi.\n" +
+                "跨\n" +
+                "vt.\n" +
+                "跨坐在…", "stride"));
+
+        questions.add(new Question("n.\n" +
+                "修订，修改;修订本;校对;复审，上诉", "revision"));
+        questions.add(new Question("adj.\n" +
+                "宗教的;虔诚的;笃信宗教的;谨慎的\n" +
+                "n.\n" +
+                "修士，修女，出家人", "religious"));
+        questions.add(new Question("n.\n" +
+                "物质，材料;实质，内容;[神]灵;（织品的）质地 [ˈsʌbstəns]", "substance"));
         return questions;
     }
 
