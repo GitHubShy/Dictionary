@@ -17,6 +17,7 @@ public class VocabularyRepo {
         mAllQuestions.put("阅读考点词2", getIELTSReadingRepo2());
         mAllQuestions.put("听力易错", getListenRepo());
         mAllQuestions.put("听力易错2", getListenRepo2());
+        mAllQuestions.put("听力易错3", getListenRepo3());
     }
 
     public static VocabularyRepo getInstance() {
@@ -83,6 +84,10 @@ public class VocabularyRepo {
                 "策略，战略;战略学", "strategy"));
         questions.add(new Question("n.\n" +
                 "奇遇;冒险经历;冒险活动", "adventure"));
+        questions.add(new Question("n.\n" +
+                "乘客，旅客;行人，过路人;碍手碍脚的人", "passenger"));
+        questions.add(new Question("n.\n" +
+                "百年，一世纪;百个;（板球）一百分;<美>百元钞票", "century"));
         return questions;
     }
 
@@ -148,6 +153,18 @@ public class VocabularyRepo {
                 "上（船、车或飞机）;收费供…膳宿;使搭伙，使寄宿;强行登（船）\n" +
                 "vi.\n" +
                 "（火车、轮船、飞机等）接受乘客;搭伙，寄宿", "board"));
+        questions.add(new Question("adj.\n" +
+                "僵硬的;严格的;（规则、方法等）死板的;刚硬的，顽固的", "rigid"));
+        questions.add(new Question("vt.& vi.\n" +
+                "挤，榨，捏;压迫，压榨\n" +
+                "vt.\n" +
+                "榨取，汲取;轻轻地捏;向…勒索（或榨取）\n" +
+                "vi.\n" +
+                "在强压下屈服;施加压力;挤过去\n" +
+                "n.\n" +
+                "挤压，压榨;抱紧，拥挤;拥挤的人群;<口>压力", "squeeze"));
+        questions.add(new Question("n.\n" +
+                "温度;气温;体温;<口>发烧，高烧\n", "temperature "));
 
         return questions;
     }
@@ -306,6 +323,8 @@ public class VocabularyRepo {
                 "聪明的;理解力强的;有智力的;[计]智能的", "intelligent"));
         questions.add(new Question("vt.\n" +
                 "感激;欠…债;应归功于;怀有情感", "owe"));
+        questions.add(new Question("adj.\n" +
+                "密集的，稠密的;浓密的，浓厚的;愚钝的", "dense"));
         return questions;
     }
 
@@ -451,11 +470,43 @@ public class VocabularyRepo {
                 "n.\n" +
                 "联谊会，联欢会;社交聚会", "social"));
         questions.add(new Question("n.\n" +
-                "钢琴家;钢琴师;钢琴演奏者", "pianist "));
+                "钢琴家;钢琴师;钢琴演奏者", "pianist"));
         questions.add(new Question("n.\n" +
                 "提交;演出;陈述，报告;颁奖仪式", "presentation"));
         questions.add(new Question("n.\n" +
                 "保护;防腐;保存，保留;维护，保持", "preservation"));
+        questions.add(new Question("n.\n" +
+                "对手;竞争者\n" +
+                "vt.\n" +
+                "与…竞争;比得上某人\n" +
+                "vi.\n" +
+                "竞争\n" +
+                "adj.\n" +
+                "竞争的", "rival"));
+        questions.add(new Question("vi.\n" +
+                "合作，协作;（国家间的）协调，提携;勾结，通敌", "collaborate"));
+        questions.add(new Question("n.\n" +
+                "电线;金属丝;电报;（木偶的）牵线，操纵绳，背后操纵的势力，秘密引线，秘密策略\n" +
+                "vi.\n" +
+                "拍电报\n" +
+                "vt.\n" +
+                "拍电报;给…装电线", "wire"));
+        questions.add(new Question("n.\n" +
+                "运费;货运，货物;船运货物;货运列车\n" +
+                "vt.\n" +
+                "运输;装货于", "freight"));
+        questions.add(new Question("n.\n" +
+                "捏;拧;扭;苦恼\n" +
+                "vt.\n" +
+                "稍稍调整（机器、系统等", "tweak"));
+        questions.add(new Question("vt.\n" +
+                "绞，拧;扭干，绞出;折磨，使苦恼;曲解\n" +
+                "vi.\n" +
+                "扭动;蠕动;感到痛苦;感到苦恼\n" +
+                "n.\n" +
+                "绞，扭;紧紧握手;剧痛[rɪŋ]", "wring"));
+        questions.add(new Question("vt.\n" +
+                "推翻;摧毁，拆毁（建筑物等）;毁坏，破坏;驳倒（论点、理论等）", "demolish"));
         return questions;
     }
 
@@ -534,6 +585,49 @@ public class VocabularyRepo {
                 "修士，修女，出家人", "religious"));
         questions.add(new Question("n.\n" +
                 "物质，材料;实质，内容;[神]灵;（织品的）质地 [ˈsʌbstəns]", "substance"));
+        return questions;
+    }
+
+    private List<Question> getListenRepo3() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question("n.\n" +
+                "金属;金属元素;成色;金色\n" +
+                "vt.\n" +
+                "以金属覆盖", "metal"));
+        questions.add(new Question("n.\n" +
+                "皮革制品;皮，皮革\n" +
+                "vt.\n" +
+                "用皮革包盖;（口）（用皮带等）抽打;制成皮，蒙上皮\n" +
+                "adj.\n" +
+                "皮的，皮革的，皮革制的", "leather"));
+        questions.add(new Question("n.\n" +
+                "侵袭;入侵，侵略;侵害，侵犯;[医]发病", "invasion"));
+        questions.add(new Question("n.\n" +
+                "限制，限定;拘束，束缚;管制", "restriction"));
+        questions.add(new Question("n.\n" +
+                "码头;被告席;草本植物;尾巴的骨肉部份\n" +
+                "vt.& vi.\n" +
+                "（使）船停靠码头;剪短（尾巴等）;削减，缩减（工资等）;在…设置船坞\n" +
+                "vi.\n" +
+                "入船坞", "dock"));
+        questions.add(new Question("n.\n" +
+                "串联;级数;系列，连续;（广播或电视上题材或角色相同的）系列节目", "series"));
+        questions.add(new Question("vt.& vi.\n" +
+                "分开;（使）分离;区分;隔开\n" +
+                "vt.\n" +
+                "分离（混合物）;分居;分类;割开\n" +
+                "vi.\n" +
+                "分手;断裂;（夫妻）分居;断绝关系\n" +
+                "adj.\n" +
+                "单独的;不同的;分开的，分离的;不相关的\n" +
+                "n.\n" +
+                "分开的事物;[用复数]（音响设备中的）独立件\n", "separate"));
+        questions.add(new Question("n.\n" +
+                "贫穷;缺乏，不足;贫瘠，不毛;低劣", "poverty"));
+        questions.add(new Question("adj.\n" +
+                "卫生的;清洁的\n" +
+                "n.\n" +
+                "公共厕所", "sanitary"));
         return questions;
     }
 
