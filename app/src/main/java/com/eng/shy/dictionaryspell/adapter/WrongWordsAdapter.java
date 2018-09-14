@@ -14,7 +14,7 @@ import com.eng.shy.dictionaryspell.pojo.Question;
 import java.util.List;
 
 
-public class WrongWordsAdapter extends RecyclerView.Adapter<WrongWordsAdapter.WrongWordViewHolder>{
+public class WrongWordsAdapter extends RecyclerView.Adapter<WrongWordsAdapter.WrongWordViewHolder> {
 
     private List<Question> mData;
 
@@ -25,7 +25,7 @@ public class WrongWordsAdapter extends RecyclerView.Adapter<WrongWordsAdapter.Wr
     @NonNull
     @Override
     public WrongWordViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.wrong_list,null,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.wrong_list, null, false);
         WrongWordViewHolder holder = new WrongWordViewHolder(view);
         return holder;
     }
@@ -34,8 +34,8 @@ public class WrongWordsAdapter extends RecyclerView.Adapter<WrongWordsAdapter.Wr
     public void onBindViewHolder(@NonNull WrongWordViewHolder holder, final int position) {
         Question question = mData.get(position);
         holder.chinese.setText(question.getChinese());
-        holder.rightWord.setText(question.getEnglish());
-        holder.wrongWord.setText(question.getWrongEnglish());
+        holder.rightWord.setText("正确答案为：" + question.getEnglish());
+        holder.wrongWord.setText("你的答案为：" + question.getWrongEnglish());
     }
 
     @Override
@@ -43,7 +43,7 @@ public class WrongWordsAdapter extends RecyclerView.Adapter<WrongWordsAdapter.Wr
         return mData.size();
     }
 
-    public class WrongWordViewHolder extends RecyclerView.ViewHolder{
+    public class WrongWordViewHolder extends RecyclerView.ViewHolder {
 
         public TextView chinese;
         public TextView rightWord;

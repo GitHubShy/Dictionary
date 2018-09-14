@@ -4,6 +4,7 @@ public class Question {
     private String chinese;
     private String english;
     private String wrongEnglish;
+    private String phonetic;
 
     public Question(String chinese, String english) {
         this.chinese = chinese;

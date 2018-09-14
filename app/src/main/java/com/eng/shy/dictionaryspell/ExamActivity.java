@@ -29,6 +29,8 @@ public class ExamActivity extends AppCompatActivity {
     private TextView mSure;
     private TextView mScore;
     private TextView mShowWrongWords;
+    private TextView mShowPhonetic;
+    private TextView mPhonetic;
     private RecyclerView mRecycleView;
 
     private List<Question> mQuestionRepository;
@@ -55,35 +57,24 @@ public class ExamActivity extends AppCompatActivity {
         mBox = findViewById(R.id.answer_box);
         mSure = findViewById(R.id.submit);
         mScore = findViewById(R.id.score_value);
+        mShowPhonetic = findViewById(R.id.phonetic_button);
+        mPhonetic = findViewById(R.id.phonetic);
         mRecycleView = findViewById(R.id.wrong_words);
         mShowWrongWords = findViewById(R.id.check_wrong_word);
-        mShowWrongWords.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showWrongWords();
-            }
-        });
-        mSure.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mShowWrongWords.setOnClickListener(v -> showWrongWords());
+        mSure.setOnClickListener(v -> estimate());
+        mBox.setOnEditorActionListener((v, actionId, event) -> {
+            //当actionId == XX_SEND 或者 XX_DONE时都触发
+            //或者event.getKeyCode == ENTER 且 event.getAction == ACTION_DOWN时也触发
+            //注意，这是一定要判断event != null。因为在某些输入法上会返回null。
+            if (actionId == EditorInfo.IME_ACTION_SEND
+                    || actionId == EditorInfo.IME_ACTION_DONE
+                    || (event != null && KeyEvent.KEYCODE_ENTER == event.getKeyCode() && KeyEvent.ACTION_DOWN == event.getAction())) {
                 estimate();
             }
+            return false;
         });
-        mBox.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                //当actionId == XX_SEND 或者 XX_DONE时都触发
-                //或者event.getKeyCode == ENTER 且 event.getAction == ACTION_DOWN时也触发
-                //注意，这是一定要判断event != null。因为在某些输入法上会返回null。
-                if (actionId == EditorInfo.IME_ACTION_SEND
-                        || actionId == EditorInfo.IME_ACTION_DONE
-                        || (event != null && KeyEvent.KEYCODE_ENTER == event.getKeyCode() && KeyEvent.ACTION_DOWN == event.getAction())) {
-                    estimate();
-                }
-                return false;
-            }
-        });
+        mShowPhonetic.setOnClickListener(v -> mPhonetic.setVisibility(View.VISIBLE));
     }
 
 

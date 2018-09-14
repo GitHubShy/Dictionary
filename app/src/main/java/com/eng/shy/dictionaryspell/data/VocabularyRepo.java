@@ -88,6 +88,22 @@ public class VocabularyRepo {
                 "乘客，旅客;行人，过路人;碍手碍脚的人", "passenger"));
         questions.add(new Question("n.\n" +
                 "百年，一世纪;百个;（板球）一百分;<美>百元钞票", "century"));
+        questions.add(new Question("adj.\n" +
+                "安全的;牢固的;有把握的;安心的\n" +
+                "vt.\n" +
+                "保护;（使）获得;使安全;担保\n" +
+                "vi.\n" +
+                "获得安全，变得安全;安全，保险;承保，担保;[航海学]停止工作", "secure"));
+        questions.add(new Question("n.\n" +
+                "摩擦;摩擦力;冲突，不和", "friction"));
+        questions.add(new Question("n.\n" +
+                "谷物;粮食;谷类植物;荞麦食品\n" +
+                "adj.\n" +
+                "谷物的，谷物制成的", "cereal"));
+        questions.add(new Question("adj.野蛮的;凶猛的;未开化的;残忍的", "savage"));
+        questions.add(new Question(" adj.不可避免的;", "inevitable"));
+        questions.add(new Question("adj.妒忌的;吃醋的;羡慕的;精心守护的", "jealous"));
+        questions.add(new Question("adj.焦急的;渴望的;令人焦虑的;流露出忧虑的", "anxious"));
         return questions;
     }
 
@@ -164,8 +180,11 @@ public class VocabularyRepo {
                 "n.\n" +
                 "挤压，压榨;抱紧，拥挤;拥挤的人群;<口>压力", "squeeze"));
         questions.add(new Question("n.\n" +
-                "温度;气温;体温;<口>发烧，高烧\n", "temperature "));
-
+                "温度;气温;体温;<口>发烧，高烧\n", "temperature"));
+        questions.add(new Question("adj.苗条的;微薄的;柔弱的", "slender"));
+        questions.add(new Question("vt.\n" +
+                "加强;提高，增加", "enhance"));
+        questions.add(new Question("n.事实;现实，现实性;真实情况，实际情形;实体，实在", "reality"));
         return questions;
     }
 
