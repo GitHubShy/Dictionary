@@ -11,6 +11,12 @@ public class Question {
         this.english = english;
     }
 
+    public Question(String chinese, String english, String phonetic) {
+        this.chinese = chinese;
+        this.english = english;
+        this.phonetic = phonetic;
+    }
+
     public String getChinese() {
         return chinese;
     }

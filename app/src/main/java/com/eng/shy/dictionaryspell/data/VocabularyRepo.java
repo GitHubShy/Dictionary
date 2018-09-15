@@ -1,12 +1,18 @@
 package com.eng.shy.dictionaryspell.data;
 
+import android.util.Log;
+
 import com.eng.shy.dictionaryspell.pojo.Question;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class VocabularyRepo {
+
+    public final static String TAG = "VOCABULARY REPO";
+
     private static VocabularyRepo mRepo = null;
 
     private VocabularyRepo() {
@@ -18,6 +24,14 @@ public class VocabularyRepo {
         mAllQuestions.put("听力易错", getListenRepo());
         mAllQuestions.put("听力易错2", getListenRepo2());
         mAllQuestions.put("听力易错3", getListenRepo3());
+        echoTotalNum ();
+
+    }
+
+    private void echoTotalNum () {
+        for (String title : mAllQuestions.keySet()) {
+            Log.e("TAG","title="+mAllQuestions.get(title).size());
+        }
     }
 
     public static VocabularyRepo getInstance() {
@@ -104,6 +118,8 @@ public class VocabularyRepo {
         questions.add(new Question(" adj.不可避免的;", "inevitable"));
         questions.add(new Question("adj.妒忌的;吃醋的;羡慕的;精心守护的", "jealous"));
         questions.add(new Question("adj.焦急的;渴望的;令人焦虑的;流露出忧虑的", "anxious"));
+        questions.add(new Question("adj.\n" +
+                "明显的;显著的;平淡无奇的;自明", "obvious", "[ˈɒbviəs]"));
         return questions;
     }
 
@@ -185,6 +201,15 @@ public class VocabularyRepo {
         questions.add(new Question("vt.\n" +
                 "加强;提高，增加", "enhance"));
         questions.add(new Question("n.事实;现实，现实性;真实情况，实际情形;实体，实在", "reality"));
+
+        questions.add(new Question("n.\n" +
+                "程序，手续;工序，过程，步骤;诉讼程序，（议会的）议事程序;〈罕〉进行", "procedure","[prəˈsi:dʒə(r)]"));
+        questions.add(new Question("n.\n" +
+                "职业，工作;占有，占领;（土地、房屋、建筑等的）使用", "occupation","[ˌɒkjuˈpeɪʃn]"));
+        questions.add(new Question("vt.\n" +
+                "揭露，揭发;使暴露;使遭受;使曝光", "expose","[ɪk'spəʊz] "));
+        questions.add(new Question("n.\n" +
+                "家具;设备;附属品", "furniture","[ˈfɜ:nɪtʃə(r)]"));
         return questions;
     }
 
