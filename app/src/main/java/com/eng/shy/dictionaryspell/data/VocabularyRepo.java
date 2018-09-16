@@ -30,7 +30,7 @@ public class VocabularyRepo {
 
     private void echoTotalNum () {
         for (String title : mAllQuestions.keySet()) {
-            Log.e("TAG","title="+mAllQuestions.get(title).size());
+            Log.e("TAG",title+"="+mAllQuestions.get(title).size());
         }
     }
 
@@ -113,7 +113,7 @@ public class VocabularyRepo {
         questions.add(new Question("n.\n" +
                 "谷物;粮食;谷类植物;荞麦食品\n" +
                 "adj.\n" +
-                "谷物的，谷物制成的", "cereal"));
+                "谷物的，谷物制成的", "cereal","[ˈsɪəriəl]"));
         questions.add(new Question("adj.野蛮的;凶猛的;未开化的;残忍的", "savage"));
         questions.add(new Question(" adj.不可避免的;", "inevitable"));
         questions.add(new Question("adj.妒忌的;吃醋的;羡慕的;精心守护的", "jealous"));
@@ -210,6 +210,14 @@ public class VocabularyRepo {
                 "揭露，揭发;使暴露;使遭受;使曝光", "expose","[ɪk'spəʊz] "));
         questions.add(new Question("n.\n" +
                 "家具;设备;附属品", "furniture","[ˈfɜ:nɪtʃə(r)]"));
+        questions.add(new Question("n.\n" +
+                "休息室;游说团;门厅，大厅;投票厅\n" +
+                "vi.\n" +
+                "为了支持或抵制某项特定目标游说\n" +
+                "vt.\n" +
+                "对…进行游说;陈情（试图努力影响某人采取有利行动）","lobby"," [ˈlɒbi] "));
+        questions.add(new Question("adj.\n" +
+                "有效率的;（直接）生效的;能干的;（因省钱、省时或省力等而）收效大的","efficient","[ɪˈfɪʃnt]"));
         return questions;
     }
 
@@ -369,6 +377,14 @@ public class VocabularyRepo {
                 "感激;欠…债;应归功于;怀有情感", "owe"));
         questions.add(new Question("adj.\n" +
                 "密集的，稠密的;浓密的，浓厚的;愚钝的", "dense"));
+        questions.add(new Question("n.\n" +
+                "[电]电池，蓄电池;[军]炮台，炮位;一组;[法]殴打", "battery","[ˈbætri]"));
+        questions.add(new Question("vt.\n" +
+                "解决;安排;使定居;使沉淀\n" +
+                "vi.\n" +
+                "定居;下沉\n" +
+                "n.\n" +
+                "高背长靠椅\n", "settle"," [ˈsetl]"));
         return questions;
     }
 
@@ -542,13 +558,14 @@ public class VocabularyRepo {
         questions.add(new Question("n.\n" +
                 "捏;拧;扭;苦恼\n" +
                 "vt.\n" +
-                "稍稍调整（机器、系统等", "tweak"));
+                "稍稍调整（机器、系统等", "tweak", " [twi:k] "));
         questions.add(new Question("vt.\n" +
                 "绞，拧;扭干，绞出;折磨，使苦恼;曲解\n" +
                 "vi.\n" +
                 "扭动;蠕动;感到痛苦;感到苦恼\n" +
                 "n.\n" +
-                "绞，扭;紧紧握手;剧痛[rɪŋ]", "wring"));
+                "绞，扭;紧紧握手;剧痛\n" +
+                "to twist and squeeze clothes, etc. in order to get the water out of them", "wring"," [rɪŋ] "));
         questions.add(new Question("vt.\n" +
                 "推翻;摧毁，拆毁（建筑物等）;毁坏，破坏;驳倒（论点、理论等）", "demolish"));
         return questions;
@@ -629,6 +646,24 @@ public class VocabularyRepo {
                 "修士，修女，出家人", "religious"));
         questions.add(new Question("n.\n" +
                 "物质，材料;实质，内容;[神]灵;（织品的）质地 [ˈsʌbstəns]", "substance"));
+        questions.add(new Question("n.\n" +
+                "分散;散布;消散;驱散","dispersal"," [dɪˈspɜ:sl] "));
+        questions.add(new Question("adv.\n" +
+                "非常;十足地;下流地;大略","grossly","[ˈgrəʊsli]"));
+        questions.add(new Question("vt.\n" +
+                "折磨;使受痛苦;使苦恼","afflict","[əˈflɪkt]"));
+        questions.add(new Question("n.\n" +
+                "泵;打气筒;轻软舞鞋;轻便帆布鞋（英式英语）\n" +
+                "vt.& vi.\n" +
+                "用抽水机汲水;给…打气;用泵（或泵样器官等）输送;涌出\n" +
+                "vt.\n" +
+                "用泵抽;注入，似用泵来拉、转或倒;抽水，从。。除去水;骑自行车的人上下蹬踏板","pump","[pʌmp]"));
+        questions.add(new Question("n.\n" +
+                "倾向，趋势;（话或作品等的）旨趣，意向;性情;癖好","tendency"," [ˈtendənsi] "));
+        questions.add(new Question("n.\n" +
+                "预测;规划，设计;[心]投射;突起物","projection","[prəˈdʒekʃn] "));
+        questions.add(new Question("adj.\n" +
+                "有前途的;有为;有希望的;光明","promising"," [ˈprɒmɪsɪŋ]"));
         return questions;
     }
 
@@ -672,6 +707,16 @@ public class VocabularyRepo {
                 "卫生的;清洁的\n" +
                 "n.\n" +
                 "公共厕所", "sanitary"));
+        questions.add(new Question("adj.\n" +
+                "自主的;不相关连的;无党派的;不相干的人所做的（或提供的）\n" +
+                "n.\n" +
+                "独立自主的人;无党派人士", "independent","[ˌɪndɪˈpendənt] "));
+        questions.add(new Question("vi.\n" +
+                "测量土地\n" +
+                "vt.\n" +
+                "调查;勘测;俯瞰\n" +
+                "n.\n" +
+                "调查（表），调查所，测量，测量部，测量图;概观，检查，鉴定书;环顾", "survey","[ˈsɜ:veɪ]"));
         return questions;
     }
 

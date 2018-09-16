@@ -32,4 +32,8 @@ public class Question {
     public void setWrongEnglish(String wrongEnglish) {
         this.wrongEnglish = wrongEnglish;
     }
+
+    public String getPhonetic() {
+        return phonetic;
+    }
 }

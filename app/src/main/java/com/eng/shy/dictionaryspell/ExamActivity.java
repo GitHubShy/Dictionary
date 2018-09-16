@@ -92,6 +92,8 @@ public class ExamActivity extends AppCompatActivity {
         Integer randomKey = random.nextInt(mQuestionRepository.size());
         mCurrentQuestion = mQuestionRepository.get(randomKey);
         mQuestion.setText(mCurrentQuestion.getChinese());
+        mPhonetic.setText(mCurrentQuestion.getPhonetic());
+        mPhonetic.setVisibility(View.GONE);
         mBox.setText("");
     }
 
