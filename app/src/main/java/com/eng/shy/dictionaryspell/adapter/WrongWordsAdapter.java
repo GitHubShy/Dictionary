@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.eng.shy.dictionaryspell.R;
-import com.eng.shy.dictionaryspell.pojo.Catalogue;
 import com.eng.shy.dictionaryspell.pojo.Question;
 
 import java.util.List;
@@ -33,7 +32,7 @@ public class WrongWordsAdapter extends RecyclerView.Adapter<WrongWordsAdapter.Wr
     @Override
     public void onBindViewHolder(@NonNull WrongWordViewHolder holder, final int position) {
         Question question = mData.get(position);
-        holder.chinese.setText(question.getChinese());
+        holder.chinese.setText(question.getChineseExplation());
         holder.rightWord.setText("正确答案为：" + question.getEnglish());
         holder.wrongWord.setText("你的答案为：" + question.getWrongEnglish());
     }

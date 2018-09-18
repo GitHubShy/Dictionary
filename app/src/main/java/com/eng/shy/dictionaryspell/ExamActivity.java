@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -17,10 +16,8 @@ import com.eng.shy.dictionaryspell.utils.StringUtil;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
-import java.util.logging.Logger;
 
 public class ExamActivity extends AppCompatActivity {
 
@@ -91,7 +88,7 @@ public class ExamActivity extends AppCompatActivity {
         Random random = new Random();
         Integer randomKey = random.nextInt(mQuestionRepository.size());
         mCurrentQuestion = mQuestionRepository.get(randomKey);
-        mQuestion.setText(mCurrentQuestion.getChinese());
+        mQuestion.setText(mCurrentQuestion.getChineseExplation());
         mPhonetic.setText(mCurrentQuestion.getPhonetic());
         mPhonetic.setVisibility(View.GONE);
         mBox.setText("");

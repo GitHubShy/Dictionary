@@ -717,6 +717,60 @@ public class VocabularyRepo {
                 "调查;勘测;俯瞰\n" +
                 "n.\n" +
                 "调查（表），调查所，测量，测量部，测量图;概观，检查，鉴定书;环顾", "survey","[ˈsɜ:veɪ]"));
+        questions.add(new Question("n.\n" +
+                "陶器;陶器厂[作坊];<集合词>陶器类;陶器制造（术）", "pottery","[ˈpɒtəri]"));
+        questions.add(new Question("vi.\n" +
+                "测量土地\n" +
+                "vt.\n" +
+                "调查;勘测;俯瞰\n" +
+                "n.\n" +
+                "调查（表），调查所，测量，测量部，测量图;概观，检查，鉴定书;环顾", "survey","[ˈsɜ:veɪ]"));
+        questions.add(new Question("n.\n" +
+                "偏爱;优先权;偏爱的事物;（债权人）受优先偿还的权利", "preference","[ˈprefrəns] "));
+        questions.add(new Question("n.\n" +
+                "[化]朊，蛋白（质）\n" +
+                "adj.\n" +
+                "蛋白质的", "protein","[ˈprəʊti:n]"));
+        questions.add(new Question("n.\n" +
+                "同事;同行;同僚", "colleague","[ˈkɒli:g]"));
+        questions.add(new Question("n.\n" +
+                "出版;发表;出版物;公布\n", "publication","[ˌpʌblɪˈkeɪʃn] "));
+        questions.add(new Question("n.\n" +
+                "质量，品质;美质，优点;才能，能力，技能，素养;品种\n" +
+                "adj.\n" +
+                "优质的，高质量的;上流社会的", "quality","[ˈkwɒləti]"));
+        questions.add(new Question("n.\n" +
+                "四分之一;一刻钟;地区;（美式足球的）一节\n" +
+                "vt.\n" +
+                "把…四等分;供…住宿;使（士兵）驻扎", "quarter","[ˈkwɔ:tə(r)] "));
+
+
+        questions.add(new Question("n.\n" +
+                "新兵;（机构中的）新成员;新学生\n" +
+                "vt.\n" +
+                "招聘，征募;吸收某人为新成员;动员…（提供帮助）;雇用\n" +
+                "vi.\n" +
+                "征募新兵;得到补充，得到补偿;恢复健康", "recruit"," [rɪˈkru:t]"));
+        questions.add(new Question("n.\n" +
+                "规则;管理;控制;规章\n" +
+                "adj.\n" +
+                "规定的，必须穿戴的，必须使用的", "regulation","[ˌregjuˈleɪʃn]"));
+        questions.add(new Question("n.\n" +
+                "放宽;消遣，放松;松懈，松弛;[生理]驰松", "relaxation","[ˌri:lækˈseɪʃn]"));
+        questions.add(new Question("n.\n" +
+                "钱包，钱袋;财力，财源;和包或钱袋相似的东西;女用小提包\n" +
+                "vt.\n" +
+                "使皱起，噘起", "purse","[pɜ:s]","a small bag made of leather, plastic, etc. for carrying coins and often also paper money, cards, etc., used especially by women"));
+        questions.add(new Question("n.\n" +
+                "隐私，秘密;隐居;私事;不受公众干扰的状态", "privacy","[ˈprɪvəsi]"));
+        questions.add(new Question("n.\n" +
+                "预防，预防法;阻止，制止，妨碍，阻碍物;[谚]治病不如防病", "prevention","[prɪˈvenʃn]"));
+        questions.add(new Question("n.\n" +
+                "香水;香料;香味，香气\n" +
+                "vt.\n" +
+                "使…充满香气;喷香水于…", "perfume","[ˈpɜ:fju:m]"));
+        questions.add(new Question("n.\n" +
+                "生而为人;人格，人品，个性;人物;名人", "personality","[ˌpɜ:səˈnæləti]"));
         return questions;
     }
 
