@@ -7,6 +7,14 @@ public class Question {
     private String wrongEnglish;
     private String phonetic;
 
+    private Question(Builder builder) {
+        english = builder.english;
+        englishExplanation = builder.englishExplanation;
+        chineseExplanation = builder.chineseExplanation;
+        englishExplanation = builder.englishExplanation;
+        phonetic = builder.phonetic;
+    }
+
     public Question(String chineseExplanation, String english) {
         this.chineseExplanation = chineseExplanation;
         this.english = english;
@@ -25,7 +33,7 @@ public class Question {
         this.phonetic = phonetic;
     }
 
-    public String getChineseExplation() {
+    public String getChineseExplanation() {
         return chineseExplanation;
     }
 
@@ -43,5 +51,34 @@ public class Question {
 
     public String getPhonetic() {
         return phonetic;
+    }
+
+    public String getEnglishExplanation() {
+        return englishExplanation;
+    }
+
+    public static class Builder {
+
+        private String english;
+        private String englishExplanation;
+        private String chineseExplanation;
+        private String wrongEnglish;
+        private String phonetic;
+
+        public Builder(String english, String chineseExplanation,String phonetic) {
+            this.english = english;
+            this.chineseExplanation = chineseExplanation;
+            this.phonetic = phonetic;
+        }
+
+        public Builder chineseExplanation(String chineseExplanation) {
+            this.chineseExplanation = chineseExplanation;
+            return this;
+        }
+
+        public Question Build() {
+            return new Question(this);
+        }
+
     }
 }

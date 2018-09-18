@@ -385,6 +385,8 @@ public class VocabularyRepo {
                 "定居;下沉\n" +
                 "n.\n" +
                 "高背长靠椅\n", "settle"," [ˈsetl]"));
+        questions.add(new Question("n.\n" +
+                "解释;说明;辩解;（消除误会后）和解", "explanation","[ˌekspləˈneɪʃn]"));
         return questions;
     }
 
@@ -771,6 +773,14 @@ public class VocabularyRepo {
                 "使…充满香气;喷香水于…", "perfume","[ˈpɜ:fju:m]"));
         questions.add(new Question("n.\n" +
                 "生而为人;人格，人品，个性;人物;名人", "personality","[ˌpɜ:səˈnæləti]"));
+
+
+        questions.add(new Question("n.\n" +
+                "演变;进化;发展", "evolution","[ˌi:vəˈlu:ʃn]"));
+        questions.add(new Question("n.\n" +
+                "革命;旋转;彻底改变;运行，公转", "revolution","[ˌrevəˈlu:ʃn]"));
+        questions.add(new Question("n.\n" +
+                "分辨率;解决;决心;坚决", "resolution","[ˌrezəˈlu:ʃn]"));
         return questions;
     }
 

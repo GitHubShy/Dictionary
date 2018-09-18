@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="一月" />
@@ -21,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:padding="5dp"
         android:background="@android:drawable/button_onoff_indicator_on"
         app:layout_constraintTop_toBottomOf="@+id/question"
         app:layout_constraintStart_toStartOf="@+id/question"
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@+id/phonetic_button"
         app:layout_constraintTop_toTopOf="@+id/phonetic_button"
+        app:layout_constraintBottom_toBottomOf="@+id/phonetic_button"
         android:layout_marginLeft="20dp"
         android:visibility="invisible"
         tools:text="一月" />
@@ -39,7 +41,7 @@
     <EditText
         android:id="@+id/answer_box"
         android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:layout_height="45dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/phonetic_button"
         app:layout_constraintTop_toBottomOf="@+id/phonetic_button" />

@@ -32,7 +32,7 @@ public class WrongWordsAdapter extends RecyclerView.Adapter<WrongWordsAdapter.Wr
     @Override
     public void onBindViewHolder(@NonNull WrongWordViewHolder holder, final int position) {
         Question question = mData.get(position);
-        holder.chinese.setText(question.getChineseExplation());
+        holder.chinese.setText(question.getChineseExplanation());
         holder.rightWord.setText("正确答案为：" + question.getEnglish());
         holder.wrongWord.setText("你的答案为：" + question.getWrongEnglish());
     }
