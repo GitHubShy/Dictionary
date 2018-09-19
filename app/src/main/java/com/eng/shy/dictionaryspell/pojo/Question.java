@@ -76,7 +76,7 @@ public class Question {
             return this;
         }
 
-        public Question Build() {
+        public Question build() {
             return new Question(this);
         }
 

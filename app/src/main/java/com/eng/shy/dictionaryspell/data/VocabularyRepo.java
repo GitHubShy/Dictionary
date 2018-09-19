@@ -1,5 +1,6 @@
 package com.eng.shy.dictionaryspell.data;
 
+import android.os.Build;
 import android.util.Log;
 
 import com.eng.shy.dictionaryspell.pojo.Question;
@@ -456,6 +457,34 @@ public class VocabularyRepo {
                 "传染;使…有病\n", "disease"));
         questions.add(new Question("n.\n" +
                 "灾难;彻底的失败;不幸;祸患", "disaster"));
+        questions.add(new Question.Builder("diary","n.\n" +
+                "日记，日志;日记簿"," [ˈdaɪəri] ").build());
+        questions.add(new Question.Builder("desire","vt.\n" +
+                "渴望;希望;要求;请求\n" +
+                "n.\n" +
+                "欲望;愿望;希望;请求\n" +
+                "vi.\n" +
+                "愿望;有希望;期望;想望"," [dɪˈzaɪə(r)]").build());
+        questions.add(new Question.Builder("destination","n.\n" +
+                "目的，目标;目的地，终点;[罕用语]预定，指定"," [ˌdestɪˈneɪʃn]").build());
+        questions.add(new Question.Builder("drama","n.\n" +
+                "戏剧，剧本;戏剧效果;戏剧文学[艺术];戏剧性事件[场面]","[ˈdrɑ:mə]").build());
+        questions.add(new Question.Builder("comedy","n.\n" +
+                "喜剧;喜剧性;喜剧体裁;有趣的事情","[ˈkɒmədi]").build());
+        questions.add(new Question.Builder("gesture","n.\n" +
+                "手势，姿势;举止，动作;〔古语〕仪态;[计算机]光笔指令\n" +
+                "vt.\n" +
+                "做手势\n" +
+                "vi.\n" +
+                "用手势表现，表达或指导"," [ˈdʒestʃə(r)]").build());
+        questions.add(new Question.Builder("graduate","vi.\n" +
+                "渐变;渐渐变为（与into连用）;渐渐消逝（与away连用）;取得资格（与as连用）\n" +
+                "vt.\n" +
+                "授予学位或毕业证书;从…接受学位;分成等级;标以刻度\n" +
+                "n.\n" +
+                "<美>毕业生;<英>大学毕业生;（已经取得学士学位正在攻读高级学位的）研究生;量筒\n" +
+                "adj.\n" +
+                "<美>毕业了的，研究生的;有（学士）学位的","[ˈgrædʒuət]").build());
         return questions;
     }
 
