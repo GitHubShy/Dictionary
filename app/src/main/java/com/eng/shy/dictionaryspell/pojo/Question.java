@@ -71,8 +71,8 @@ public class Question {
             this.phonetic = phonetic;
         }
 
-        public Builder chineseExplanation(String chineseExplanation) {
-            this.chineseExplanation = chineseExplanation;
+        public Builder englishExplanation(String englishExplanation) {
+            this.englishExplanation = englishExplanation;
             return this;
         }
 

@@ -25,6 +25,7 @@ public class VocabularyRepo {
         mAllQuestions.put("听力易错", getListenRepo());
         mAllQuestions.put("听力易错2", getListenRepo2());
         mAllQuestions.put("听力易错3", getListenRepo3());
+        mAllQuestions.put("没事往里填填词", getDreamRepo());
         echoTotalNum ();
 
     }
@@ -388,6 +389,10 @@ public class VocabularyRepo {
                 "高背长靠椅\n", "settle"," [ˈsetl]"));
         questions.add(new Question("n.\n" +
                 "解释;说明;辩解;（消除误会后）和解", "explanation","[ˌekspləˈneɪʃn]"));
+        questions.add(new Question("adj.\n" +
+                "模糊的;（思想上）不清楚的;（表达或感知）含糊的;暧昧的\n" +
+                "n.\n" +
+                "模糊不定状态", "vague","[veɪg]"));
         return questions;
     }
 
@@ -695,6 +700,14 @@ public class VocabularyRepo {
                 "预测;规划，设计;[心]投射;突起物","projection","[prəˈdʒekʃn] "));
         questions.add(new Question("adj.\n" +
                 "有前途的;有为;有希望的;光明","promising"," [ˈprɒmɪsɪŋ]"));
+        questions.add(new Question("adj.\n" +
+                "多余的，累赘的;（因人员过剩）被解雇的，失业的;重沓;衍","redundant","[rɪˈdʌndənt] "));
+        questions.add(new Question("adj.\n" +
+                "积分的;完整的;必须的\n" +
+                "n.\n" +
+                "积分;整体","integral"," [ˈɪntɪgrəl] "));
+        questions.add(new Question("vt.\n" +
+                "完成;达到（目的）;走完（路程、距离等）;使完美","accomplish","[əˈkʌmplɪʃ]"));
         return questions;
     }
 
@@ -810,6 +823,49 @@ public class VocabularyRepo {
                 "革命;旋转;彻底改变;运行，公转", "revolution","[ˌrevəˈlu:ʃn]"));
         questions.add(new Question("n.\n" +
                 "分辨率;解决;决心;坚决", "resolution","[ˌrezəˈlu:ʃn]"));
+        return questions;
+    }
+
+    private List<Question> getDreamRepo() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question.Builder("negotiate","n.\n" +
+                "商人;店主;批发商;零售商\n" +
+                "adj.\n" +
+                "商人的;商业的\n","[ˈmɜ:tʃənt] ]").englishExplanation("a person who buys and sells goods in large quantities, especially one who imports and exports goods").build());
+        questions.add(new Question.Builder("merchant","vi.\n" +
+                "谈判，协商，交涉\n" +
+                "vt.\n" +
+                "谈判达成;成功越过;议价出售\n"," [nɪˈgəʊʃieɪt] ").build());
+        questions.add(new Question.Builder("campaign","n.\n" +
+                "运动;战役;竞选运动;季节性竞赛\n" +
+                "vi.\n" +
+                "作战;参加[发起]运动，参加竞选;参战，参加战役","[kæmˈpeɪn]").build());
+        questions.add(new Question.Builder("fossil","n.\n" +
+                "化石;僵化的事物;老顽固，食古不化的人;习语中保存的旧词\n" +
+                "adj.\n" +
+                "化石的;陈腐的，守旧的","[ˈfɒsl]").build());
+        questions.add(new Question.Builder("insult","vt.\n" +
+                "辱骂;侮辱，凌辱;损害\n" +
+                "n.\n" +
+                "侮辱，凌辱;损害;无礼"," [ɪnˈsʌlt]").build());
+        questions.add(new Question.Builder("prey","n.\n" +
+                "被捕食的动物;捕食（习性）;受害者;受骗者\n" +
+                "vi.\n" +
+                "捕食;（疾病等）使人慢慢衰弱;折磨;（人）靠欺诈为生","[preɪ]").build());
+        questions.add(new Question.Builder("pray","vt.\n" +
+                "祈祷，祷告;请求，恳求;央求\n" +
+                "vi.\n" +
+                "祈祷;请;恳求","[preɪ]").build());
+        questions.add(new Question.Builder("fancy","vt.\n" +
+                "设想;想要;猜想\n" +
+                "n.\n" +
+                "设想;想像力;爱好;怪想\n" +
+                "adj.\n" +
+                "（构思者）奇特的;昂贵的;（价格等）高价的;[美国俚语]真棒\n" +
+                "vi.\n" +
+                "想象，幻想","[ˈfænsi]").build());
+        questions.add(new Question.Builder("reckless","adj.\n" +
+                "鲁莽的，不顾危险的;粗心大意的;满不在乎的;胆大妄为"," [ˈrekləs]").build());
         return questions;
     }
 
