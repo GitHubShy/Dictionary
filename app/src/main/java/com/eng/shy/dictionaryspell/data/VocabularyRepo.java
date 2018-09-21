@@ -122,6 +122,12 @@ public class VocabularyRepo {
         questions.add(new Question("adj.焦急的;渴望的;令人焦虑的;流露出忧虑的", "anxious"));
         questions.add(new Question("adj.\n" +
                 "明显的;显著的;平淡无奇的;自明", "obvious", "[ˈɒbviəs]"));
+        questions.add(new Question("vt.\n" +
+                "认为;注视;涉及;尊敬\n" +
+                "vi.\n" +
+                "凝视;留意\n" +
+                "n.\n" +
+                "凝视;留意;尊敬;问候", "regard", "[rɪˈgɑ:d]"));
         return questions;
     }
 
@@ -393,6 +399,20 @@ public class VocabularyRepo {
                 "模糊的;（思想上）不清楚的;（表达或感知）含糊的;暧昧的\n" +
                 "n.\n" +
                 "模糊不定状态", "vague","[veɪg]"));
+        questions.add(new Question("adj.\n" +
+                "纯粹的;仅仅，只不过;小的，轻微的\n" +
+                "n.\n" +
+                "小湖，池塘;〈英〉边境（线）", "mere","[mɪə(r)]"));
+        questions.add(new Question("vt.& vi.\n" +
+                "拥抱\n" +
+                "vt.\n" +
+                "接受;信奉;包括;包含\n" +
+                "n.\n" +
+                "拥抱，怀抱", "embrace","[ɪmˈbreɪs]"));
+        questions.add(new Question("vt.\n" +
+                "刺激;使有动机，促动，激发，诱导;激发…的积极性", "motivate","[ˈməʊtɪveɪt]"));
+        questions.add(new Question("adj.\n" +
+                "不一致的，不调和的;前后矛盾的，不合逻辑的;反复无常的;歧出", "inconsistent","[ˌɪnkənˈsɪstənt]"));
         return questions;
     }
 
@@ -828,11 +848,11 @@ public class VocabularyRepo {
 
     private List<Question> getDreamRepo() {
         List<Question> questions = new ArrayList<>();
-        questions.add(new Question.Builder("negotiate","n.\n" +
+        questions.add(new Question.Builder("merchant","n.\n" +
                 "商人;店主;批发商;零售商\n" +
                 "adj.\n" +
                 "商人的;商业的\n","[ˈmɜ:tʃənt] ]").englishExplanation("a person who buys and sells goods in large quantities, especially one who imports and exports goods").build());
-        questions.add(new Question.Builder("merchant","vi.\n" +
+        questions.add(new Question.Builder("negotiate","vi.\n" +
                 "谈判，协商，交涉\n" +
                 "vt.\n" +
                 "谈判达成;成功越过;议价出售\n"," [nɪˈgəʊʃieɪt] ").build());
@@ -866,6 +886,38 @@ public class VocabularyRepo {
                 "想象，幻想","[ˈfænsi]").build());
         questions.add(new Question.Builder("reckless","adj.\n" +
                 "鲁莽的，不顾危险的;粗心大意的;满不在乎的;胆大妄为"," [ˈrekləs]").build());
+        questions.add(new Question.Builder("leap","vi.\n" +
+                "跳;冲动的行动\n" +
+                "vt.\n" +
+                "跳过，跃过;使跳跃\n" +
+                "n.\n" +
+                "跳跃，飞跃;跳跃的距离","[li:p]").build());
+        questions.add(new Question.Builder("grasp","vt.\n" +
+                "抓住;了解;急忙抓住;急切（或贪婪）地抓住\n" +
+                "n.\n" +
+                "控制;控制力;能力所及\n" +
+                "vi.\n" +
+                "攫取（常与 at 连用）;急于接受;急切地寻求（常与 for 连用）"," [grɑ:sp] ").build());
+        questions.add(new Question.Builder("entice","vt.\n" +
+                "诱惑;怂恿","[ɪnˈtaɪs]").build());
+        questions.add(new Question.Builder("prone","adj.\n" +
+                "俯卧的;易于…的;有…倾向的;倾斜的，坡陡的","[prəʊn]").build());
+        questions.add(new Question.Builder("perceive","v.\n" +
+                "意识到;察觉，发觉","[pəˈsi:v]").build());
+        questions.add(new Question.Builder("valid","adj.\n" +
+                "有效的;有法律效力的;正当的;健全的","[ˈvælɪd]").build());
+        questions.add(new Question.Builder("transparent","adj.\n" +
+                "透明的;清澈的;易识破的;显而易见的","[trænsˈpærənt] ").build());
+        questions.add(new Question.Builder("intervention","n.\n" +
+                "介入，干涉，干预;调解，排解","[ˌɪntə'venʃn]").build());
+        questions.add(new Question.Builder("incidence","n.\n" +
+                "发生率;影响范围;[数]关联，接合;[物]入射，入射角","[ˈɪnsɪdəns]").build());
+        questions.add(new Question.Builder("distant","adj.\n" +
+                "遥远的;冷漠的，冷淡的;远离的，远隔的;不太清晰的","[ˈdɪstənt]").build());
+        questions.add(new Question.Builder("chop","v.\n" +
+                "切碎，砍;向下猛击;降低;终止\n" +
+                "n.\n" +
+                "排骨;砍，剁;掌劈;嘴周围的地方","[tʃɒp]").build());
         return questions;
     }
 
