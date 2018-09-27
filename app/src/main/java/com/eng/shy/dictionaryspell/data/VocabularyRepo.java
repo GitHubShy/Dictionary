@@ -413,6 +413,16 @@ public class VocabularyRepo {
                 "刺激;使有动机，促动，激发，诱导;激发…的积极性", "motivate","[ˈməʊtɪveɪt]"));
         questions.add(new Question("adj.\n" +
                 "不一致的，不调和的;前后矛盾的，不合逻辑的;反复无常的;歧出", "inconsistent","[ˌɪnkənˈsɪstənt]"));
+        questions.add(new Question("vt.\n" +
+                "压下，压低;使沮丧;使萧条;使跌价", "depress"," [dɪˈpres] "));
+        questions.add(new Question("adv.\n" +
+                "为此，因此", "therefor"," [ðeə'fɔ:"));
+        questions.add(new Question("conj.\n" +
+                "然而;鉴于;反之\n" +
+                "n.\n" +
+                "“鉴于…”：正式文件的介绍性陈述，开场白;条件性陈述", "whereas"," [ˌweərˈæz] "));
+        questions.add(new Question("n.\n" +
+                "气味，臭气;声望，名誉", "odour","[ˈəʊdə(r)]"));
         return questions;
     }
 
@@ -728,6 +738,58 @@ public class VocabularyRepo {
                 "积分;整体","integral"," [ˈɪntɪgrəl] "));
         questions.add(new Question("vt.\n" +
                 "完成;达到（目的）;走完（路程、距离等）;使完美","accomplish","[əˈkʌmplɪʃ]"));
+        questions.add(new Question("adj.\n" +
+                "有读写能力的;有文化修养的\n" +
+                "n.\n" +
+                "识字的人;有学问的人", "literate","[ˈlɪtərət]]"));
+        questions.add(new Question("vt.\n" +
+                "对分;把…分成两半;把…减半;平摊", "halve","[hɑ:v]"));
+        questions.add(new Question("vt.\n" +
+                "抑制，克制\n" +
+                "n.\n" +
+                "（诗歌的）叠句，副歌;经常重复的评价（或抱怨）\n" +
+                "vi.\n" +
+                "忍耐，节制", "refrain"," [rɪˈfreɪn]"));
+        questions.add(new Question("vt.\n" +
+                "嘲笑，奚落;用嘲笑刺激\n" +
+                "n.\n" +
+                "讥讽;嘲弄，奚落;嘲弄的对象，笑柄\n" +
+                "adj.\n" +
+                "[航]（桅杆）很高的", "taunt","[tɔ:nt]"));
+        questions.add(new Question("vt.& vi.\n" +
+                "推，猛推\n" +
+                "vt.\n" +
+                "〈口〉乱放，乱塞;随手扔\n" +
+                "n.\n" +
+                "推，推开", "shove"," [ʃʌv]"));
+        questions.add(new Question("vt.\n" +
+                "（使）弯曲，屈身;拉弯;使成形，强行;集中全力于\n" +
+                "vi.\n" +
+                "偏向;使变曲，成角度;弯身，弯腰;专心\n" +
+                "n.\n" +
+                "弯道;弯曲（处）;（尤指道路或河流的）拐弯;（潜水员过快浮出水面造成的）减压病", "bend","[bend]"));
+        questions.add(new Question("vt.\n" +
+                "强加;征税;以…欺骗\n" +
+                "vi.\n" +
+                "利用;欺骗;施加影响", "impose"," [ɪmˈpəʊz] "));
+        questions.add(new Question("vn.\n" +
+                "用具，装备;索具;阻挡;阻截队员\n" +
+                "vt.\n" +
+                "着手处理;[橄榄球]擒住并摔倒（一名对方球员）;给（马）配上挽具\n" +
+                "vi.\n" +
+                "擒住并摔倒一名对手", "tackle","[ˈtækl] "));
+        questions.add(new Question("vi.\n" +
+                "符合;遵照;适应环境\n" +
+                "vt.\n" +
+                "使遵守;使一致;使顺从\n" +
+                "adj.\n" +
+                "一致的;顺从的", "conform","[kənˈfɔ:m]"));
+        questions.add(new Question("vt.\n" +
+                "隐藏，隐瞒，遮住", "conceal","[kənˈsi:l]"));
+        questions.add(new Question("vt.\n" +
+                "诊断;判断\n" +
+                "vi.\n" +
+                "做出诊断", "diagnose","[ˈdaɪəgnəʊz]"));
         return questions;
     }
 
@@ -843,6 +905,22 @@ public class VocabularyRepo {
                 "革命;旋转;彻底改变;运行，公转", "revolution","[ˌrevəˈlu:ʃn]"));
         questions.add(new Question("n.\n" +
                 "分辨率;解决;决心;坚决", "resolution","[ˌrezəˈlu:ʃn]"));
+        questions.add(new Question("n.\n" +
+                "安全;保证，担保;保护，防护;有价证券\n" +
+                "adj.\n" +
+                "安全的，保安的，保密的", "security","[sɪˈkjʊərəti]"));
+        questions.add(new Question("n.\n" +
+                "演讲;训斥，教训\n" +
+                "vi.\n" +
+                "作演讲\n" +
+                "vt.\n" +
+                "给…作演讲;教训（通常是长篇大论的）", "lecture","[ˈlektʃə(r)]"));
+        questions.add(new Question("n.\n" +
+                "专题论文，学位论文;学术演讲", "dissertation"," [ˌdɪsəˈteɪʃn]"));
+        questions.add(new Question("n.\n" +
+                "参考;参考书;提及，涉及;证明人，介绍人\n" +
+                "v.\n" +
+                "引用;参照\n", "reference","[ˈrefrəns]"));
         return questions;
     }
 
@@ -918,6 +996,30 @@ public class VocabularyRepo {
                 "切碎，砍;向下猛击;降低;终止\n" +
                 "n.\n" +
                 "排骨;砍，剁;掌劈;嘴周围的地方","[tʃɒp]").build());
+        questions.add(new Question.Builder("admit","vt.& vi.\n" +
+                "许可进入;承认，供认\n" +
+                "vt.\n" +
+                "允许;确认\n" +
+                "vi.\n" +
+                "承认;允许\n","[ədˈmɪt]").build());
+        questions.add(new Question.Builder("revise","vt.\n" +
+                "修订;修正;改变;[主英国英语]复习\n" +
+                "vt.& vi.\n" +
+                "复习\n" +
+                "vi.\n" +
+                "修订，校订\n" +
+                "n.\n" +
+                "修订;校订;[印刷]校样，清样;修订版，修订本\n","[rɪˈvaɪz] ").build());
+        questions.add(new Question.Builder("situation","n.\n" +
+                "（人的）情况;局面，形势，处境;位置;[心理学]情境\n"," [ˌsɪtʃuˈeɪʃn]").build());
+        questions.add(new Question.Builder("usage","n.\n" +
+                "使用;用法;习惯;惯例"," [ˈju:sɪdʒ]]").build());
+        questions.add(new Question.Builder("pattern","n.\n" +
+                "模式;图案;花样，样品;榜样，典范\n" +
+                "vt.\n" +
+                "模仿;以图案装饰\n" +
+                "vi.\n" +
+                "形成图案"," [ˈpætn]").build());
         return questions;
     }
 
