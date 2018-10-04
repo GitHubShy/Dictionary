@@ -128,6 +128,20 @@ public class VocabularyRepo {
                 "凝视;留意\n" +
                 "n.\n" +
                 "凝视;留意;尊敬;问候", "regard", "[rɪˈgɑ:d]"));
+        questions.add(new Question("vt.\n" +
+                "提倡;鼓吹;拥护;为…辩护\n" +
+                "n.\n" +
+                "提倡者;（辩护）律师;支持者", "advocate", "[ˈædvəkeɪt]"));
+        questions.add(new Question("n.\n" +
+                "顺序;[数]数列，序列;连续;片断插曲\n" +
+                "vt.\n" +
+                "使按顺序排列，安排顺序;[生化]确定…的顺序，确定…的化学结构序列", "sequence", "[ˈsi:kwəns]"));
+        questions.add(new Question("n.\n" +
+                "推论;结果，成果;[逻]结论;重要性", "consequence", "[ˈkɒnsɪkwəns] "));
+        questions.add(new Question("vi.\n" +
+                "犹豫，踌躇;不愿;支吾;停顿\n" +
+                "vt.\n" +
+                "对…犹豫;不情愿", "hesitate", "[ˈhezɪteɪt]"));
         return questions;
     }
 
@@ -226,6 +240,14 @@ public class VocabularyRepo {
                 "对…进行游说;陈情（试图努力影响某人采取有利行动）","lobby"," [ˈlɒbi] "));
         questions.add(new Question("adj.\n" +
                 "有效率的;（直接）生效的;能干的;（因省钱、省时或省力等而）收效大的","efficient","[ɪˈfɪʃnt]"));
+        questions.add(new Question("n.\n" +
+                "发明;发明物;捏造：内心捏造的东西，特指谎言;发明才能","invention","[ɪnˈvenʃn]"));
+        questions.add(new Question("adj.\n" +
+                "时间的;世俗的;暂存的;<语>表示时间的\n" +
+                "n.\n" +
+                "暂存的事物，世间的事物;世俗的权力;一时的事物，俗事","temporal","[ˈtempərəl]"));
+        questions.add(new Question("vt.\n" +
+                "表明，标示，指示;象征，暗示，预示;[医]显示需要做…的治疗","indicate","[ˈɪndɪkeɪt]"));
         return questions;
     }
 
@@ -321,7 +343,22 @@ public class VocabularyRepo {
                 "逐渐毁坏;削弱，损害", "erode"));
         questions.add(new Question("vt.\n" +
                 "引起;归纳;引诱;[电]感应", "induce"));
-
+        questions.add(new Question("adj.\n" +
+                "市的，市政的;地方自治的;都市的，市营的，市制的;内政的\n" +
+                "n.\n" +
+                "市政债券", "municipal","[mju:ˈnɪsɪpl]"));
+        questions.add(new Question("adj.\n" +
+                "平的;单调的;不景气的;干脆的\n" +
+                "adv.\n" +
+                "（尤指贴着另一表面）平直地;断然地;水平地;直接地，完全地\n" +
+                "n.\n" +
+                "平面;公寓;平地\n" +
+                "vt.\n" +
+                "使变平;[音乐]使（音调）下降，尤指降半音\n" +
+                "vi.\n" +
+                "逐渐变平;[音乐]以降调唱（或奏）\n", "flat","[flæt]"));
+        questions.add(new Question("adj.\n" +
+                "光学的;视觉的，视力的;眼睛的", "optical","[ˈɒptɪkl]"));
         return questions;
     }
 
@@ -634,6 +671,36 @@ public class VocabularyRepo {
                 "to twist and squeeze clothes, etc. in order to get the water out of them", "wring"," [rɪŋ] "));
         questions.add(new Question("vt.\n" +
                 "推翻;摧毁，拆毁（建筑物等）;毁坏，破坏;驳倒（论点、理论等）", "demolish"));
+        questions.add(new Question("n.\n" +
+                "日历;历法;日程表;（一年之中的）重大事件（或重要日期）一览表\n" +
+                "vt.\n" +
+                "把…记入日程表中;把…列入表中;为（文件等）作分类索引;将…排入日程表", "calendar","[ˈkælɪndə(r)]"));
+        questions.add(new Question("n.\n" +
+                "天堂;天;上帝;极乐", "heaven","[ˈhevn]"));
+        questions.add(new Question("n.\n" +
+                "间隔;幕间休息;（数学）区间", "interval","[ˈɪntəvl]"));
+        questions.add(new Question("vt.& vi.\n" +
+                "（使）滴下\n" +
+                "vi.\n" +
+                "滴出;含有;充满;充溢\n" +
+                "n.\n" +
+                "水滴;滴答，滴答滴答的声音;[医]点滴;点滴（的信息等）", "drip"," [drɪp]"));
+        questions.add(new Question("n.\n" +
+                "出现;到来;基督降临节（圣诞节前的四个星期）", "advent","[ˈædvent] "));
+        questions.add(new Question("adj.\n" +
+                "内心的，精神的，思想的，心理的;智慧的，智[脑]力的;〈口〉精神病的，意志薄弱的，愚笨的\n" +
+                "n.\n" +
+                "精神病患者", "mental","[ˈmentl]"));
+        questions.add(new Question("n.\n" +
+                "瑕疵，缺点;一阵狂风;短暂的风暴;裂缝，裂纹\n" +
+                "v.\n" +
+                "使生裂缝，使有裂纹;使无效;使有缺陷\n" +
+                "vi.\n" +
+                "生裂缝;变的有缺陷", "flaw","[flɔ:]"));
+        questions.add(new Question("vt.\n" +
+                "构成，组成;制定，设立;等同于;指派", "constitute"," [ˈkɒnstɪtju:t] "));
+        questions.add(new Question("n.\n" +
+                "边缘;（悬崖峭壁的）边沿;（危险的）边沿;初始状态", "brink"," [brɪŋk]"));
         return questions;
     }
 
@@ -790,6 +857,26 @@ public class VocabularyRepo {
                 "诊断;判断\n" +
                 "vi.\n" +
                 "做出诊断", "diagnose","[ˈdaɪəgnəʊz]"));
+        questions.add(new Question("adj.\n" +
+                "微弱的，模糊的;软弱的;无勇气的;将昏倒似的\n" +
+                "vi.\n" +
+                "头晕，昏过去;渐渐不明，消失\n" +
+                "n.\n" +
+                "昏厥，昏倒", "faint","[feɪnt]"));
+        questions.add(new Question("adj.\n" +
+                "微弱的，模糊的;软弱的;无勇气的;将昏倒似的\n" +
+                "vi.\n" +
+                "头晕，昏过去;渐渐不明，消失\n" +
+                "n.\n" +
+                "昏厥，昏倒", "faint","[feɪnt]"));
+        questions.add(new Question("n.\n" +
+                "束;梁，栋梁;光线;（电波的）波束\n" +
+                "vi.\n" +
+                "发出光与热;面露喜色\n" +
+                "vt.\n" +
+                "播送;以梁支撑;用…照射;流露\n" +
+                "vt.& vi.\n" +
+                "笑容满面，眉开眼笑;发射电波，播送;放出束状的光（或热）", "beam","[bi:m]"));
         return questions;
     }
 
