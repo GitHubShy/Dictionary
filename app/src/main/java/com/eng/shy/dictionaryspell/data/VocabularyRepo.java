@@ -26,14 +26,17 @@ public class VocabularyRepo {
         mAllQuestions.put("听力易错2", getListenRepo2());
         mAllQuestions.put("听力易错3", getListenRepo3());
         mAllQuestions.put("没事往里填填词", getDreamRepo());
-        echoTotalNum ();
+        echoTotalNum();
 
     }
 
-    private void echoTotalNum () {
+    private void echoTotalNum() {
+        int sum = 0;
         for (String title : mAllQuestions.keySet()) {
-            Log.e("TAG",title+"="+mAllQuestions.get(title).size());
+            Log.e("TAG", title + "=" + mAllQuestions.get(title).size());
+            sum = sum + mAllQuestions.get(title).size();
         }
+        Log.e("TAG", "total=" + sum);
     }
 
     public static VocabularyRepo getInstance() {
@@ -115,7 +118,7 @@ public class VocabularyRepo {
         questions.add(new Question("n.\n" +
                 "谷物;粮食;谷类植物;荞麦食品\n" +
                 "adj.\n" +
-                "谷物的，谷物制成的", "cereal","[ˈsɪəriəl]"));
+                "谷物的，谷物制成的", "cereal", "[ˈsɪəriəl]"));
         questions.add(new Question("adj.野蛮的;凶猛的;未开化的;残忍的", "savage"));
         questions.add(new Question(" adj.不可避免的;", "inevitable"));
         questions.add(new Question("adj.妒忌的;吃醋的;羡慕的;精心守护的", "jealous"));
@@ -225,29 +228,29 @@ public class VocabularyRepo {
         questions.add(new Question("n.事实;现实，现实性;真实情况，实际情形;实体，实在", "reality"));
 
         questions.add(new Question("n.\n" +
-                "程序，手续;工序，过程，步骤;诉讼程序，（议会的）议事程序;〈罕〉进行", "procedure","[prəˈsi:dʒə(r)]"));
+                "程序，手续;工序，过程，步骤;诉讼程序，（议会的）议事程序;〈罕〉进行", "procedure", "[prəˈsi:dʒə(r)]"));
         questions.add(new Question("n.\n" +
-                "职业，工作;占有，占领;（土地、房屋、建筑等的）使用", "occupation","[ˌɒkjuˈpeɪʃn]"));
+                "职业，工作;占有，占领;（土地、房屋、建筑等的）使用", "occupation", "[ˌɒkjuˈpeɪʃn]"));
         questions.add(new Question("vt.\n" +
-                "揭露，揭发;使暴露;使遭受;使曝光", "expose","[ɪk'spəʊz] "));
+                "揭露，揭发;使暴露;使遭受;使曝光", "expose", "[ɪk'spəʊz] "));
         questions.add(new Question("n.\n" +
-                "家具;设备;附属品", "furniture","[ˈfɜ:nɪtʃə(r)]"));
+                "家具;设备;附属品", "furniture", "[ˈfɜ:nɪtʃə(r)]"));
         questions.add(new Question("n.\n" +
                 "休息室;游说团;门厅，大厅;投票厅\n" +
                 "vi.\n" +
                 "为了支持或抵制某项特定目标游说\n" +
                 "vt.\n" +
-                "对…进行游说;陈情（试图努力影响某人采取有利行动）","lobby"," [ˈlɒbi] "));
+                "对…进行游说;陈情（试图努力影响某人采取有利行动）", "lobby", " [ˈlɒbi] "));
         questions.add(new Question("adj.\n" +
-                "有效率的;（直接）生效的;能干的;（因省钱、省时或省力等而）收效大的","efficient","[ɪˈfɪʃnt]"));
+                "有效率的;（直接）生效的;能干的;（因省钱、省时或省力等而）收效大的", "efficient", "[ɪˈfɪʃnt]"));
         questions.add(new Question("n.\n" +
-                "发明;发明物;捏造：内心捏造的东西，特指谎言;发明才能","invention","[ɪnˈvenʃn]"));
+                "发明;发明物;捏造：内心捏造的东西，特指谎言;发明才能", "invention", "[ɪnˈvenʃn]"));
         questions.add(new Question("adj.\n" +
                 "时间的;世俗的;暂存的;<语>表示时间的\n" +
                 "n.\n" +
-                "暂存的事物，世间的事物;世俗的权力;一时的事物，俗事","temporal","[ˈtempərəl]"));
+                "暂存的事物，世间的事物;世俗的权力;一时的事物，俗事", "temporal", "[ˈtempərəl]"));
         questions.add(new Question("vt.\n" +
-                "表明，标示，指示;象征，暗示，预示;[医]显示需要做…的治疗","indicate","[ˈɪndɪkeɪt]"));
+                "表明，标示，指示;象征，暗示，预示;[医]显示需要做…的治疗", "indicate", "[ˈɪndɪkeɪt]"));
         return questions;
     }
 
@@ -346,7 +349,7 @@ public class VocabularyRepo {
         questions.add(new Question("adj.\n" +
                 "市的，市政的;地方自治的;都市的，市营的，市制的;内政的\n" +
                 "n.\n" +
-                "市政债券", "municipal","[mju:ˈnɪsɪpl]"));
+                "市政债券", "municipal", "[mju:ˈnɪsɪpl]"));
         questions.add(new Question("adj.\n" +
                 "平的;单调的;不景气的;干脆的\n" +
                 "adv.\n" +
@@ -356,9 +359,9 @@ public class VocabularyRepo {
                 "vt.\n" +
                 "使变平;[音乐]使（音调）下降，尤指降半音\n" +
                 "vi.\n" +
-                "逐渐变平;[音乐]以降调唱（或奏）\n", "flat","[flæt]"));
+                "逐渐变平;[音乐]以降调唱（或奏）\n", "flat", "[flæt]"));
         questions.add(new Question("adj.\n" +
-                "光学的;视觉的，视力的;眼睛的", "optical","[ˈɒptɪkl]"));
+                "光学的;视觉的，视力的;眼睛的", "optical", "[ˈɒptɪkl]"));
         return questions;
     }
 
@@ -423,43 +426,43 @@ public class VocabularyRepo {
         questions.add(new Question("adj.\n" +
                 "密集的，稠密的;浓密的，浓厚的;愚钝的", "dense"));
         questions.add(new Question("n.\n" +
-                "[电]电池，蓄电池;[军]炮台，炮位;一组;[法]殴打", "battery","[ˈbætri]"));
+                "[电]电池，蓄电池;[军]炮台，炮位;一组;[法]殴打", "battery", "[ˈbætri]"));
         questions.add(new Question("vt.\n" +
                 "解决;安排;使定居;使沉淀\n" +
                 "vi.\n" +
                 "定居;下沉\n" +
                 "n.\n" +
-                "高背长靠椅\n", "settle"," [ˈsetl]"));
+                "高背长靠椅\n", "settle", " [ˈsetl]"));
         questions.add(new Question("n.\n" +
-                "解释;说明;辩解;（消除误会后）和解", "explanation","[ˌekspləˈneɪʃn]"));
+                "解释;说明;辩解;（消除误会后）和解", "explanation", "[ˌekspləˈneɪʃn]"));
         questions.add(new Question("adj.\n" +
                 "模糊的;（思想上）不清楚的;（表达或感知）含糊的;暧昧的\n" +
                 "n.\n" +
-                "模糊不定状态", "vague","[veɪg]"));
+                "模糊不定状态", "vague", "[veɪg]"));
         questions.add(new Question("adj.\n" +
                 "纯粹的;仅仅，只不过;小的，轻微的\n" +
                 "n.\n" +
-                "小湖，池塘;〈英〉边境（线）", "mere","[mɪə(r)]"));
+                "小湖，池塘;〈英〉边境（线）", "mere", "[mɪə(r)]"));
         questions.add(new Question("vt.& vi.\n" +
                 "拥抱\n" +
                 "vt.\n" +
                 "接受;信奉;包括;包含\n" +
                 "n.\n" +
-                "拥抱，怀抱", "embrace","[ɪmˈbreɪs]"));
+                "拥抱，怀抱", "embrace", "[ɪmˈbreɪs]"));
         questions.add(new Question("vt.\n" +
-                "刺激;使有动机，促动，激发，诱导;激发…的积极性", "motivate","[ˈməʊtɪveɪt]"));
+                "刺激;使有动机，促动，激发，诱导;激发…的积极性", "motivate", "[ˈməʊtɪveɪt]"));
         questions.add(new Question("adj.\n" +
-                "不一致的，不调和的;前后矛盾的，不合逻辑的;反复无常的;歧出", "inconsistent","[ˌɪnkənˈsɪstənt]"));
+                "不一致的，不调和的;前后矛盾的，不合逻辑的;反复无常的;歧出", "inconsistent", "[ˌɪnkənˈsɪstənt]"));
         questions.add(new Question("vt.\n" +
-                "压下，压低;使沮丧;使萧条;使跌价", "depress"," [dɪˈpres] "));
+                "压下，压低;使沮丧;使萧条;使跌价", "depress", " [dɪˈpres] "));
         questions.add(new Question("adv.\n" +
-                "为此，因此", "therefor"," [ðeə'fɔ:"));
+                "为此，因此", "therefor", " [ðeə'fɔ:"));
         questions.add(new Question("conj.\n" +
                 "然而;鉴于;反之\n" +
                 "n.\n" +
-                "“鉴于…”：正式文件的介绍性陈述，开场白;条件性陈述", "whereas"," [ˌweərˈæz] "));
+                "“鉴于…”：正式文件的介绍性陈述，开场白;条件性陈述", "whereas", " [ˌweərˈæz] "));
         questions.add(new Question("n.\n" +
-                "气味，臭气;声望，名誉", "odour","[ˈəʊdə(r)]"));
+                "气味，臭气;声望，名誉", "odour", "[ˈəʊdə(r)]"));
         return questions;
     }
 
@@ -522,41 +525,39 @@ public class VocabularyRepo {
         questions.add(new Question("n.\n" +
                 "住处，住宅;居住时间，居住;公馆;驻地", "residence"));
         questions.add(new Question("n.\n" +
-                "住处，住宅;居住时间，居住;公馆;驻地", "residence"));
-        questions.add(new Question("n.\n" +
                 "疾病;弊端;不安\n" +
                 "vt.\n" +
                 "传染;使…有病\n", "disease"));
         questions.add(new Question("n.\n" +
                 "灾难;彻底的失败;不幸;祸患", "disaster"));
-        questions.add(new Question.Builder("diary","n.\n" +
-                "日记，日志;日记簿"," [ˈdaɪəri] ").build());
-        questions.add(new Question.Builder("desire","vt.\n" +
+        questions.add(new Question.Builder("diary", "n.\n" +
+                "日记，日志;日记簿", " [ˈdaɪəri] ").build());
+        questions.add(new Question.Builder("desire", "vt.\n" +
                 "渴望;希望;要求;请求\n" +
                 "n.\n" +
                 "欲望;愿望;希望;请求\n" +
                 "vi.\n" +
-                "愿望;有希望;期望;想望"," [dɪˈzaɪə(r)]").build());
-        questions.add(new Question.Builder("destination","n.\n" +
-                "目的，目标;目的地，终点;[罕用语]预定，指定"," [ˌdestɪˈneɪʃn]").build());
-        questions.add(new Question.Builder("drama","n.\n" +
-                "戏剧，剧本;戏剧效果;戏剧文学[艺术];戏剧性事件[场面]","[ˈdrɑ:mə]").build());
-        questions.add(new Question.Builder("comedy","n.\n" +
-                "喜剧;喜剧性;喜剧体裁;有趣的事情","[ˈkɒmədi]").build());
-        questions.add(new Question.Builder("gesture","n.\n" +
+                "愿望;有希望;期望;想望", " [dɪˈzaɪə(r)]").build());
+        questions.add(new Question.Builder("destination", "n.\n" +
+                "目的，目标;目的地，终点;[罕用语]预定，指定", " [ˌdestɪˈneɪʃn]").build());
+        questions.add(new Question.Builder("drama", "n.\n" +
+                "戏剧，剧本;戏剧效果;戏剧文学[艺术];戏剧性事件[场面]", "[ˈdrɑ:mə]").build());
+        questions.add(new Question.Builder("comedy", "n.\n" +
+                "喜剧;喜剧性;喜剧体裁;有趣的事情", "[ˈkɒmədi]").build());
+        questions.add(new Question.Builder("gesture", "n.\n" +
                 "手势，姿势;举止，动作;〔古语〕仪态;[计算机]光笔指令\n" +
                 "vt.\n" +
                 "做手势\n" +
                 "vi.\n" +
-                "用手势表现，表达或指导"," [ˈdʒestʃə(r)]").build());
-        questions.add(new Question.Builder("graduate","vi.\n" +
+                "用手势表现，表达或指导", " [ˈdʒestʃə(r)]").build());
+        questions.add(new Question.Builder("graduate", "vi.\n" +
                 "渐变;渐渐变为（与into连用）;渐渐消逝（与away连用）;取得资格（与as连用）\n" +
                 "vt.\n" +
                 "授予学位或毕业证书;从…接受学位;分成等级;标以刻度\n" +
                 "n.\n" +
                 "<美>毕业生;<英>大学毕业生;（已经取得学士学位正在攻读高级学位的）研究生;量筒\n" +
                 "adj.\n" +
-                "<美>毕业了的，研究生的;有（学士）学位的","[ˈgrædʒuət]").build());
+                "<美>毕业了的，研究生的;有（学士）学位的", "[ˈgrædʒuət]").build());
         return questions;
     }
 
@@ -668,39 +669,39 @@ public class VocabularyRepo {
                 "扭动;蠕动;感到痛苦;感到苦恼\n" +
                 "n.\n" +
                 "绞，扭;紧紧握手;剧痛\n" +
-                "to twist and squeeze clothes, etc. in order to get the water out of them", "wring"," [rɪŋ] "));
+                "to twist and squeeze clothes, etc. in order to get the water out of them", "wring", " [rɪŋ] "));
         questions.add(new Question("vt.\n" +
                 "推翻;摧毁，拆毁（建筑物等）;毁坏，破坏;驳倒（论点、理论等）", "demolish"));
         questions.add(new Question("n.\n" +
                 "日历;历法;日程表;（一年之中的）重大事件（或重要日期）一览表\n" +
                 "vt.\n" +
-                "把…记入日程表中;把…列入表中;为（文件等）作分类索引;将…排入日程表", "calendar","[ˈkælɪndə(r)]"));
+                "把…记入日程表中;把…列入表中;为（文件等）作分类索引;将…排入日程表", "calendar", "[ˈkælɪndə(r)]"));
         questions.add(new Question("n.\n" +
-                "天堂;天;上帝;极乐", "heaven","[ˈhevn]"));
+                "天堂;天;上帝;极乐", "heaven", "[ˈhevn]"));
         questions.add(new Question("n.\n" +
-                "间隔;幕间休息;（数学）区间", "interval","[ˈɪntəvl]"));
+                "间隔;幕间休息;（数学）区间", "interval", "[ˈɪntəvl]"));
         questions.add(new Question("vt.& vi.\n" +
                 "（使）滴下\n" +
                 "vi.\n" +
                 "滴出;含有;充满;充溢\n" +
                 "n.\n" +
-                "水滴;滴答，滴答滴答的声音;[医]点滴;点滴（的信息等）", "drip"," [drɪp]"));
+                "水滴;滴答，滴答滴答的声音;[医]点滴;点滴（的信息等）", "drip", " [drɪp]"));
         questions.add(new Question("n.\n" +
-                "出现;到来;基督降临节（圣诞节前的四个星期）", "advent","[ˈædvent] "));
+                "出现;到来;基督降临节（圣诞节前的四个星期）", "advent", "[ˈædvent] "));
         questions.add(new Question("adj.\n" +
                 "内心的，精神的，思想的，心理的;智慧的，智[脑]力的;〈口〉精神病的，意志薄弱的，愚笨的\n" +
                 "n.\n" +
-                "精神病患者", "mental","[ˈmentl]"));
+                "精神病患者", "mental", "[ˈmentl]"));
         questions.add(new Question("n.\n" +
                 "瑕疵，缺点;一阵狂风;短暂的风暴;裂缝，裂纹\n" +
                 "v.\n" +
                 "使生裂缝，使有裂纹;使无效;使有缺陷\n" +
                 "vi.\n" +
-                "生裂缝;变的有缺陷", "flaw","[flɔ:]"));
+                "生裂缝;变的有缺陷", "flaw", "[flɔ:]"));
         questions.add(new Question("vt.\n" +
-                "构成，组成;制定，设立;等同于;指派", "constitute"," [ˈkɒnstɪtju:t] "));
+                "构成，组成;制定，设立;等同于;指派", "constitute", " [ˈkɒnstɪtju:t] "));
         questions.add(new Question("n.\n" +
-                "边缘;（悬崖峭壁的）边沿;（危险的）边沿;初始状态", "brink"," [brɪŋk]"));
+                "边缘;（悬崖峭壁的）边沿;（危险的）边沿;初始状态", "brink", " [brɪŋk]"));
         return questions;
     }
 
@@ -780,95 +781,95 @@ public class VocabularyRepo {
         questions.add(new Question("n.\n" +
                 "物质，材料;实质，内容;[神]灵;（织品的）质地 [ˈsʌbstəns]", "substance"));
         questions.add(new Question("n.\n" +
-                "分散;散布;消散;驱散","dispersal"," [dɪˈspɜ:sl] "));
+                "分散;散布;消散;驱散", "dispersal", " [dɪˈspɜ:sl] "));
         questions.add(new Question("adv.\n" +
-                "非常;十足地;下流地;大略","grossly","[ˈgrəʊsli]"));
+                "非常;十足地;下流地;大略", "grossly", "[ˈgrəʊsli]"));
         questions.add(new Question("vt.\n" +
-                "折磨;使受痛苦;使苦恼","afflict","[əˈflɪkt]"));
+                "折磨;使受痛苦;使苦恼", "afflict", "[əˈflɪkt]"));
         questions.add(new Question("n.\n" +
                 "泵;打气筒;轻软舞鞋;轻便帆布鞋（英式英语）\n" +
                 "vt.& vi.\n" +
                 "用抽水机汲水;给…打气;用泵（或泵样器官等）输送;涌出\n" +
                 "vt.\n" +
-                "用泵抽;注入，似用泵来拉、转或倒;抽水，从。。除去水;骑自行车的人上下蹬踏板","pump","[pʌmp]"));
+                "用泵抽;注入，似用泵来拉、转或倒;抽水，从。。除去水;骑自行车的人上下蹬踏板", "pump", "[pʌmp]"));
         questions.add(new Question("n.\n" +
-                "倾向，趋势;（话或作品等的）旨趣，意向;性情;癖好","tendency"," [ˈtendənsi] "));
+                "倾向，趋势;（话或作品等的）旨趣，意向;性情;癖好", "tendency", " [ˈtendənsi] "));
         questions.add(new Question("n.\n" +
-                "预测;规划，设计;[心]投射;突起物","projection","[prəˈdʒekʃn] "));
+                "预测;规划，设计;[心]投射;突起物", "projection", "[prəˈdʒekʃn] "));
         questions.add(new Question("adj.\n" +
-                "有前途的;有为;有希望的;光明","promising"," [ˈprɒmɪsɪŋ]"));
+                "有前途的;有为;有希望的;光明", "promising", " [ˈprɒmɪsɪŋ]"));
         questions.add(new Question("adj.\n" +
-                "多余的，累赘的;（因人员过剩）被解雇的，失业的;重沓;衍","redundant","[rɪˈdʌndənt] "));
+                "多余的，累赘的;（因人员过剩）被解雇的，失业的;重沓;衍", "redundant", "[rɪˈdʌndənt] "));
         questions.add(new Question("adj.\n" +
                 "积分的;完整的;必须的\n" +
                 "n.\n" +
-                "积分;整体","integral"," [ˈɪntɪgrəl] "));
+                "积分;整体", "integral", " [ˈɪntɪgrəl] "));
         questions.add(new Question("vt.\n" +
-                "完成;达到（目的）;走完（路程、距离等）;使完美","accomplish","[əˈkʌmplɪʃ]"));
+                "完成;达到（目的）;走完（路程、距离等）;使完美", "accomplish", "[əˈkʌmplɪʃ]"));
         questions.add(new Question("adj.\n" +
                 "有读写能力的;有文化修养的\n" +
                 "n.\n" +
-                "识字的人;有学问的人", "literate","[ˈlɪtərət]]"));
+                "识字的人;有学问的人", "literate", "[ˈlɪtərət]]"));
         questions.add(new Question("vt.\n" +
-                "对分;把…分成两半;把…减半;平摊", "halve","[hɑ:v]"));
+                "对分;把…分成两半;把…减半;平摊", "halve", "[hɑ:v]"));
         questions.add(new Question("vt.\n" +
                 "抑制，克制\n" +
                 "n.\n" +
                 "（诗歌的）叠句，副歌;经常重复的评价（或抱怨）\n" +
                 "vi.\n" +
-                "忍耐，节制", "refrain"," [rɪˈfreɪn]"));
+                "忍耐，节制", "refrain", " [rɪˈfreɪn]"));
         questions.add(new Question("vt.\n" +
                 "嘲笑，奚落;用嘲笑刺激\n" +
                 "n.\n" +
                 "讥讽;嘲弄，奚落;嘲弄的对象，笑柄\n" +
                 "adj.\n" +
-                "[航]（桅杆）很高的", "taunt","[tɔ:nt]"));
+                "[航]（桅杆）很高的", "taunt", "[tɔ:nt]"));
         questions.add(new Question("vt.& vi.\n" +
                 "推，猛推\n" +
                 "vt.\n" +
                 "〈口〉乱放，乱塞;随手扔\n" +
                 "n.\n" +
-                "推，推开", "shove"," [ʃʌv]"));
+                "推，推开", "shove", " [ʃʌv]"));
         questions.add(new Question("vt.\n" +
                 "（使）弯曲，屈身;拉弯;使成形，强行;集中全力于\n" +
                 "vi.\n" +
                 "偏向;使变曲，成角度;弯身，弯腰;专心\n" +
                 "n.\n" +
-                "弯道;弯曲（处）;（尤指道路或河流的）拐弯;（潜水员过快浮出水面造成的）减压病", "bend","[bend]"));
+                "弯道;弯曲（处）;（尤指道路或河流的）拐弯;（潜水员过快浮出水面造成的）减压病", "bend", "[bend]"));
         questions.add(new Question("vt.\n" +
                 "强加;征税;以…欺骗\n" +
                 "vi.\n" +
-                "利用;欺骗;施加影响", "impose"," [ɪmˈpəʊz] "));
+                "利用;欺骗;施加影响", "impose", " [ɪmˈpəʊz] "));
         questions.add(new Question("vn.\n" +
                 "用具，装备;索具;阻挡;阻截队员\n" +
                 "vt.\n" +
                 "着手处理;[橄榄球]擒住并摔倒（一名对方球员）;给（马）配上挽具\n" +
                 "vi.\n" +
-                "擒住并摔倒一名对手", "tackle","[ˈtækl] "));
+                "擒住并摔倒一名对手", "tackle", "[ˈtækl] "));
         questions.add(new Question("vi.\n" +
                 "符合;遵照;适应环境\n" +
                 "vt.\n" +
                 "使遵守;使一致;使顺从\n" +
                 "adj.\n" +
-                "一致的;顺从的", "conform","[kənˈfɔ:m]"));
+                "一致的;顺从的", "conform", "[kənˈfɔ:m]"));
         questions.add(new Question("vt.\n" +
-                "隐藏，隐瞒，遮住", "conceal","[kənˈsi:l]"));
+                "隐藏，隐瞒，遮住", "conceal", "[kənˈsi:l]"));
         questions.add(new Question("vt.\n" +
                 "诊断;判断\n" +
                 "vi.\n" +
-                "做出诊断", "diagnose","[ˈdaɪəgnəʊz]"));
+                "做出诊断", "diagnose", "[ˈdaɪəgnəʊz]"));
         questions.add(new Question("adj.\n" +
                 "微弱的，模糊的;软弱的;无勇气的;将昏倒似的\n" +
                 "vi.\n" +
                 "头晕，昏过去;渐渐不明，消失\n" +
                 "n.\n" +
-                "昏厥，昏倒", "faint","[feɪnt]"));
+                "昏厥，昏倒", "faint", "[feɪnt]"));
         questions.add(new Question("adj.\n" +
                 "微弱的，模糊的;软弱的;无勇气的;将昏倒似的\n" +
                 "vi.\n" +
                 "头晕，昏过去;渐渐不明，消失\n" +
                 "n.\n" +
-                "昏厥，昏倒", "faint","[feɪnt]"));
+                "昏厥，昏倒", "faint", "[feɪnt]"));
         questions.add(new Question("n.\n" +
                 "束;梁，栋梁;光线;（电波的）波束\n" +
                 "vi.\n" +
@@ -876,7 +877,7 @@ public class VocabularyRepo {
                 "vt.\n" +
                 "播送;以梁支撑;用…照射;流露\n" +
                 "vt.& vi.\n" +
-                "笑容满面，眉开眼笑;发射电波，播送;放出束状的光（或热）", "beam","[bi:m]"));
+                "笑容满面，眉开眼笑;发射电波，播送;放出束状的光（或热）", "beam", "[bi:m]"));
         return questions;
     }
 
@@ -923,39 +924,33 @@ public class VocabularyRepo {
         questions.add(new Question("adj.\n" +
                 "自主的;不相关连的;无党派的;不相干的人所做的（或提供的）\n" +
                 "n.\n" +
-                "独立自主的人;无党派人士", "independent","[ˌɪndɪˈpendənt] "));
+                "独立自主的人;无党派人士", "independent", "[ˌɪndɪˈpendənt] "));
         questions.add(new Question("vi.\n" +
                 "测量土地\n" +
                 "vt.\n" +
                 "调查;勘测;俯瞰\n" +
                 "n.\n" +
-                "调查（表），调查所，测量，测量部，测量图;概观，检查，鉴定书;环顾", "survey","[ˈsɜ:veɪ]"));
+                "调查（表），调查所，测量，测量部，测量图;概观，检查，鉴定书;环顾", "survey", "[ˈsɜ:veɪ]"));
         questions.add(new Question("n.\n" +
-                "陶器;陶器厂[作坊];<集合词>陶器类;陶器制造（术）", "pottery","[ˈpɒtəri]"));
-        questions.add(new Question("vi.\n" +
-                "测量土地\n" +
-                "vt.\n" +
-                "调查;勘测;俯瞰\n" +
-                "n.\n" +
-                "调查（表），调查所，测量，测量部，测量图;概观，检查，鉴定书;环顾", "survey","[ˈsɜ:veɪ]"));
+                "陶器;陶器厂[作坊];<集合词>陶器类;陶器制造（术）", "pottery", "[ˈpɒtəri]"));
         questions.add(new Question("n.\n" +
-                "偏爱;优先权;偏爱的事物;（债权人）受优先偿还的权利", "preference","[ˈprefrəns] "));
+                "偏爱;优先权;偏爱的事物;（债权人）受优先偿还的权利", "preference", "[ˈprefrəns] "));
         questions.add(new Question("n.\n" +
                 "[化]朊，蛋白（质）\n" +
                 "adj.\n" +
-                "蛋白质的", "protein","[ˈprəʊti:n]"));
+                "蛋白质的", "protein", "[ˈprəʊti:n]"));
         questions.add(new Question("n.\n" +
-                "同事;同行;同僚", "colleague","[ˈkɒli:g]"));
+                "同事;同行;同僚", "colleague", "[ˈkɒli:g]"));
         questions.add(new Question("n.\n" +
-                "出版;发表;出版物;公布\n", "publication","[ˌpʌblɪˈkeɪʃn] "));
+                "出版;发表;出版物;公布\n", "publication", "[ˌpʌblɪˈkeɪʃn] "));
         questions.add(new Question("n.\n" +
                 "质量，品质;美质，优点;才能，能力，技能，素养;品种\n" +
                 "adj.\n" +
-                "优质的，高质量的;上流社会的", "quality","[ˈkwɒləti]"));
+                "优质的，高质量的;上流社会的", "quality", "[ˈkwɒləti]"));
         questions.add(new Question("n.\n" +
                 "四分之一;一刻钟;地区;（美式足球的）一节\n" +
                 "vt.\n" +
-                "把…四等分;供…住宿;使（士兵）驻扎", "quarter","[ˈkwɔ:tə(r)] "));
+                "把…四等分;供…住宿;使（士兵）驻扎", "quarter", "[ˈkwɔ:tə(r)] "));
 
 
         questions.add(new Question("n.\n" +
@@ -963,150 +958,172 @@ public class VocabularyRepo {
                 "vt.\n" +
                 "招聘，征募;吸收某人为新成员;动员…（提供帮助）;雇用\n" +
                 "vi.\n" +
-                "征募新兵;得到补充，得到补偿;恢复健康", "recruit"," [rɪˈkru:t]"));
+                "征募新兵;得到补充，得到补偿;恢复健康", "recruit", " [rɪˈkru:t]"));
         questions.add(new Question("n.\n" +
                 "规则;管理;控制;规章\n" +
                 "adj.\n" +
-                "规定的，必须穿戴的，必须使用的", "regulation","[ˌregjuˈleɪʃn]"));
+                "规定的，必须穿戴的，必须使用的", "regulation", "[ˌregjuˈleɪʃn]"));
         questions.add(new Question("n.\n" +
-                "放宽;消遣，放松;松懈，松弛;[生理]驰松", "relaxation","[ˌri:lækˈseɪʃn]"));
+                "放宽;消遣，放松;松懈，松弛;[生理]驰松", "relaxation", "[ˌri:lækˈseɪʃn]"));
         questions.add(new Question("n.\n" +
                 "钱包，钱袋;财力，财源;和包或钱袋相似的东西;女用小提包\n" +
                 "vt.\n" +
-                "使皱起，噘起", "purse","[pɜ:s]","a small bag made of leather, plastic, etc. for carrying coins and often also paper money, cards, etc., used especially by women"));
+                "使皱起，噘起", "purse", "[pɜ:s]", "a small bag made of leather, plastic, etc. for carrying coins and often also paper money, cards, etc., used especially by women"));
         questions.add(new Question("n.\n" +
-                "隐私，秘密;隐居;私事;不受公众干扰的状态", "privacy","[ˈprɪvəsi]"));
+                "隐私，秘密;隐居;私事;不受公众干扰的状态", "privacy", "[ˈprɪvəsi]"));
         questions.add(new Question("n.\n" +
-                "预防，预防法;阻止，制止，妨碍，阻碍物;[谚]治病不如防病", "prevention","[prɪˈvenʃn]"));
+                "预防，预防法;阻止，制止，妨碍，阻碍物;[谚]治病不如防病", "prevention", "[prɪˈvenʃn]"));
         questions.add(new Question("n.\n" +
                 "香水;香料;香味，香气\n" +
                 "vt.\n" +
-                "使…充满香气;喷香水于…", "perfume","[ˈpɜ:fju:m]"));
+                "使…充满香气;喷香水于…", "perfume", "[ˈpɜ:fju:m]"));
         questions.add(new Question("n.\n" +
-                "生而为人;人格，人品，个性;人物;名人", "personality","[ˌpɜ:səˈnæləti]"));
+                "生而为人;人格，人品，个性;人物;名人", "personality", "[ˌpɜ:səˈnæləti]"));
 
 
         questions.add(new Question("n.\n" +
-                "演变;进化;发展", "evolution","[ˌi:vəˈlu:ʃn]"));
+                "演变;进化;发展", "evolution", "[ˌi:vəˈlu:ʃn]"));
         questions.add(new Question("n.\n" +
-                "革命;旋转;彻底改变;运行，公转", "revolution","[ˌrevəˈlu:ʃn]"));
+                "革命;旋转;彻底改变;运行，公转", "revolution", "[ˌrevəˈlu:ʃn]"));
         questions.add(new Question("n.\n" +
-                "分辨率;解决;决心;坚决", "resolution","[ˌrezəˈlu:ʃn]"));
+                "分辨率;解决;决心;坚决", "resolution", "[ˌrezəˈlu:ʃn]"));
         questions.add(new Question("n.\n" +
                 "安全;保证，担保;保护，防护;有价证券\n" +
                 "adj.\n" +
-                "安全的，保安的，保密的", "security","[sɪˈkjʊərəti]"));
+                "安全的，保安的，保密的", "security", "[sɪˈkjʊərəti]"));
         questions.add(new Question("n.\n" +
                 "演讲;训斥，教训\n" +
                 "vi.\n" +
                 "作演讲\n" +
                 "vt.\n" +
-                "给…作演讲;教训（通常是长篇大论的）", "lecture","[ˈlektʃə(r)]"));
+                "给…作演讲;教训（通常是长篇大论的）", "lecture", "[ˈlektʃə(r)]"));
         questions.add(new Question("n.\n" +
-                "专题论文，学位论文;学术演讲", "dissertation"," [ˌdɪsəˈteɪʃn]"));
+                "专题论文，学位论文;学术演讲", "dissertation", " [ˌdɪsəˈteɪʃn]"));
         questions.add(new Question("n.\n" +
                 "参考;参考书;提及，涉及;证明人，介绍人\n" +
                 "v.\n" +
-                "引用;参照\n", "reference","[ˈrefrəns]"));
+                "引用;参照\n", "reference", "[ˈrefrəns]"));
         return questions;
     }
 
     private List<Question> getDreamRepo() {
         List<Question> questions = new ArrayList<>();
-        questions.add(new Question.Builder("merchant","n.\n" +
+        questions.add(new Question.Builder("merchant", "n.\n" +
                 "商人;店主;批发商;零售商\n" +
                 "adj.\n" +
-                "商人的;商业的\n","[ˈmɜ:tʃənt] ]").englishExplanation("a person who buys and sells goods in large quantities, especially one who imports and exports goods").build());
-        questions.add(new Question.Builder("negotiate","vi.\n" +
+                "商人的;商业的\n", "[ˈmɜ:tʃənt] ]").englishExplanation("a person who buys and sells goods in large quantities, especially one who imports and exports goods").build());
+        questions.add(new Question.Builder("negotiate", "vi.\n" +
                 "谈判，协商，交涉\n" +
                 "vt.\n" +
-                "谈判达成;成功越过;议价出售\n"," [nɪˈgəʊʃieɪt] ").build());
-        questions.add(new Question.Builder("campaign","n.\n" +
+                "谈判达成;成功越过;议价出售\n", " [nɪˈgəʊʃieɪt] ").build());
+        questions.add(new Question.Builder("campaign", "n.\n" +
                 "运动;战役;竞选运动;季节性竞赛\n" +
                 "vi.\n" +
-                "作战;参加[发起]运动，参加竞选;参战，参加战役","[kæmˈpeɪn]").build());
-        questions.add(new Question.Builder("fossil","n.\n" +
+                "作战;参加[发起]运动，参加竞选;参战，参加战役", "[kæmˈpeɪn]").build());
+        questions.add(new Question.Builder("fossil", "n.\n" +
                 "化石;僵化的事物;老顽固，食古不化的人;习语中保存的旧词\n" +
                 "adj.\n" +
-                "化石的;陈腐的，守旧的","[ˈfɒsl]").build());
-        questions.add(new Question.Builder("insult","vt.\n" +
+                "化石的;陈腐的，守旧的", "[ˈfɒsl]").build());
+        questions.add(new Question.Builder("insult", "vt.\n" +
                 "辱骂;侮辱，凌辱;损害\n" +
                 "n.\n" +
-                "侮辱，凌辱;损害;无礼"," [ɪnˈsʌlt]").build());
-        questions.add(new Question.Builder("prey","n.\n" +
+                "侮辱，凌辱;损害;无礼", " [ɪnˈsʌlt]").build());
+        questions.add(new Question.Builder("prey", "n.\n" +
                 "被捕食的动物;捕食（习性）;受害者;受骗者\n" +
                 "vi.\n" +
-                "捕食;（疾病等）使人慢慢衰弱;折磨;（人）靠欺诈为生","[preɪ]").build());
-        questions.add(new Question.Builder("pray","vt.\n" +
+                "捕食;（疾病等）使人慢慢衰弱;折磨;（人）靠欺诈为生", "[preɪ]").build());
+        questions.add(new Question.Builder("pray", "vt.\n" +
                 "祈祷，祷告;请求，恳求;央求\n" +
                 "vi.\n" +
-                "祈祷;请;恳求","[preɪ]").build());
-        questions.add(new Question.Builder("fancy","vt.\n" +
+                "祈祷;请;恳求", "[preɪ]").build());
+        questions.add(new Question.Builder("fancy", "vt.\n" +
                 "设想;想要;猜想\n" +
                 "n.\n" +
                 "设想;想像力;爱好;怪想\n" +
                 "adj.\n" +
                 "（构思者）奇特的;昂贵的;（价格等）高价的;[美国俚语]真棒\n" +
                 "vi.\n" +
-                "想象，幻想","[ˈfænsi]").build());
-        questions.add(new Question.Builder("reckless","adj.\n" +
-                "鲁莽的，不顾危险的;粗心大意的;满不在乎的;胆大妄为"," [ˈrekləs]").build());
-        questions.add(new Question.Builder("leap","vi.\n" +
+                "想象，幻想", "[ˈfænsi]").build());
+        questions.add(new Question.Builder("reckless", "adj.\n" +
+                "鲁莽的，不顾危险的;粗心大意的;满不在乎的;胆大妄为", " [ˈrekləs]").build());
+        questions.add(new Question.Builder("leap", "vi.\n" +
                 "跳;冲动的行动\n" +
                 "vt.\n" +
                 "跳过，跃过;使跳跃\n" +
                 "n.\n" +
-                "跳跃，飞跃;跳跃的距离","[li:p]").build());
-        questions.add(new Question.Builder("grasp","vt.\n" +
+                "跳跃，飞跃;跳跃的距离", "[li:p]").build());
+        questions.add(new Question.Builder("grasp", "vt.\n" +
                 "抓住;了解;急忙抓住;急切（或贪婪）地抓住\n" +
                 "n.\n" +
                 "控制;控制力;能力所及\n" +
                 "vi.\n" +
-                "攫取（常与 at 连用）;急于接受;急切地寻求（常与 for 连用）"," [grɑ:sp] ").build());
-        questions.add(new Question.Builder("entice","vt.\n" +
-                "诱惑;怂恿","[ɪnˈtaɪs]").build());
-        questions.add(new Question.Builder("prone","adj.\n" +
-                "俯卧的;易于…的;有…倾向的;倾斜的，坡陡的","[prəʊn]").build());
-        questions.add(new Question.Builder("perceive","v.\n" +
-                "意识到;察觉，发觉","[pəˈsi:v]").build());
-        questions.add(new Question.Builder("valid","adj.\n" +
-                "有效的;有法律效力的;正当的;健全的","[ˈvælɪd]").build());
-        questions.add(new Question.Builder("transparent","adj.\n" +
-                "透明的;清澈的;易识破的;显而易见的","[trænsˈpærənt] ").build());
-        questions.add(new Question.Builder("intervention","n.\n" +
-                "介入，干涉，干预;调解，排解","[ˌɪntə'venʃn]").build());
-        questions.add(new Question.Builder("incidence","n.\n" +
-                "发生率;影响范围;[数]关联，接合;[物]入射，入射角","[ˈɪnsɪdəns]").build());
-        questions.add(new Question.Builder("distant","adj.\n" +
-                "遥远的;冷漠的，冷淡的;远离的，远隔的;不太清晰的","[ˈdɪstənt]").build());
-        questions.add(new Question.Builder("chop","v.\n" +
+                "攫取（常与 at 连用）;急于接受;急切地寻求（常与 for 连用）", " [grɑ:sp] ").build());
+        questions.add(new Question.Builder("entice", "vt.\n" +
+                "诱惑;怂恿", "[ɪnˈtaɪs]").build());
+        questions.add(new Question.Builder("prone", "adj.\n" +
+                "俯卧的;易于…的;有…倾向的;倾斜的，坡陡的", "[prəʊn]").build());
+        questions.add(new Question.Builder("perceive", "v.\n" +
+                "意识到;察觉，发觉", "[pəˈsi:v]").build());
+        questions.add(new Question.Builder("valid", "adj.\n" +
+                "有效的;有法律效力的;正当的;健全的", "[ˈvælɪd]").build());
+        questions.add(new Question.Builder("transparent", "adj.\n" +
+                "透明的;清澈的;易识破的;显而易见的", "[trænsˈpærənt] ").build());
+        questions.add(new Question.Builder("intervention", "n.\n" +
+                "介入，干涉，干预;调解，排解", "[ˌɪntə'venʃn]").build());
+        questions.add(new Question.Builder("incidence", "n.\n" +
+                "发生率;影响范围;[数]关联，接合;[物]入射，入射角", "[ˈɪnsɪdəns]").build());
+        questions.add(new Question.Builder("distant", "adj.\n" +
+                "遥远的;冷漠的，冷淡的;远离的，远隔的;不太清晰的", "[ˈdɪstənt]").build());
+        questions.add(new Question.Builder("chop", "v.\n" +
                 "切碎，砍;向下猛击;降低;终止\n" +
                 "n.\n" +
-                "排骨;砍，剁;掌劈;嘴周围的地方","[tʃɒp]").build());
-        questions.add(new Question.Builder("admit","vt.& vi.\n" +
+                "排骨;砍，剁;掌劈;嘴周围的地方", "[tʃɒp]").build());
+        questions.add(new Question.Builder("admit", "vt.& vi.\n" +
                 "许可进入;承认，供认\n" +
                 "vt.\n" +
                 "允许;确认\n" +
                 "vi.\n" +
-                "承认;允许\n","[ədˈmɪt]").build());
-        questions.add(new Question.Builder("revise","vt.\n" +
+                "承认;允许\n", "[ədˈmɪt]").build());
+        questions.add(new Question.Builder("revise", "vt.\n" +
                 "修订;修正;改变;[主英国英语]复习\n" +
                 "vt.& vi.\n" +
                 "复习\n" +
                 "vi.\n" +
                 "修订，校订\n" +
                 "n.\n" +
-                "修订;校订;[印刷]校样，清样;修订版，修订本\n","[rɪˈvaɪz] ").build());
-        questions.add(new Question.Builder("situation","n.\n" +
-                "（人的）情况;局面，形势，处境;位置;[心理学]情境\n"," [ˌsɪtʃuˈeɪʃn]").build());
-        questions.add(new Question.Builder("usage","n.\n" +
-                "使用;用法;习惯;惯例"," [ˈju:sɪdʒ]]").build());
-        questions.add(new Question.Builder("pattern","n.\n" +
+                "修订;校订;[印刷]校样，清样;修订版，修订本\n", "[rɪˈvaɪz] ").build());
+        questions.add(new Question.Builder("situation", "n.\n" +
+                "（人的）情况;局面，形势，处境;位置;[心理学]情境\n", " [ˌsɪtʃuˈeɪʃn]").build());
+        questions.add(new Question.Builder("usage", "n.\n" +
+                "使用;用法;习惯;惯例", " [ˈju:sɪdʒ]]").build());
+        questions.add(new Question.Builder("pattern", "n.\n" +
                 "模式;图案;花样，样品;榜样，典范\n" +
                 "vt.\n" +
                 "模仿;以图案装饰\n" +
                 "vi.\n" +
-                "形成图案"," [ˈpætn]").build());
+                "形成图案", " [ˈpætn]").build());
+        questions.add(new Question.Builder("impair", "vt.\n" +
+                "损害，削弱", "[ɪmˈpeə(r)] ").build());
+        questions.add(new Question.Builder("disgust", "n.\n" +
+                "反感，厌恶，嫌恶\n" +
+                "vt.\n" +
+                "使反感，厌恶\n", "[dɪsˈgʌst]").build());
+        questions.add(new Question.Builder("infant", "n.\n" +
+                "婴儿，幼儿;未成年人;初学者，生手\n" +
+                "adj.\n" +
+                "婴儿的，幼儿的;幼稚的，幼小的;初期的;未成年的", "[ˈɪnfənt]").build());
+        questions.add(new Question.Builder("feeble", "adj.\n" +
+                "虚弱的，衰弱的;无效的，无意的;缺乏决心的，缺乏活力的", " [ˈfi:bl]").build());
+        questions.add(new Question.Builder("prevalent", "adj.\n" +
+                "流行的，盛行的;普遍存在的，普遍发生的", "[ˈprevələnt]").build());
+        questions.add(new Question.Builder("renown", "n.\n" +
+                "名望，声誉;威名;声威", " [rɪˈnaʊn] ").build());
+        questions.add(new Question.Builder("assert", "vt.\n" +
+                "声称，断言;维护，坚持;坚持自己的主张;生效", " [əˈsɜ:t]").build());
+        questions.add(new Question.Builder("carve", "vi.\n" +
+                "雕刻;切，切开;创制，开创\n" +
+                "vt.\n" +
+                "雕塑;切片", "[kɑ:v]").build());
         return questions;
     }
 
