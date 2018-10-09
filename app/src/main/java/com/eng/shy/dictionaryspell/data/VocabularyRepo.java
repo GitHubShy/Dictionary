@@ -145,6 +145,8 @@ public class VocabularyRepo {
                 "犹豫，踌躇;不愿;支吾;停顿\n" +
                 "vt.\n" +
                 "对…犹豫;不情愿", "hesitate", "[ˈhezɪteɪt]"));
+        questions.add(new Question("n.\n" +
+                "现象，事件;奇迹;非凡的人", "phenomenon", "[fəˈnɒmɪnən]"));
         return questions;
     }
 
@@ -463,6 +465,57 @@ public class VocabularyRepo {
                 "“鉴于…”：正式文件的介绍性陈述，开场白;条件性陈述", "whereas", " [ˌweərˈæz] "));
         questions.add(new Question("n.\n" +
                 "气味，臭气;声望，名誉", "odour", "[ˈəʊdə(r)]"));
+        questions.add(new Question("vt.\n" +
+                "拥有;掌握，懂得;主宰;缠住，迷住", "possess", " [pəˈzes]"));
+        questions.add(new Question("n.\n" +
+                "过程;工序;做事方法;工艺流程\n" +
+                "vt.\n" +
+                "处理;加工;审阅;审核\n" +
+                "vi.\n" +
+                "列队行进\n" +
+                "adj.\n" +
+                "经过特殊加工（或处理）的", "process", "[ˈprəʊses]"));
+        questions.add(new Question("n.\n" +
+                "过程;工序;做事方法;工艺流程\n" +
+                "vt.\n" +
+                "处理;加工;审阅;审核\n" +
+                "vi.\n" +
+                "列队行进\n" +
+                "adj.\n" +
+                "经过特殊加工（或处理）的", "process", "[ˈprəʊses]"));
+        questions.add(new Question("n.\n" +
+                "导航;指导，引导;领导", "guidance", "[ˈgaɪdns]"));
+        questions.add(new Question("adj.\n" +
+                "明确的;一定的;肯定;有把握", "definite", " [ˈdefɪnət]"));
+        questions.add(new Question("n.\n" +
+                "高潮;顶点，极点;层进法;[生物学]顶极群落\n" +
+                "vt.& vi.\n" +
+                "达到顶点;达到巅峰;使达到高潮;使达到性高潮", "climax", "[ˈklaɪmæks]"));
+        questions.add(new Question("n.\n" +
+                "臀部;[建筑学]屋脊;臀围（尺寸）;臀部…的\n" +
+                "adj.\n" +
+                "（衣服、音乐等方面）时髦的，赶时髦的\n" +
+                "vt.\n" +
+                "使…的髋关节脱臼，损伤…的髋部;[建筑学]给（房屋）建屋脊;使知晓，使了解，告诉;使消息灵通", "hip", " [hɪp]"));
+        questions.add(new Question("n.\n" +
+                "秘诀;奥秘;秘密，机密\n" +
+                "adj.\n" +
+                "隐秘的;神秘的;秘密的，机密的\n", "secret", " [ˈsi:krət]"));
+        questions.add(new Question("n.\n" +
+                "奇迹，圣迹，神迹;令人惊奇的人（或事）", "miracle", "[ˈmɪrəkl]"));
+        questions.add(new Question("v.\n" +
+                "称赞;赞扬;向…欢呼;向…喝彩\n" +
+                "n.\n" +
+                "公开赞扬;称誉\n" +
+                "热烈欢迎或赞同", "acclaim", "[əˈkleɪm]"));
+        questions.add(new Question("n.\n" +
+                "忏悔;承认，自首;供认状;信条，教义", "confession", "[kənˈfeʃn]"));
+        questions.add(new Question("n.\n" +
+                "（尤指宗教）信条，教义;主义，纲领;宗派", "creed", "[kri:d]"));
+        questions.add(new Question("vt.\n" +
+                "责备，责骂;使丢脸;申斥;损伤…的体面\n" +
+                "n.\n" +
+                "谴责;责备，责骂;耻辱，污辱;[宗]应答圣歌", "reproach", "[rɪˈprəʊtʃ]"));
         return questions;
     }
 
@@ -1124,6 +1177,38 @@ public class VocabularyRepo {
                 "雕刻;切，切开;创制，开创\n" +
                 "vt.\n" +
                 "雕塑;切片", "[kɑ:v]").build());
+        questions.add(new Question.Builder("dormant", "adj.\n" +
+                "潜伏的，蛰服的，休眠的;静止的;资金没有利用的;权利尚待争取的", "[ˈdɔ:mənt] ").build());
+        questions.add(new Question.Builder("drill", "n.\n" +
+                "钻头;操练;军事训练;（应对紧急情况的）演习\n" +
+                "vt.& vi.\n" +
+                "训练;操练;钻（孔）;打（眼）\n" +
+                "vt.\n" +
+                "作…演习，操练", " [drɪl]").build());
+        questions.add(new Question.Builder("contest", "vt.\n" +
+                "竞争，为…而奋争;辩驳\n" +
+                "vi.\n" +
+                "竞争;争夺;争斗\n" +
+                "n.\n" +
+                "比赛;竞赛;搏斗", " [ˈkɒntest] ").build());
+        questions.add(new Question.Builder("engagement", "n.\n" +
+                "约会;订婚，婚约;约定，契约;雇用", "[ɪnˈgeɪdʒmənt]").build());
+        questions.add(new Question.Builder("fear", "n.\n" +
+                "害怕;可能性;（对神等的）敬畏;忧虑\n" +
+                "vt.\n" +
+                "害怕;畏惧;为…忧虑（或担心、焦虑）;敬畏（神等）\n" +
+                "vi.\n" +
+                "害怕;惧怕;忧虑;感到害怕\n", "[fɪə(r)]").build());
+        questions.add(new Question.Builder("keen", "adj.\n" +
+                "锐利的;厉害的，强烈的;敏锐的，敏捷的;热心的\n" +
+                "vi.\n" +
+                "（为死者）恸哭，哀号\n" +
+                "n.\n" +
+                "〈英〉号哭，恸哭\n", "[ki:n]").build());
+        questions.add(new Question.Builder("optimistic", "adj.\n" +
+                "乐观的，乐观主义的", "[ˌɒptɪˈmɪstɪk]").build());
+        questions.add(new Question.Builder("pessimistic", "adj.\n" +
+                "悲观主义的;悲观的，厌世的", "[ˌpesɪˈmɪstɪk]").build());
         return questions;
     }
 
