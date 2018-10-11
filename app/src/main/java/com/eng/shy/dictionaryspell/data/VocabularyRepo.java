@@ -26,6 +26,7 @@ public class VocabularyRepo {
         mAllQuestions.put("听力易错2", getListenRepo2());
         mAllQuestions.put("听力易错3", getListenRepo3());
         mAllQuestions.put("没事往里填填词", getDreamRepo());
+        mAllQuestions.put("人体和性格", getPersonRepo());
         echoTotalNum();
 
     }
@@ -147,6 +148,12 @@ public class VocabularyRepo {
                 "对…犹豫;不情愿", "hesitate", "[ˈhezɪteɪt]"));
         questions.add(new Question("n.\n" +
                 "现象，事件;奇迹;非凡的人", "phenomenon", "[fəˈnɒmɪnən]"));
+        questions.add(new Question("vt.\n" +
+                "复制，复写;重复，反复;折转;[生] 复制\n" +
+                "adj.\n" +
+                "复制的;折叠的;[植]折转的\n" +
+                "n.\n" +
+                "复制品;八音阶间隔的反覆音", "replicate", "[ˈreplɪkeɪt]"));
         return questions;
     }
 
@@ -253,6 +260,42 @@ public class VocabularyRepo {
                 "暂存的事物，世间的事物;世俗的权力;一时的事物，俗事", "temporal", "[ˈtempərəl]"));
         questions.add(new Question("vt.\n" +
                 "表明，标示，指示;象征，暗示，预示;[医]显示需要做…的治疗", "indicate", "[ˈɪndɪkeɪt]"));
+        questions.add(new Question("vt.\n" +
+                "宣判有罪;证明…有罪;使知罪;定…的罪\n" +
+                "n.\n" +
+                "罪犯", "convict", "[kənˈvɪkt]"));
+        questions.add(new Question("n.\n" +
+                "创造性，创造力，创作能力", "creativity", "[ˌkri:eɪ'tɪvətɪ]"));
+        questions.add(new Question("vi.\n" +
+                "发芽;抽芽\n" +
+                "vt.\n" +
+                "使发芽;使生长\n" +
+                "n.\n" +
+                "幼芽，新梢;[植]球芽甘蓝;幼苗状物，年轻人;美俚〉后代", "sprout", "[spraʊt]"));
+        questions.add(new Question("vt.\n" +
+                "刺激;激励，鼓舞;使兴奋\n" +
+                "vi.\n" +
+                "起兴奋作用;起促进作用;起刺激作用", "stimulate", "[ˈstɪmjuleɪt]"));
+        questions.add(new Question("n.\n" +
+                "审计，查账\n" +
+                "vt.\n" +
+                "审计，查账;旁听\n" +
+                "vi.\n" +
+                "审计", "audit", "[ˈɔ:dɪt]"));
+        questions.add(new Question("vi.\n" +
+                "出现，浮现;暴露;摆脱", "emerge", "[iˈmɜ:dʒ]"));
+        questions.add(new Question("adj.\n" +
+                "精密;精确的;清晰的;正规的", "precise", "[prɪˈsaɪs]"));
+        questions.add(new Question("vt.\n" +
+                "奉献;把…奉献（给），把…专用（于）", "devote", "[dɪˈvəʊt]"));
+        questions.add(new Question("adj.\n" +
+                "国内的;家庭的，家的;驯养的;热心家务的\n" +
+                "n.\n" +
+                "佣人;国货", "domestic", "[dəˈmestɪk]"));
+        questions.add(new Question("adj.\n" +
+                "异国的;外来的;异乎寻常的，奇异的;吸引人的\n" +
+                "n.\n" +
+                "舶来品，外来物;脱衣舞女", "exotic", "[ɪgˈzɒtɪk]"));
         return questions;
     }
 
@@ -364,6 +407,33 @@ public class VocabularyRepo {
                 "逐渐变平;[音乐]以降调唱（或奏）\n", "flat", "[flæt]"));
         questions.add(new Question("adj.\n" +
                 "光学的;视觉的，视力的;眼睛的", "optical", "[ˈɒptɪkl]"));
+
+        questions.add(new Question("n.\n" +
+                "大破坏，浩劫;蹂躏，摧残;大混乱，大骚动\n" +
+                "vt.\n" +
+                "严重破坏;毁灭\n" +
+                "vi.\n" +
+                "损毁", "havoc", "[ˈhævək]"));
+        questions.add(new Question("vt.\n" +
+                "使逐步升级;使逐步上升;乘自动梯上升\n" +
+                "vi.\n" +
+                "逐步扩大;逐步上升;（战争）逐步升级;像乘自动梯上升", "escalate", "[ˈeskəleɪt]"));
+        questions.add(new Question("n.\n" +
+                "危险;冒险\n" +
+                "vt.\n" +
+                "置…于危险中;危及", "peril", "[ˈperəl]"));
+        questions.add(new Question("n.\n" +
+                "摧毁，根除", "eradication", " [ɪˌrædɪ'keɪʃn] "));
+        questions.add(new Question("n.\n" +
+                "杂草;大麻;废物;烟草\n" +
+                "vt.\n" +
+                "给…除杂草;除（草）;消除\n" +
+                "vi.\n" +
+                "除草\n", "weed", "[wi:d]"));
+        questions.add(new Question("adj.\n" +
+                "难以捉摸的;不易记住的;逃避的;难以找到的", "elusive", "[iˈlu:sɪv]"));
+        questions.add(new Question("n.\n" +
+                "怜悯，同情;恻隐之心", "compassion", "[kəmˈpæʃn]"));
         return questions;
     }
 
@@ -458,7 +528,7 @@ public class VocabularyRepo {
         questions.add(new Question("vt.\n" +
                 "压下，压低;使沮丧;使萧条;使跌价", "depress", " [dɪˈpres] "));
         questions.add(new Question("adv.\n" +
-                "为此，因此", "therefor", " [ðeə'fɔ:"));
+                "为此，因此", "therefore", " [ðeə'fɔ:"));
         questions.add(new Question("conj.\n" +
                 "然而;鉴于;反之\n" +
                 "n.\n" +
@@ -476,14 +546,6 @@ public class VocabularyRepo {
                 "adj.\n" +
                 "经过特殊加工（或处理）的", "process", "[ˈprəʊses]"));
         questions.add(new Question("n.\n" +
-                "过程;工序;做事方法;工艺流程\n" +
-                "vt.\n" +
-                "处理;加工;审阅;审核\n" +
-                "vi.\n" +
-                "列队行进\n" +
-                "adj.\n" +
-                "经过特殊加工（或处理）的", "process", "[ˈprəʊses]"));
-        questions.add(new Question("n.\n" +
                 "导航;指导，引导;领导", "guidance", "[ˈgaɪdns]"));
         questions.add(new Question("adj.\n" +
                 "明确的;一定的;肯定;有把握", "definite", " [ˈdefɪnət]"));
@@ -491,12 +553,6 @@ public class VocabularyRepo {
                 "高潮;顶点，极点;层进法;[生物学]顶极群落\n" +
                 "vt.& vi.\n" +
                 "达到顶点;达到巅峰;使达到高潮;使达到性高潮", "climax", "[ˈklaɪmæks]"));
-        questions.add(new Question("n.\n" +
-                "臀部;[建筑学]屋脊;臀围（尺寸）;臀部…的\n" +
-                "adj.\n" +
-                "（衣服、音乐等方面）时髦的，赶时髦的\n" +
-                "vt.\n" +
-                "使…的髋关节脱臼，损伤…的髋部;[建筑学]给（房屋）建屋脊;使知晓，使了解，告诉;使消息灵通", "hip", " [hɪp]"));
         questions.add(new Question("n.\n" +
                 "秘诀;奥秘;秘密，机密\n" +
                 "adj.\n" +
@@ -516,6 +572,34 @@ public class VocabularyRepo {
                 "责备，责骂;使丢脸;申斥;损伤…的体面\n" +
                 "n.\n" +
                 "谴责;责备，责骂;耻辱，污辱;[宗]应答圣歌", "reproach", "[rɪˈprəʊtʃ]"));
+        questions.add(new Question("n.\n" +
+                "好奇心，爱打听的癖性;奇人;奇物，古玩;奇特性", "curiosity", "[ˌkjʊəriˈɒsəti]"));
+        questions.add(new Question("n.\n" +
+                "地区;教区;〈美〉（各州众议员）选举区;行政区，市区\n" +
+                "vt.\n" +
+                "把…分区", "district", "[ˈdɪstrɪkt]"));
+        questions.add(new Question("n.\n" +
+                "讨论，谈论;详述，论述", "discussion", "[dɪˈskʌʃn]"));
+        questions.add(new Question("adj.\n" +
+                "综合的;广泛的;有理解力的，悟性好的;[保险业]总体担保的\n" +
+                "n.\n" +
+                "[常用复数]专业综合考试;综合学校;综合性中学", "comprehensive", "[ˌkɒmprɪˈhensɪv]"));
+        questions.add(new Question("n.\n" +
+                "容量;性能;才能;生产能力\n" +
+                "adj.\n" +
+                "充其量的，最大限度的", "capacity", "[kəˈpæsəti]"));
+        questions.add(new Question("n.\n" +
+                "速率，速度;周转率;高速，快速", "velocity", " [vəˈlɒsəti]"));
+        questions.add(new Question("n.\n" +
+                "阻塞;充血;拥挤，堵车;（人口）过剩，稠密", "congestion", "[kənˈdʒestʃən]"));
+        questions.add(new Question("n.\n" +
+                "环境，周围的事物\n" +
+                "adj.\n" +
+                "周围的，附近的\n" +
+                "v.\n" +
+                "围绕;包围( surround的现在分词 );与…紧密相关;喜欢结交（某类人）", "surrounding", "[səˈraʊndɪŋ]"));
+        questions.add(new Question("adv.\n" +
+                "此外", "additionally", " [ə'dɪʃənəlɪ]"));
         return questions;
     }
 
@@ -755,6 +839,28 @@ public class VocabularyRepo {
                 "构成，组成;制定，设立;等同于;指派", "constitute", " [ˈkɒnstɪtju:t] "));
         questions.add(new Question("n.\n" +
                 "边缘;（悬崖峭壁的）边沿;（危险的）边沿;初始状态", "brink", " [brɪŋk]"));
+        questions.add(new Question("n.\n" +
+                "牙科医生", "dentist", " [ˈdentɪst]"));
+        questions.add(new Question("n.\n" +
+                "雕刻;雕刻品\n" +
+                "v.\n" +
+                "雕刻( carve的现在分词);分割", "carving", "  [ˈkɑ:vɪŋ] "));
+        questions.add(new Question("n.\n" +
+                "雕刻;雕刻品\n" +
+                "v.\n" +
+                "雕刻( carve的现在分词);分割", "carving", "  [ˈkɑ:vɪŋ] "));
+        questions.add(new Question("vt.& vi.\n" +
+                "（使）窘迫，（使）局促不安;（使）困难\n", "embarrass", "[ɪmˈbærəs]"));
+        questions.add(new Question("adj.\n" +
+                "灵活的;柔韧的;易弯曲的;易被说服的", "flexible", " [ˈfleksəbl]"));
+        questions.add(new Question("vt.\n" +
+                "引用，引证;[法]传讯;表扬;[军事]传（或通）令嘉奖\n" +
+                "n.\n" +
+                "<口>例证，引文", "cite", "[saɪt]"));
+        questions.add(new Question("adj.\n" +
+                "有责任的;有义务的;有…倾向的;易…的", "liable", "[ˈlaɪəbl]"));
+        questions.add(new Question("n.\n" +
+                "理发师;剪头或做头发的人", "hairdresser", " [ˈheədresə(r)] "));
         return questions;
     }
 
@@ -917,12 +1023,6 @@ public class VocabularyRepo {
                 "头晕，昏过去;渐渐不明，消失\n" +
                 "n.\n" +
                 "昏厥，昏倒", "faint", "[feɪnt]"));
-        questions.add(new Question("adj.\n" +
-                "微弱的，模糊的;软弱的;无勇气的;将昏倒似的\n" +
-                "vi.\n" +
-                "头晕，昏过去;渐渐不明，消失\n" +
-                "n.\n" +
-                "昏厥，昏倒", "faint", "[feɪnt]"));
         questions.add(new Question("n.\n" +
                 "束;梁，栋梁;光线;（电波的）波束\n" +
                 "vi.\n" +
@@ -931,6 +1031,42 @@ public class VocabularyRepo {
                 "播送;以梁支撑;用…照射;流露\n" +
                 "vt.& vi.\n" +
                 "笑容满面，眉开眼笑;发射电波，播送;放出束状的光（或热）", "beam", "[bi:m]"));
+        questions.add(new Question("n.\n" +
+                "混乱，凌乱;动乱，骚乱;不正当行为;（身心机能的）失调\n" +
+                "vt.\n" +
+                "使混乱，使凌乱;扰乱;使（身心等）失调;使（神经等）错乱", "disorder", "[dɪsˈɔ:də(r)] "));
+        questions.add(new Question("vt.\n" +
+                "产生;造成;引起\n" +
+                "vi.\n" +
+                "形成;引起\n", "engender", "[ɪnˈdʒendə(r)]"));
+        questions.add(new Question("adj.\n" +
+                "致命的，致死的;能致命的;破坏性的;有害的\n" +
+                "n.\n" +
+                "致死因子", "lethal", "[ˈli:θl]"));
+        questions.add(new Question("adj.\n" +
+                "耀眼的，闪闪发光的;炫耀的，显眼的;瞪眼的;粗俗的\n" +
+                "v.\n" +
+                "怒目而视(glare的现在分词);发强光", "glaring", " [ˈgleərɪŋ]"));
+        questions.add(new Question("n.\n" +
+                "后代，子孙;产物，结果;（动物的）崽;幼苗\n", "offspring", " [ˈɒfsprɪŋ]"));
+        questions.add(new Question("vt.\n" +
+                "居住;在…出现;填满\n" +
+                "vi.\n" +
+                "居住", "inhabit", "[ɪnˈhæbɪt]"));
+        questions.add(new Question("n.\n" +
+                "习惯，习性;气质;宗教服装\n" +
+                "vt.\n" +
+                "给…穿衣服;打扮", "habit","[ɪnˈhæbɪt]"));
+        questions.add(new Question("vt.\n" +
+                "呈现;陈列，展览;证明;[法]提交证据\n" +
+                "vi.\n" +
+                "展出;公开展览某物\n" +
+                "n.\n" +
+                "展览，陈列;展览品;公开展示;[法]证据", "exhibit", "[ɪgˈzɪbɪt] "));
+        questions.add(new Question("n.\n" +
+                "产地;（动物的）栖息地，住处;经常发现某种事物的地方", "habitat", "[ˈhæbɪtæt]"));
+        questions.add(new Question("n.\n" +
+                "承诺，许诺;委任，委托;致力，献身;承担义务", "commitment", "[kəˈmɪtmənt] "));
         return questions;
     }
 
@@ -1205,10 +1341,122 @@ public class VocabularyRepo {
                 "（为死者）恸哭，哀号\n" +
                 "n.\n" +
                 "〈英〉号哭，恸哭\n", "[ki:n]").build());
+        questions.add(new Question.Builder("balcony", "n.\n" +
+                "阳台;包厢;（电影院等的）楼厅，楼座", "[ˈbælkəni]").build());
+        questions.add(new Question.Builder("deserve", "vt.\n" +
+                "值得;应得;应受\n" +
+                "vi.\n" +
+                "应受报答;应得报酬;应得赔偿;应受惩罚\n", "[dɪˈzɜ:v]").build());
+        questions.add(new Question.Builder("thwart", "vt.\n" +
+                "阻挠;挫败;使受挫折;<旧>横过\n" +
+                "n.\n" +
+                "<船>横座板，划手座，独木舟的横梁\n" +
+                "adj.\n" +
+                "横放的，横着的，穿过的;<旧>执拗的，固执的\n" +
+                "adv.\n" +
+                "<古>横跨着，横过\n" +
+                "prep.\n" +
+                "<古>横跨，横过", "[θwɔ:t]").build());
+        questions.add(new Question.Builder("besiege", "vt.\n" +
+                "包围，为敌对势力包围;拥挤在周围，包围住;如被询问纠缠或强求;使感到丧气或焦虑", "[bɪˈsi:dʒ]").build());
+        questions.add(new Question.Builder("undaunted", "adj.\n" +
+                "顽强的，不惧怕的，无畏的", " [ˌʌnˈdɔ:ntɪd] ").build());
+        questions.add(new Question.Builder("invective", "n.\n" +
+                "痛骂，猛烈抨击", "[ɪnˈvektɪv]").build());
+        questions.add(new Question.Builder("exempt", "vt.\n" +
+                "使免除，豁免\n" +
+                "adj.\n" +
+                "被免除的，被豁免的\n" +
+                "n.\n" +
+                "被免除（义务，责任）的人;免税人", "[ɪgˈzempt] ").build());
+        questions.add(new Question.Builder("propound", "vt.\n" +
+                "提出（问题、计划等）供考虑[讨论]，提议", "[prəˈpaʊnd]").build());
+        questions.add(new Question.Builder("parch", "vt.& vi.\n" +
+                "（使）焦干， （使）干透\n" +
+                "vt.\n" +
+                "使（某人）极口渴", "[pɑ:tʃ]").build());
+        questions.add(new Question.Builder("dye", "n.\n" +
+                "染料，染色;颜色\n" +
+                "vt.\n" +
+                "染色;给…染色\n" +
+                "vi.\n" +
+                "染上或粘上（颜色）", "[daɪ]").build());
+        questions.add(new Question.Builder("cluster", "n.\n" +
+                "群;丛;簇，串;[语言]辅音群\n" +
+                "vi.\n" +
+                "丛生;群聚\n" +
+                "vt.\n" +
+                "使密集，使聚集", "[ˈklʌstə(r)] ").build());
+        return questions;
+    }
+
+    private List<Question> getPersonRepo() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question("n.\n" +
+                "臀部;[建筑学]屋脊;臀围（尺寸）;臀部…的\n" +
+                "adj.\n" +
+                "（衣服、音乐等方面）时髦的，赶时髦的\n" +
+                "vt.\n" +
+                "使…的髋关节脱臼，损伤…的髋部;[建筑学]给（房屋）建屋脊;使知晓，使了解，告诉;使消息灵通", "hip", " [hɪp]"));
+        questions.add(new Question.Builder("thigh", "n.\n" +
+                "股，大腿;食用的鸡（等的）腿", "[θaɪ] ").build());
+        questions.add(new Question.Builder("jaw", "n.\n" +
+                "下巴;颌;唠叨;狭窄入口\n" +
+                "vi.\n" +
+                "闲谈;唠唠叨叨，喋喋不休;教训", "[dʒɔ:]").build());
+        questions.add(new Question.Builder("elbow", "n.\n" +
+                "肘部;弯头，扶手;肘形管，弯管\n" +
+                "vt.\n" +
+                "用肘推挤（另一人或另一些人）;用手肘推开\n" +
+                "vi.\n" +
+                "用肘推搡着前进;在拐角处转弯", "[ˈelbəʊ]").build());
+        questions.add(new Question.Builder("stomach", "n.\n" +
+                "胃;腹部;食欲;欲望\n" +
+                "vt.\n" +
+                "容忍;吃…吃得津津有味;〈古〉对…发怒\n", "[ˈstʌmək]").build());
+        questions.add(new Question.Builder("lung", "n.\n" +
+                "肺;呼吸器官;[医]辅助呼吸的装置;〈英〉可供呼吸新鲜空气的地方", "[lʌŋ]").build());
+        questions.add(new Question.Builder("neck", "n.\n" +
+                "颈，脖子;衣领;海峡;[地]岩颈\n" +
+                "vi.\n" +
+                "搂着脖子亲吻，相拥互吻;变狭窄\n" +
+                "vt.\n" +
+                "使变细;与…搂著脖子亲吻;割颈杀死（家禽等）", "[nek]").build());
+        questions.add(new Question.Builder("belly", "n.\n" +
+                "肚子，腹部;（物体的）圆形或凸起部份;胃口，食欲;腹部…形的\n" +
+                "vt.& vi.\n" +
+                "膨胀", "[ˈbeli]").build());
+        questions.add(new Question.Builder("crus", "n.\n" +
+                "小腿，后腿的，似小腿或后腿形状的构造", " [kru:]").build());
+        questions.add(new Question.Builder("wrist", "n.\n" +
+                "腕关节;腕，手腕;（衣袖等的）腕部", "[rɪst]").build());
+        questions.add(new Question.Builder("organ", "n.\n" +
+                "器官;机构;风琴;元件", "[ˈɔ:gən]").build());
+
         questions.add(new Question.Builder("optimistic", "adj.\n" +
                 "乐观的，乐观主义的", "[ˌɒptɪˈmɪstɪk]").build());
         questions.add(new Question.Builder("pessimistic", "adj.\n" +
                 "悲观主义的;悲观的，厌世的", "[ˌpesɪˈmɪstɪk]").build());
+        questions.add(new Question.Builder("humour", "n.\n" +
+                "幽默;幽默感 ;感觉;体液\n" +
+                "v.\n" +
+                "迁就;顺应\n", "[ˈhju:mə(r)]").build());
+        questions.add(new Question.Builder("loyal", "adj.\n" +
+                "忠贞的;忠诚的，忠心的\n" +
+                "n.\n" +
+                "效忠的臣民;忠实信徒\n", "[ˈlɔɪəl]").build());
+        questions.add(new Question.Builder("sympathetic", "adj.\n" +
+                "同情的，有同情心的;赞同的;相投合的，称心的;〈口〉抱好感的", "[ˌsɪmpəˈθetɪk]").build());
+        questions.add(new Question.Builder("selfish", "adj.\n" +
+                "自私的，利己的", "[ˈselfɪʃ]").build());
+        questions.add(new Question.Builder("selfless", "adj.\n" +
+                "大公无私;无私的，忘我的;公而忘私", "[ˈselfləs] ").build());
+        questions.add(new Question.Builder("cunning", "adj.\n" +
+                "狡猾的;灵巧的;奸诈的\n" +
+                "n.\n" +
+                "狡猾;狡黠;诡诈", " [ˈkʌnɪŋ]").build());
+        questions.add(new Question.Builder("modest", "adj.\n" +
+                "谦虚的，谦逊的;适度的，适中的;端庄的;羞怯的", "[ˈmɒdɪst] ").build());
         return questions;
     }
 
