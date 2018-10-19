@@ -1,6 +1,5 @@
 package com.eng.shy.dictionaryspell.data;
 
-import android.os.Build;
 import android.util.Log;
 
 import com.eng.shy.dictionaryspell.pojo.Question;
@@ -8,7 +7,6 @@ import com.eng.shy.dictionaryspell.pojo.Question;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class VocabularyRepo {
 
@@ -22,11 +20,12 @@ public class VocabularyRepo {
         mAllQuestions.put("日常进阶2", getProNormalRepo2());
         mAllQuestions.put("阅读考点词", getIELTSReadingRepo());
         mAllQuestions.put("阅读考点词2", getIELTSReadingRepo2());
+        mAllQuestions.put("阅读考点词3", getIELTSReadingRepo3());
         mAllQuestions.put("听力易错", getListenRepo());
         mAllQuestions.put("听力易错2", getListenRepo2());
         mAllQuestions.put("听力易错3", getListenRepo3());
         mAllQuestions.put("没事往里填填词", getDreamRepo());
-        mAllQuestions.put("人体和性格", getPersonRepo());
+        mAllQuestions.put("人体,性格,动作", getPersonRepo());
         echoTotalNum();
 
     }
@@ -1192,6 +1191,22 @@ public class VocabularyRepo {
                 "参考;参考书;提及，涉及;证明人，介绍人\n" +
                 "v.\n" +
                 "引用;参照\n", "reference", "[ˈrefrəns]"));
+        questions.add(new Question.Builder("suppress", "vt.\n" +
+                "镇压，压制;止住，忍住;禁止发表;阻止…的生长（或发展）", "[səˈpres] ").build());
+        questions.add(new Question.Builder("qualify", "vt.& vi.\n" +
+                "（使）具有资格;有权;达标\n" +
+                "vt.\n" +
+                "限定，修饰;描述，形容;使合适;证明…合格\n" +
+                "vi.\n" +
+                "合格或成为合格;取得…的资格\n", "[ˈkwɒlɪfaɪ]").build());
+        questions.add(new Question.Builder("admire", "vt.\n" +
+                "欣赏;赞赏;称赞;<美口>想要", "[ədˈmaɪə(r)]").build());
+        questions.add(new Question.Builder("convince", "vt.\n" +
+                "使相信，说服，使承认;使明白;使确信;使悔悟，使认错[罪]", "[kənˈvɪns]").build());
+        questions.add(new Question.Builder("courage", "n.\n" +
+                "勇气;胆量;魄力;肝胆", " [ˈkʌrɪdʒ] ").build());
+        questions.add(new Question.Builder("accommodation", "n.\n" +
+                "住处;适应;和解;便利", " [əˌkɒməˈdeɪʃn] ").build());
         return questions;
     }
 
@@ -1305,6 +1320,8 @@ public class VocabularyRepo {
                 "虚弱的，衰弱的;无效的，无意的;缺乏决心的，缺乏活力的", " [ˈfi:bl]").build());
         questions.add(new Question.Builder("prevalent", "adj.\n" +
                 "流行的，盛行的;普遍存在的，普遍发生的", "[ˈprevələnt]").build());
+        questions.add(new Question.Builder("relevant", "adj.\n" +
+                "有关的，中肯的;相关联的;确切的;有重大意义[作用]的，实质性的", "[ˈreləvənt]").build());
         questions.add(new Question.Builder("renown", "n.\n" +
                 "名望，声誉;威名;声威", " [rɪˈnaʊn] ").build());
         questions.add(new Question.Builder("assert", "vt.\n" +
@@ -1430,6 +1447,12 @@ public class VocabularyRepo {
                 "小腿，后腿的，似小腿或后腿形状的构造", " [kru:]").build());
         questions.add(new Question.Builder("wrist", "n.\n" +
                 "腕关节;腕，手腕;（衣袖等的）腕部", "[rɪst]").build());
+        questions.add(new Question.Builder("artery", "n.\n" +
+                "[解剖]动脉;干线，要道", "[ˈɑ:təri]").build());
+        questions.add(new Question.Builder("vein", "n.\n" +
+                "静脉;[地]矿脉，岩脉;[植]叶脉;气质，倾向\n" +
+                "v.\n" +
+                "使有脉络;使有纹理;象脉络般分布于", "[veɪn]").build());
         questions.add(new Question.Builder("organ", "n.\n" +
                 "器官;机构;风琴;元件", "[ˈɔ:gən]").build());
 
@@ -1451,12 +1474,106 @@ public class VocabularyRepo {
                 "自私的，利己的", "[ˈselfɪʃ]").build());
         questions.add(new Question.Builder("selfless", "adj.\n" +
                 "大公无私;无私的，忘我的;公而忘私", "[ˈselfləs] ").build());
+        questions.add(new Question.Builder("modest", "adj.\n" +
+                "谦虚的，谦逊的;适度的，适中的;端庄的;羞怯的\n", " [ˈmɒdɪst]").build());
         questions.add(new Question.Builder("cunning", "adj.\n" +
                 "狡猾的;灵巧的;奸诈的\n" +
                 "n.\n" +
                 "狡猾;狡黠;诡诈", " [ˈkʌnɪŋ]").build());
         questions.add(new Question.Builder("modest", "adj.\n" +
                 "谦虚的，谦逊的;适度的，适中的;端庄的;羞怯的", "[ˈmɒdɪst] ").build());
+        questions.add(new Question.Builder("introvert", "n.\n" +
+                "性格内向的人", "[ˈɪntrəvɜ:t]").build());
+        questions.add(new Question.Builder("extrovert", "n.\n" +
+                "外向;性格外向的人;<口>活跃、愉快、爱交际的人", "[ˈekstrəvɜ:t]").build());
+
+        questions.add(new Question.Builder("swallow", "vt.& vi.\n" +
+                "吞，咽;忍耐，忍受\n" +
+                "vt.\n" +
+                "不流露;<口>忍受，轻信\n" +
+                "n.\n" +
+                "[鸟]燕子;胃管，食道;一次吞咽的量;（滑车等的）通索孔\n", "[ˈswɒləʊ] ").build());
+        questions.add(new Question.Builder("crawl", "vi.\n" +
+                "爬行;缓慢行进;巴结\n" +
+                "n.\n" +
+                "缓慢的爬行;〈美俚〉跳舞，自由式游泳;养鱼（龟）池\n", "[krɔ:l]").build());
+        questions.add(new Question.Builder("stagger", "vi.\n" +
+                "蹒跚;动摇;犹豫\n" +
+                "vt.\n" +
+                "使蹒跚，使摇摆;使犹豫;错开时间;使吃惊\n" +
+                "n.\n" +
+                "摇晃;一种不稳定形式，部署或者秩序;摇摆不定", "[ˈstægə(r)] ").build());
+        return questions;
+    }
+
+    private List<Question> getIELTSReadingRepo3() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question.Builder("supremacy", "n.\n" +
+                "霸权;至高无上;最高权力;最高地位", "[su:ˈpreməsi]").build());
+        questions.add(new Question.Builder("steer", "vt.& vi.\n" +
+                "引导;驾驶;操纵，控制\n" +
+                "vt.\n" +
+                "掌（舵）\n" +
+                "vi.\n" +
+                "行进\n" +
+                "n.\n" +
+                "阉公牛，肉用公牛;〈美俚〉建议;关于行路（或驾驶）的指示", "[stɪə(r)]").build());
+        questions.add(new Question.Builder("succumb", "vi.\n" +
+                "屈服;死亡", "[səˈkʌm]").build());
+        questions.add(new Question.Builder("symptom", "n.\n" +
+                "症状;征兆", "[ˈsɪmptəm]").build());
+        questions.add(new Question.Builder("toll", "n.\n" +
+                "通行费;伤亡人数;钟声;长途电话费\n" +
+                "v.\n" +
+                "鸣钟;敲钟", "[təʊl]").build());
+        questions.add(new Question.Builder("transcend", "vt.\n" +
+                "超越，超出…的限度;优于或胜过…;高于或独立于（宇宙）而生存\n", " [trænˈsend]").build());
+        questions.add(new Question.Builder("vulnerable", "adj.\n" +
+                "（地方）易受攻击的;易受伤的;易受批评的;[桥牌]已成局的", " [ˈvʌlnərəbl] ").build());
+        questions.add(new Question.Builder("gist", "n.\n" +
+                "要领;精神;要点，主旨;大要", "[dʒɪst]").build());
+        questions.add(new Question.Builder("spark", "n.\n" +
+                "电火花;燃烧的颗粒;火星，火花，余火;（金属的）发光的颗粒\n" +
+                "vi.\n" +
+                "发出火星，发出闪光;热烈赞同;正常运转\n" +
+                "vt.\n" +
+                "发动，触发;激起运动，鼓舞\n", "[spɑ:k]").build());
+        questions.add(new Question.Builder("controversy", "n.\n" +
+                "论战;公开辩论", "[ˈkɒntrəvɜ:si]").build());
+        questions.add(new Question.Builder("divergent", "adj.\n" +
+                "发散的;有分歧的;叉开的;扩散的", "[daɪ'vɜ:dʒənt]").build());
+        questions.add(new Question.Builder("denote", "vt.\n" +
+                "代表;指代;预示;意思是", "[dɪˈnəʊt]").build());
+        questions.add(new Question.Builder("recreation", "n.\n" +
+                "消遣（方式）;娱乐（方式）;重建，重现", "[ˌrekriˈeɪʃn] ").build());
+        questions.add(new Question.Builder("contradiction", "n.\n" +
+                "矛盾;否认，反驳", " [ˌkɒntrəˈdɪkʃn] ").build());
+        questions.add(new Question.Builder("criminal", "n.\n" +
+                "罪犯，犯人\n" +
+                "adj.\n" +
+                "犯罪的;刑事的;可耻的\n", "[ˈkrɪmɪnl]").build());
+        questions.add(new Question.Builder("undergo", "vt.\n" +
+                "经历，经验;遭受，承受", " [ˌʌndəˈgəʊ] ").build());
+        questions.add(new Question.Builder("cultivate", "vt.\n" +
+                "树立，耕作，种植;教养，栽培;改善;交朋友", "[ˈkʌltɪveɪt]  ").build());
+        questions.add(new Question.Builder("inherent", "adj.\n" +
+                "天生;固有的，内在的", "[ɪnˈhɪərənt]").build());
+        questions.add(new Question.Builder("reticence", "n.\n" +
+                "沉默;含蓄;不轻易暴露想法或感情;不爱说话", " ['retɪsns]").build());
+        questions.add(new Question.Builder("passionate", "adj.\n" +
+                "激昂的;热烈的;易怒的;易被情欲所支配的\n", "[ˈpæʃənət] ").build());
+        questions.add(new Question.Builder("untangle", "vt.\n" +
+                "整顿;解开（某物的）结;使不再打结;解决（纠纷等）", " [ˌʌnˈtæŋgl] ").build());
+        questions.add(new Question.Builder("miserable", "adj.\n" +
+                "悲惨的;令人痛苦的;太少的;卑鄙的", " [ˈmɪzrəbl]").build());
+        questions.add(new Question.Builder("compatible", "adj.\n" +
+                "兼容的，相容的;和谐的，协调的;[生物学]亲和的;可以并存的，能共处的", "[kəmˈpætəbl] ").build());
+        questions.add(new Question.Builder("obligation", "n.\n" +
+                "债务;义务，责任;证券，契约;恩惠", "[ˌɒblɪˈgeɪʃn] ").build());
+        questions.add(new Question.Builder("menace", "n.\n" +
+                "威胁;恐吓\n" +
+                "vt.&vi.\n" +
+                "威胁;恐吓", "[ˈmenəs] ").build());
         return questions;
     }
 
