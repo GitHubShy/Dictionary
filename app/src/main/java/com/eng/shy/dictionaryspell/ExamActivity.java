@@ -24,13 +24,15 @@ public class ExamActivity extends AppCompatActivity {
     private TextView mQuestion;
     private TextView mBox;
     private TextView mSure;
+    private TextView mShowAllWords;
     private TextView mScore;
     private TextView mShowWrongWords;
     private TextView mShowPhonetic;
     private TextView mPhonetic;
     private RecyclerView mRecycleView;
 
-    private List<Question> mQuestionRepository;
+    private List<Question> mInitialQuestionRepository;
+    private List<Question> mQuestionRepository = new ArrayList<>();
     private List<Question> mWrongQuestion = new ArrayList<>();
 
     private Question mCurrentQuestion;
@@ -53,6 +55,7 @@ public class ExamActivity extends AppCompatActivity {
         mQuestion = findViewById(R.id.question);
         mBox = findViewById(R.id.answer_box);
         mSure = findViewById(R.id.submit);
+        mShowAllWords = findViewById(R.id.display_all_words);
         mScore = findViewById(R.id.score_value);
         mShowPhonetic = findViewById(R.id.phonetic_button);
         mPhonetic = findViewById(R.id.phonetic);
@@ -72,13 +75,15 @@ public class ExamActivity extends AppCompatActivity {
             return false;
         });
         mShowPhonetic.setOnClickListener(v -> mPhonetic.setVisibility(View.VISIBLE));
+        mShowAllWords.setOnClickListener(v -> showAllWords());
     }
 
 
     private void initData() {
         mTitle = getIntent().getStringExtra("title");
-        mQuestionRepository = VocabularyRepo.getInstance().getmAllQuestions().get(mTitle);
-        mRepoSize = mQuestionRepository.size();
+        mInitialQuestionRepository = VocabularyRepo.getInstance().getmAllQuestions().get(mTitle);
+        mQuestionRepository.addAll(mInitialQuestionRepository);
+        mRepoSize = mInitialQuestionRepository.size();
 
         displayQuestion();
     }
@@ -119,6 +124,12 @@ public class ExamActivity extends AppCompatActivity {
 
     private void showWrongWords() {
         WrongWordsAdapter wrongWordsAdapter = new WrongWordsAdapter(mWrongQuestion);
+        mRecycleView.setLayoutManager(new LinearLayoutManager(this));
+        mRecycleView.setAdapter(wrongWordsAdapter);
+    }
+
+    private void showAllWords() {
+        WrongWordsAdapter wrongWordsAdapter = new WrongWordsAdapter(mInitialQuestionRepository);
         mRecycleView.setLayoutManager(new LinearLayoutManager(this));
         mRecycleView.setAdapter(wrongWordsAdapter);
     }

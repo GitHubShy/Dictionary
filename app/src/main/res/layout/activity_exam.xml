@@ -57,6 +57,16 @@
         app:layout_constraintTop_toTopOf="@+id/answer_box" />
 
     <TextView
+        android:id="@+id/display_all_words"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="显示所有单词"
+        app:layout_constraintStart_toEndOf="@+id/submit"
+        app:layout_constraintTop_toTopOf="@+id/submit" />
+
+    <TextView
         android:id="@+id/score_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
