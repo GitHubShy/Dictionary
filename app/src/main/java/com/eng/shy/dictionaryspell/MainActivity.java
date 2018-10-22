@@ -42,15 +42,16 @@ public class MainActivity extends AppCompatActivity {
             mData.add(new Catalogue(title,"90%"));
         }
         mAdapter = new CatalogueAdapter(mData);
-        mAdapter.setmClickListener(new CatalogueAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(int position) {
-                Catalogue catalogue = mData.get(position);
-                Intent i = new Intent();
-                i.putExtra("title",catalogue.title);
+        mAdapter.setmClickListener((position, type) -> {
+            Catalogue catalogue = mData.get(position);
+            Intent i = new Intent();
+            i.putExtra("title",catalogue.title);
+            if (type == 1) {
                 i.setClass(MainActivity.this,ExamActivity.class);
-                startActivity(i);
+            } else if (type == 2) {
+                i.setClass(MainActivity.this,EngToChiActivity.class);
             }
+            startActivity(i);
         });
         mRecycleView.setAdapter(mAdapter);
     }

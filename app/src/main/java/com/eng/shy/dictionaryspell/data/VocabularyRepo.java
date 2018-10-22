@@ -26,6 +26,7 @@ public class VocabularyRepo {
         mAllQuestions.put("听力易错3", getListenRepo3());
         mAllQuestions.put("没事往里填填词", getDreamRepo());
         mAllQuestions.put("人体,性格,动作", getPersonRepo());
+        mAllQuestions.put("生物化学", getAniVet());
         echoTotalNum();
 
     }
@@ -1207,6 +1208,10 @@ public class VocabularyRepo {
                 "勇气;胆量;魄力;肝胆", " [ˈkʌrɪdʒ] ").build());
         questions.add(new Question.Builder("accommodation", "n.\n" +
                 "住处;适应;和解;便利", " [əˌkɒməˈdeɪʃn] ").build());
+        questions.add(new Question.Builder("decorate", "vt.\n" +
+                "装饰;点缀;粉刷;授予（某人）勋章\n" +
+                "vi.\n" +
+                "装饰;布置", "[ˈdekəreɪt]").build());
         return questions;
     }
 
@@ -1453,6 +1458,10 @@ public class VocabularyRepo {
                 "静脉;[地]矿脉，岩脉;[植]叶脉;气质，倾向\n" +
                 "v.\n" +
                 "使有脉络;使有纹理;象脉络般分布于", "[veɪn]").build());
+        questions.add(new Question.Builder("molecule", "n.\n" +
+                "分子;微小颗粒", " [ˈmɒlɪkju:l]").build());
+        questions.add(new Question.Builder("atom", "n.\n" +
+                "原子;原子能;微粒，微量\n", "[ˈætəm]").build());
         questions.add(new Question.Builder("organ", "n.\n" +
                 "器官;机构;风琴;元件", "[ˈɔ:gən]").build());
 
@@ -1503,6 +1512,30 @@ public class VocabularyRepo {
                 "使蹒跚，使摇摆;使犹豫;错开时间;使吃惊\n" +
                 "n.\n" +
                 "摇晃;一种不稳定形式，部署或者秩序;摇摆不定", "[ˈstægə(r)] ").build());
+        questions.add(new Question.Builder("vomit", "vt.& vi.\n" +
+                "呕吐;大量喷出\n" +
+                "n.\n" +
+                "呕吐，呕吐物;催吐剂\n", " [ˈvɒmɪt]").build());
+        questions.add(new Question.Builder("plug", "n.\n" +
+                "插头;塞子;消防栓;（内燃机的）火花塞\n" +
+                "vt.& vi.\n" +
+                "插上插头\n" +
+                "vt.\n" +
+                "插入;以（塞子）塞住;〈俚〉枪击，殴打\n" +
+                "vi.\n" +
+                "填塞，堵;〈俚〉勤苦工作，用功\n", "[plʌg]").build());
+        questions.add(new Question.Builder("spit", "vt.\n" +
+                "吐，吐出\n" +
+                "n.\n" +
+                "口水;唾沫;烤肉叉\n" +
+                "vi.\n" +
+                "吐痰，吐口水;发出劈啪声\n", "[spɪt]").build());
+        questions.add(new Question.Builder("righteous", "adj.\n" +
+                "正义的;正直的;公正的", "[ˈraɪtʃəs] ").build());
+        questions.add(new Question.Builder("humble", "adj.\n" +
+                "谦逊的;简陋的;（级别或地位）低下的;不大的\n" +
+                "vt.\n" +
+                "使谦恭;轻松打败（尤指强大的对手）;低声下气", "[ˈhʌmbl]").build());
         return questions;
     }
 
@@ -1510,6 +1543,12 @@ public class VocabularyRepo {
         List<Question> questions = new ArrayList<>();
         questions.add(new Question.Builder("supremacy", "n.\n" +
                 "霸权;至高无上;最高权力;最高地位", "[su:ˈpreməsi]").build());
+        questions.add(new Question.Builder("supersede", "vt.\n" +
+                "取代，接替;更替，继任;将…免职，撤换\n" +
+                "vi.\n" +
+                "推迟行动\n" +
+                "v.\n" +
+                "废除，废弃", "[ˌsu:pəˈsi:d]").build());
         questions.add(new Question.Builder("steer", "vt.& vi.\n" +
                 "引导;驾驶;操纵，控制\n" +
                 "vt.\n" +
@@ -1574,6 +1613,117 @@ public class VocabularyRepo {
                 "威胁;恐吓\n" +
                 "vt.&vi.\n" +
                 "威胁;恐吓", "[ˈmenəs] ").build());
+        questions.add(new Question.Builder("hardship", "n.\n" +
+                "艰难;困苦;艰难情况;造成困苦与苦难的原因", "[ˈhɑ:dʃɪp] ").build());
+        questions.add(new Question.Builder("hypothesis", "n.\n" +
+                "假设，假说;[逻]前提", "[haɪˈpɒθəsɪs]").build());
+        questions.add(new Question.Builder("indulge", "vt.\n" +
+                "迁就，纵容;使满足;使（自己）沉溺于;使快乐\n" +
+                "vi.\n" +
+                "沉溺;纵容;满足", "[ɪnˈdʌldʒ] ").build());
+        questions.add(new Question.Builder("lopsided", "adj.\n" +
+                "不平等的;两侧不匀称[不平衡]的，向一侧歪斜的;畸", "[ˌlɒpˈsaɪdɪd]").build());
+        questions.add(new Question.Builder("norm", "n.\n" +
+                "规范;标准;准则;（劳动）定额", "[nɔ:m]").build());
+        questions.add(new Question.Builder("optimum", "adj.\n" +
+                "最适宜的\n" +
+                "n.\n" +
+                "最佳效果;最适宜条件;[生物学] 最适度", "[ˈɒptɪməm]").build());
+        questions.add(new Question.Builder("plot", "n.\n" +
+                "地基，基址图;（戏剧、小说等的）情节;一块地;测算表\n" +
+                "vt.\n" +
+                "密谋;以图表画出，制图;把…分成小块;为（文学作品）设计情节\n" +
+                "vi.\n" +
+                "设计作品情节;标示于图表上;密谋，暗中策划\n", " [plɒt] ").build());
+        questions.add(new Question.Builder("portable", "adj.\n" +
+                "轻便的;手提的\n" +
+                "n.\n" +
+                "手提式打字机", "[ˈpɔ:təbl]").build());
+        questions.add(new Question.Builder("paramount", "adj.\n" +
+                "最高的，至上的;最重要的，主要的;卓越的;有最高权力的\n" +
+                "n.\n" +
+                "最高，至上;有最高权力的人;元首，首长", "[ˈpærəmaʊnt]").build());
+        questions.add(new Question.Builder("cylinder", "n.\n" +
+                "汽缸;圆筒，圆柱;（尤指用作容器的）圆筒状物", "[ˈsɪlɪndə(r)] ").build());
+        questions.add(new Question.Builder("ascribe", "vt.\n" +
+                "把…归于，认为…是由于;认为…具有", "[əˈskraɪb]").build());
+        questions.add(new Question.Builder("rot", "n.\n" +
+                "腐烂，腐朽\n" +
+                "vt.& vi.\n" +
+                "（使）腐烂，（使）腐朽\n", "[rɒt]").build());
+        questions.add(new Question.Builder("discard", "vt.\n" +
+                "丢弃，抛弃;解雇;出牌\n" +
+                "n.\n" +
+                "被抛弃的人[物];丢弃，抛弃;打出的牌;打出的牌\n" +
+                "vi.\n" +
+                "出无用的牌;垫牌", "[dɪsˈkɑ:d]").build());
+        questions.add(new Question.Builder("recession", "n.\n" +
+                "经济衰退，不景气;后退，撤退;凹处;退场", "[rɪˈseʃn]").build());
+        questions.add(new Question.Builder("vice", "n.\n" +
+                "恶习;不道德行为;（肉体的）缺陷，疾病;（文体等的）缺点，瑕疵\n" +
+                "prep.\n" +
+                "代替;取代\n" +
+                "adj.\n" +
+                "副的;代替的\n" +
+                "vt.\n" +
+                "用老虎钳夹紧;钳制\n", "[vaɪs]").build());
+        questions.add(new Question.Builder("dismantle", "vt.\n" +
+                "拆卸;拆开;废除;取消", "[dɪsˈmæntl]").build());
+        questions.add(new Question.Builder("immense", "adj.\n" +
+                "极大的，巨大的;浩瀚的，无边际的;〈口〉非常好的;弘道", " [ɪˈmens]").build());
+        questions.add(new Question.Builder("volume", "n.\n" +
+                "体积;卷;音量;量，大量\n" +
+                "adj.\n" +
+                "大量的\n" +
+                "vi.\n" +
+                "成团卷起\n" +
+                "vt.\n" +
+                "把…收集成卷\n", "[ˈvɒlju:m]").build());
+        return questions;
+    }
+
+    private List<Question> getAniVet() {
+        List<Question> questions = new ArrayList<>();
+
+        questions.add(new Question.Builder("vegetable", "n.\n" +
+                "蔬菜", "[ˈvedʒtəbl]]").build());
+        questions.add(new Question.Builder("potato", "n.\n" +
+                "马铃薯， 土豆，洋芋;土豆块茎", "[pəˈteɪtəʊ]").build());
+        questions.add(new Question.Builder("tomato", "n.\n" +
+                "番茄，西红柿;[俚语] 美女", "[təˈmɑ:təʊ]").build());
+        questions.add(new Question.Builder("eggplant", "n.\n" +
+                "茄子", " [ˈegplɑ:nt]").build());
+        questions.add(new Question.Builder("watermelon", "n.\n" +
+                "西瓜", "[ˈwɔ:təmelən]").build());
+
+        questions.add(new Question.Builder("mouse", "n.\n" +
+                "鼠标;老鼠;羞怯[胆小]的人;[非正式用语] 眼部青肿\n" +
+                "vi.\n" +
+                "捕鼠;窥探，偷偷地寻找\n", " [maʊs]").build());
+        questions.add(new Question.Builder("camel", "n.\n" +
+                "骆驼", "[ˈkæml]").build());
+
+        questions.add(new Question.Builder("spicy", "adj.\n" +
+                "辛辣的;加有香料的，香的;有刺激性的;（故事等）猥亵的，下流的", "[ˈspaɪsi]").build());
+
+
+        questions.add(new Question.Builder("physics", "n.\n" +
+                "物理学;物理现象;物理成分", "[ˈfɪzɪks]").build());
+        questions.add(new Question.Builder("psychology", "n.\n" +
+                "心理学;心理状态;心理特点;心理影响", "[saɪˈkɒlədʒi]").build());
+        questions.add(new Question.Builder("chemistry", "n.\n" +
+                "化学;物质的化学组成（或性质），化学作用（现象）;（常指有强烈性吸引力的）两人间的关系;〈比喻〉神秘的变化（过程）\n", " [ˈkemɪstri] ").build());
+        questions.add(new Question.Builder("biology", "n.\n" +
+                "生物学;生物", "[baɪˈɒlədʒi]").build());
+
+        questions.add(new Question.Builder("oxygen", "n.\n" +
+                "[化]氧，氧气", "[ˈɒksɪdʒən]").build());
+        questions.add(new Question.Builder("carbon", "n.\n" +
+                "[化学]碳;（一张）复写纸;[电]碳精棒[片，粉]，碳精电极;复写的副本\n" +
+                "adj.\n" +
+                "碳的;碳处理的", "[ˈkɑ:bən] ").build());
+        questions.add(new Question.Builder("dioxide", "n.\n" +
+                "[化]二氧化物", "[daɪˈɒksaɪd]").build());
         return questions;
     }
 

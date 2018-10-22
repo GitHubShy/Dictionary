@@ -18,13 +18,22 @@
         tools:text="日常"/>
 
     <TextView
-        android:id="@+id/accuracy"
+        android:id="@+id/c2e"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         app:layout_constraintStart_toEndOf="@+id/title"
         app:layout_constraintTop_toTopOf="@+id/title"
         app:layout_constraintBottom_toBottomOf="@+id/title"
-        tools:text="80%"/>
+        android:text="汉翻英"/>
+
+    <TextView
+        android:id="@+id/e2c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@+id/c2e"
+        app:layout_constraintTop_toTopOf="@+id/c2e"
+        android:text="英翻汉"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -39,13 +39,8 @@ public class CatalogueAdapter extends RecyclerView.Adapter<CatalogueAdapter.Cata
     public void onBindViewHolder(@NonNull CatalogueViewHolder holder, final int position) {
         Catalogue catalogue = mData.get(position);
         holder.title.setText(catalogue.title);
-        holder.accuracy.setText(catalogue.accuracy);
-        holder.title.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mClickListener.onItemClick(position);
-            }
-        });
+        holder.chinese2english.setOnClickListener(v -> mClickListener.onItemClick(position, 1));
+        holder.english2chinese.setOnClickListener(v -> mClickListener.onItemClick(position, 2));
     }
 
     @Override
@@ -56,17 +51,19 @@ public class CatalogueAdapter extends RecyclerView.Adapter<CatalogueAdapter.Cata
     public class CatalogueViewHolder extends RecyclerView.ViewHolder {
 
         public TextView title;
-        public TextView accuracy;
+        public TextView chinese2english;
+        public TextView english2chinese;
 
         public CatalogueViewHolder(View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
-            accuracy = itemView.findViewById(R.id.accuracy);
+            chinese2english = itemView.findViewById(R.id.c2e);
+            english2chinese = itemView.findViewById(R.id.e2c);
         }
     }
 
     public interface OnItemClickListener {
-        void onItemClick(int position);
+        void onItemClick(int position, int type);
     }
 
 }
