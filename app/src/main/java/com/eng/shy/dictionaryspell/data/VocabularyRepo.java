@@ -434,6 +434,20 @@ public class VocabularyRepo {
                 "难以捉摸的;不易记住的;逃避的;难以找到的", "elusive", "[iˈlu:sɪv]"));
         questions.add(new Question("n.\n" +
                 "怜悯，同情;恻隐之心", "compassion", "[kəmˈpæʃn]"));
+        questions.add(new Question("n.\n" +
+                "配给，分配;分配额（或量）;划拨的款项;拨给的场地", "allocation", "[ˌæləˈkeɪʃn]"));
+        questions.add(new Question("vt.\n" +
+                "使分心;使混乱", "distract", "[dɪˈstrækt]"));
+        questions.add(new Question("n.\n" +
+                "诱惑，引诱;诱惑物", "temptation", "[tempˈteɪʃn]"));
+        questions.add(new Question("v.\n" +
+                "抵抗，抗拒;忍耐;反对，抵制\n" +
+                "n.\n" +
+                "防染剂;防腐剂", "resist", "[rɪˈzɪst]"));
+        questions.add(new Question("vt.& vi.\n" +
+                "继承\n" +
+                "vt.\n" +
+                "经遗传获得（品质、身体特征等），继任", "inherit", "[ɪnˈherɪt]"));
         return questions;
     }
 
@@ -695,6 +709,10 @@ public class VocabularyRepo {
                 "<美>毕业生;<英>大学毕业生;（已经取得学士学位正在攻读高级学位的）研究生;量筒\n" +
                 "adj.\n" +
                 "<美>毕业了的，研究生的;有（学士）学位的", "[ˈgrædʒuət]").build());
+        questions.add(new Question.Builder("appropriate", "adj.\n" +
+                "适当的;合适的;恰当的\n" +
+                "v.\n" +
+                "盗用;侵吞;拨（专款等）", "[əˈprəʊpriət]").build());
         return questions;
     }
 
@@ -1536,6 +1554,10 @@ public class VocabularyRepo {
                 "谦逊的;简陋的;（级别或地位）低下的;不大的\n" +
                 "vt.\n" +
                 "使谦恭;轻松打败（尤指强大的对手）;低声下气", "[ˈhʌmbl]").build());
+        questions.add(new Question.Builder("gaunt", "adj.\n" +
+                "憔悴的;骨瘦如柴的;荒凉的\n" +
+                "n.\n" +
+                "憔悴，荒凉", "[gɔ:nt]").build());
         return questions;
     }
 
@@ -1679,6 +1701,26 @@ public class VocabularyRepo {
                 "成团卷起\n" +
                 "vt.\n" +
                 "把…收集成卷\n", "[ˈvɒlju:m]").build());
+        questions.add(new Question.Builder("pragmatic", "adj.\n" +
+                "实用主义的;实际的;好管闲事的;国事的\n" +
+                "n.\n" +
+                "爱管闲事的人;专断的人;国事诏书;实务家", "[prægˈmætɪk]").build());
+        questions.add(new Question.Builder("expedient", "adj.\n" +
+                "应急有效的，权宜之计的;方便的，便利的，有利的\n" +
+                "n.\n" +
+                "应急办法，权宜之计\n", "[ɪkˈspi:diənt]").build());
+        questions.add(new Question.Builder("staircase", "n.\n" +
+                "楼梯;楼梯间", " [ˈsteəkeɪs]").build());
+        questions.add(new Question.Builder("greed", "n.\n" +
+                "贪婪;贪心", "[gri:d]").build());
+        questions.add(new Question.Builder("sparse", "adj.\n" +
+                "稀疏的;稀少的", "[spɑ:s]").build());
+        questions.add(new Question.Builder("scrape", "vt.\n" +
+                "擦，刮;擦去;擦伤，刮破;挖空\n" +
+                "vi.\n" +
+                "刮，擦;搔，抓;掏;发出刺耳的声音\n" +
+                "n.\n" +
+                "擦，刮;刮痕;刮擦声;刮胡子，修面\n", "[skreɪp] ").build());
         return questions;
     }
 
@@ -1695,6 +1737,12 @@ public class VocabularyRepo {
                 "茄子", " [ˈegplɑ:nt]").build());
         questions.add(new Question.Builder("watermelon", "n.\n" +
                 "西瓜", "[ˈwɔ:təmelən]").build());
+        questions.add(new Question.Builder("mushroom", "n.\n" +
+                "蘑菇;蘑菇状物，蘑菇形物体;（女用）蘑菇形草帽;暴发户\n" +
+                "adj.\n" +
+                "蘑菇的;蘑菇形的;迅速生长的;雨后蘑菇似的\n" +
+                "vi.\n" +
+                "迅速增长;采蘑菇;迅速增加;（火）猛然的扩大", "[ˈmʌʃrʊm]").build());
 
         questions.add(new Question.Builder("mouse", "n.\n" +
                 "鼠标;老鼠;羞怯[胆小]的人;[非正式用语] 眼部青肿\n" +
@@ -1715,6 +1763,8 @@ public class VocabularyRepo {
                 "化学;物质的化学组成（或性质），化学作用（现象）;（常指有强烈性吸引力的）两人间的关系;〈比喻〉神秘的变化（过程）\n", " [ˈkemɪstri] ").build());
         questions.add(new Question.Builder("biology", "n.\n" +
                 "生物学;生物", "[baɪˈɒlədʒi]").build());
+        questions.add(new Question.Builder("geometry", "n.\n" +
+                "几何学;几何形状;几何图形;几何学著作", "[dʒiˈɒmətri]").build());
 
         questions.add(new Question.Builder("oxygen", "n.\n" +
                 "[化]氧，氧气", "[ˈɒksɪdʒən]").build());
