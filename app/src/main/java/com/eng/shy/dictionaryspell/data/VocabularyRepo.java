@@ -27,6 +27,7 @@ public class VocabularyRepo {
         mAllQuestions.put("没事往里填填词", getDreamRepo());
         mAllQuestions.put("人体,性格,动作", getPersonRepo());
         mAllQuestions.put("生物化学", getAniVet());
+        mAllQuestions.put("常见常错", getOftenErrorRepo3());
         echoTotalNum();
 
     }
@@ -154,6 +155,14 @@ public class VocabularyRepo {
                 "复制的;折叠的;[植]折转的\n" +
                 "n.\n" +
                 "复制品;八音阶间隔的反覆音", "replicate", "[ˈreplɪkeɪt]"));
+        questions.add(new Question("vt.\n" +
+                "控制;管理;限制;支配\n" +
+                "n.\n" +
+                "支配权;操纵者;（对国家、地区、机构等的）管理权;（键盘上的）控制键", "control", "[kənˈtrəʊl]"));
+        questions.add(new Question("adj.\n" +
+                "外国的，外交的;外来的;不相干的;[医]异质的", "foreign", "[ˈfɒrən]"));
+        questions.add(new Question("n.\n" +
+                "外国人;外人，陌生人;外来物，进口货物;（非本土的）外来动植物", "foreigner", "[ˈfɒrənə(r)]"));
         return questions;
     }
 
@@ -492,8 +501,12 @@ public class VocabularyRepo {
 
         questions.add(new Question("adv.\n" +
                 "一般地，通常;广泛地，普遍地;概括地;主要地", "generally"));
+        questions.add(new Question("adv.\n" +
+                "一般地，通常;广泛地，普遍地;概括地;主要地", "generate"));
+        questions.add(new Question("vt.\n" +
+                "形成，造成;产生物理反应;产生（后代）;引起", "generation"));
         questions.add(new Question("n.\n" +
-                "产生;一代人;代（约30年），时代;生殖", "generation"));
+                "<军>手榴弹;催泪弹，灭火弹", "grenade", "[grəˈneɪd]"));
         questions.add(new Question("adj.\n" +
                 "有耐性的;能容忍的\n" +
                 "n.\n" +
@@ -713,7 +726,54 @@ public class VocabularyRepo {
                 "适当的;合适的;恰当的\n" +
                 "v.\n" +
                 "盗用;侵吞;拨（专款等）", "[əˈprəʊpriət]").build());
+        questions.add(new Question.Builder("behavior", "n.\n" +
+                "行为;态度;（机器等的）运转状态;（事物的）反应", "[bɪ'heɪvjə] ").build());
+        questions.add(new Question.Builder("emergent", "adj.\n" +
+                "紧急的;浮现的;突然出现的;自然发生的", "[iˈmɜ:dʒənt]").build());
+        questions.add(new Question.Builder("mediator", "n.\n" +
+                "调解人;调停者;传递者;中介物", "[ˈmi:dieɪtə(r)] ").build());
+        questions.add(new Question.Builder("superiority", "n.\n" +
+                "优越（性），优等;傲慢", "[su:ˌpɪəriˈɒrəti]").build());
+        questions.add(new Question.Builder("slide", "vi.\n" +
+                "滑落;下跌;打滑;[棒球]滑垒\n" +
+                "vt.\n" +
+                "衰落（成）;逐渐降低;使悄悄转动;（使）快捷而悄声地移动\n" +
+                "n.\n" +
+                "幻灯片;降低", "[slaɪd] ").build());
+        questions.add(new Question.Builder("classification", "n.\n" +
+                "分类;分级;类别;（动植物等的）分类学", "[ˌklæsɪfɪˈkeɪʃn]").build());
+        questions.add(new Question.Builder("classify", "vt.\n" +
+                "分类，归类;把…列为密件", "[ˈklæsɪfaɪ]").build());
+        questions.add(new Question.Builder("fountain", "n.\n" +
+                "泉源;人造喷泉，喷泉水;液体贮存器，汽水桶，冷饮柜;源头，来源", "[ˈfaʊntən]").build());
+        questions.add(new Question.Builder("laundry", "n.\n" +
+                "洗衣店，洗衣房;洗好的衣服;待洗的衣服;洗熨", "[ˈlɔ:ndri]").build());
+        questions.add(new Question.Builder("lounge", "n.\n" +
+                "客厅;休息厅;（机场等的）等候室\n" +
+                "vi.\n" +
+                "闲逛;懒洋洋地躺\n" +
+                "vt.\n" +
+                "懒洋洋地打发（时间）;虚度光阴", "[laʊndʒ]").build());
+        questions.add(new Question.Builder("pizza", "n.\n" +
+                "意大利薄饼，比萨饼", "[ˈpi:tsə]").build());
+        questions.add(new Question.Builder("sailing", "n.\n" +
+                "帆船运动;（乘帆船的）航行;（轮船的）航班\n" +
+                "v.\n" +
+                "驾驶( sail的现在分词);起航;坐船旅行;掠\n" +
+                "adj.\n" +
+                "航行的", "[ˈseɪlɪŋ]").build());
+        questions.add(new Question.Builder("cycling", "n.\n" +
+                "骑脚踏车兜风，骑脚踏车消遣", "[ˈsaɪklɪŋ]").build());
+        questions.add(new Question.Builder("evidence", "n.\n" +
+                "证据;迹象;证词;明显\n" +
+                "vt.\n" +
+                "表明;使明显;显示;证实", " [ˈevɪdəns]").build());
+        questions.add(new Question.Builder("calculation", "n.\n" +
+                "计算，盘算;估计;计算的结果;深思熟虑，慎重的计划\n", "[ˌkælkjuˈleɪʃn]").build());
+        questions.add(new Question.Builder("journalist", "n.\n" +
+                "新闻工作者，新闻记者;记日志者", "[ˈdʒɜ:nəlɪst]").build());
         return questions;
+
     }
 
     private List<Question> getListenRepo2() {
@@ -879,6 +939,14 @@ public class VocabularyRepo {
                 "有责任的;有义务的;有…倾向的;易…的", "liable", "[ˈlaɪəbl]"));
         questions.add(new Question("n.\n" +
                 "理发师;剪头或做头发的人", "hairdresser", " [ˈheədresə(r)] "));
+        questions.add(new Question("n.\n" +
+                "十几岁的青少年;十三岁到十九岁的少年", "teenager", "[ˈti:neɪdʒə(r)]"));
+        questions.add(new Question("adj.\n" +
+                "暴力引起的;剧烈的，（风，爆炸等）猛烈的，狂暴的;感情强烈的;颜色强烈的", "violent", "[ˈvaɪələnt]"));
+        questions.add(new Question("n.\n" +
+                "段落;分段符号\n" +
+                "vt.\n" +
+                "将…分段;写短文报导\n", "paragraph", "[ˈpærəgrɑ:f]"));
         return questions;
     }
 
@@ -1230,6 +1298,38 @@ public class VocabularyRepo {
                 "装饰;点缀;粉刷;授予（某人）勋章\n" +
                 "vi.\n" +
                 "装饰;布置", "[ˈdekəreɪt]").build());
+        questions.add(new Question.Builder("neatly", "adv.\n" +
+                "整洁地;干净地;灵巧地;恰好地", "[ni:tlɪ]").build());
+        questions.add(new Question.Builder("engross", "vt.\n" +
+                "使全神贯注", " [ɪnˈgrəʊs]").build());
+        questions.add(new Question("vt.\n" +
+                "联想;（使）发生联系;（使）联合;结交\n" +
+                "vi.\n" +
+                "联盟;陪伴同事\n" +
+                "n.\n" +
+                "合伙人;伴侣，同志;非正式会员\n" +
+                "adj.\n" +
+                "联合的;合伙的;非正式的;（性质上）有密切联系的", "associate", "[əˈsəʊʃieɪt]"));
+        questions.add(new Question("n.\n" +
+                "苗圃;婴儿室，幼儿园;临时托儿所;温床，滋生地", "nursery", "[ˈnɜ:səri]"));
+        questions.add(new Question("n.\n" +
+                "秘书;干事，书记员; 部长，大臣", "secretary", " [ˈsekrətri]"));
+        questions.add(new Question("n.\n" +
+                "皇帝，君主", "emperor", "[ˈempərə(r)]"));
+        questions.add(new Question("n.\n" +
+                "泥，泥淖;没价值的东西，污物;<美俚>咖啡;诽谤的话\n" +
+                "vt.\n" +
+                "抹泥;钻入泥中", "mud", "[mʌd]"));
+        questions.add(new Question("n.\n" +
+                "角;[比喻]（考虑、问题的）角度;观点;轮廓鲜明的突出体\n" +
+                "vt.\n" +
+                "使形成（或弯成）角度;把…放置成一角度;调整（或对准）…的角度;使（新闻、报道等）带有倾向性\n" +
+                "vi.\n" +
+                "垂钓;斜移;弯曲成一角度;从（某角度）报道", "angle", " [ˈæŋgl] "));
+        questions.add(new Question("n.\n" +
+                "安琪儿;天使，天使般的人;守护神;善良可爱的人", "angel", "[ˈeɪndʒl] "));
+        questions.add(new Question("n.\n" +
+                "灌溉;水利;[医]冲洗;冲注洗剂\n", "irrigation", "[ˌɪrɪ'ɡeɪʃn]"));
         return questions;
     }
 
@@ -1737,6 +1837,10 @@ public class VocabularyRepo {
                 "茄子", " [ˈegplɑ:nt]").build());
         questions.add(new Question.Builder("watermelon", "n.\n" +
                 "西瓜", "[ˈwɔ:təmelən]").build());
+        questions.add(new Question.Builder("cheese", "n.\n" +
+                "奶酪;<俚>微笑\n" +
+                "vt.\n" +
+                "<俚>停止", "[tʃi:z] ").build());
         questions.add(new Question.Builder("mushroom", "n.\n" +
                 "蘑菇;蘑菇状物，蘑菇形物体;（女用）蘑菇形草帽;暴发户\n" +
                 "adj.\n" +
@@ -1750,6 +1854,13 @@ public class VocabularyRepo {
                 "捕鼠;窥探，偷偷地寻找\n", " [maʊs]").build());
         questions.add(new Question.Builder("camel", "n.\n" +
                 "骆驼", "[ˈkæml]").build());
+        questions.add(new Question.Builder("spider", "n.\n" +
+                "蜘蛛;星形轮，十字叉;带柄三脚平底锅;三脚架", "[ˈspaɪdə(r)]").build());
+        questions.add(new Question.Builder("duck", "n.\n" +
+                "鸭肉;鸭子，野鸭;（表示友好的称呼）乖乖;（板球）零分\n" +
+                "vt.& vi.\n" +
+                "躲避，回避;潜入;忽然低下头（或弯下腰）;迅速行进", "[dʌk]").build());
+
 
         questions.add(new Question.Builder("spicy", "adj.\n" +
                 "辛辣的;加有香料的，香的;有刺激性的;（故事等）猥亵的，下流的", "[ˈspaɪsi]").build());
@@ -1774,6 +1885,20 @@ public class VocabularyRepo {
                 "碳的;碳处理的", "[ˈkɑ:bən] ").build());
         questions.add(new Question.Builder("dioxide", "n.\n" +
                 "[化]二氧化物", "[daɪˈɒksaɪd]").build());
+        return questions;
+
+    }
+
+    private List<Question> getOftenErrorRepo3() {
+        List<Question> questions = new ArrayList<>();
+        questions.add(new Question.Builder("structure", "n.\n" +
+                "结构;构造;建筑物;体系\n" +
+                "vt.\n" +
+                "构成，排列;安排\n", "[ˈstrʌktʃə(r)] ").build());
+        questions.add(new Question.Builder("solution", "n.\n" +
+                "溶液;解决;溶解;答案", " [səˈlu:ʃn]").build());
+        questions.add(new Question.Builder("probably", "adv.\n" +
+                "大概;或许;很可能;备不住", "[ˈprɒbəbli]").build());
         return questions;
     }
 
